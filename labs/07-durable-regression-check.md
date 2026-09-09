@@ -13,7 +13,7 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-The training app once let a signed-in staff user open an allocation detail page that silently failed to load its record. The UI still showed a page title, so the regression escaped casual testing.
+The local allocation dashboard can show its heading even when loading AL-01 fails. A heading-only test misses the failed record load. This exercise requires no real sign-in.
 
 ## Mission
 
@@ -21,7 +21,7 @@ Add one small, deterministic check that proves the allocation record loaded and 
 
 ## Constraints
 
-- Use the starter project’s test command and fixtures.
+- Use `npx playwright test sandbox/starter.spec.mjs` after the optional setup in Lab setup. `npm test` verifies seeded fixture behavior and does not run your browser assertion.
 - Prefer role/name or stable test selectors; do not use brittle screen coordinates.
 - Assert an observable outcome and one relevant network/state condition.
 - No unlimited retries, long sleeps, or real external accounts.
@@ -31,7 +31,7 @@ Add one small, deterministic check that proves the allocation record loaded and 
 1. Read the existing test and acceptance criterion.
 2. Draft a short AI task brief for Codex requesting an explanation and a proposed patch.
 3. Verify the proposal; implement/revise the smallest useful check.
-4. Run it against the seeded regression and fixed branch.
+4. Run it with `CANDIDATE=buggy` and `CANDIDATE=fixed`, using your shell's syntax in the platform guide. These are runtime selections, not branches. Record the same check failing A and passing B.
 5. Review the diff together.
 
 ## Deliverables
@@ -40,6 +40,8 @@ Add one small, deterministic check that proves the allocation record loaded and 
 - green and red run results;
 - explanation of why the locator/fixture is stable;
 - a one-sentence statement of what the test does not cover.
+
+If installation is blocked, the equivalent foundation submission is a precise assertion design: selector, response/status condition, expected A/B results and an explanation of why it detects the failure. Mark all execution unverified. Grade that design on reasoning, not fabricated red/green logs; record hands-on automation execution as a separate apprenticeship follow-up.
 
 ## Stretch
 

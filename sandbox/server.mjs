@@ -14,6 +14,13 @@ export function createServer() {
     const json = (status,body) => {res.writeHead(status, {'Content-Type':'application/json','Cache-Control':'no-store'}); res.end(JSON.stringify(body));};
     // Training identity is a selector, not authentication. Loopback only.
     try {
+      const methods = url.pathname === '/api/events' ? ['GET','POST'] :
+        url.pathname.startsWith('/api/contacts/') ? ['GET','PATCH'] :
+        ['/', '/api/health', '/api/contacts', '/api/send', '/api/allocation'].includes(url.pathname) ? ['GET'] : null;
+      if (methods && !methods.includes(req.method)) {
+        res.setHeader('Allow', methods.join(', '));
+        return json(405,{error:'method not supported; no action performed'});
+      }
       if (url.pathname === '/') {
         res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
         return res.end(await readFile(new URL('./index.html',import.meta.url)));

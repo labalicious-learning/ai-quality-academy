@@ -31,14 +31,14 @@ Reuse this course's evidence packet, charter, task brief and evaluation card ins
 | 02 | Task brief, verified repository map, test/check result, unresolved question |
 | 03 | Preserved synthetic raw data, working CSV, sources, decision memo, automation boundary |
 | 04 | Risk-ranked test charter and first three tests with rationale |
-| 05 | Journey log, evidence, proposed regression check, product question |
-| 06 | Four-lock evidence table, boundary finding, regression proposal |
+| 05 | Contact lookup/allocation/send-permission journey, candidate/role comparison, mobile/API evidence, regression proposal |
+| 06 | Four-lock read/PATCH-permission/send table, positive control, simulation limits, regression proposal |
 | 07 | Patch, actual red/green results or explicitly unexecuted assertion design, coverage limits |
 | 08 | Annotated screenshots, OS/browser/viewport/zoom, keyboard evidence, user impact |
-| 09 | Integration map, healthy/failure/recovery evidence, final state and retry reasoning |
+| 09 | Implemented/simulated/absent map, healthy/failure/recovery event counts and decision flags, downstream limits |
 | 10 | Round-by-round recommendations and factual incident update |
-| 11 | Evaluation card, approved/restricted/rejected roles, added corpus case |
-| 12 | Charter, task brief, evidence, automation proposal, verdict and individual reflections |
+| 11 | Evaluation card, hypothetical role recommendations, added case; mock unavailable metrics marked not measured |
+| 12 | Published capstone card, charter, brief, evidence, automation proposal/design, verdict, reflections and changed-condition defense |
 
 Group packets include each alias's contribution and reflection. A polished team artifact does not replace individual understanding. Public answers are available: cite sources and collaboration, and be ready to explain one decision and handle a small changed scenario.
 

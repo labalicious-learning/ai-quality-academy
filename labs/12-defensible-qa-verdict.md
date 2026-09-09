@@ -13,10 +13,10 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario cards
 
-Choose one card supplied by the instructor:
+Choose one of the [four runnable capstone cards](../fixtures/capstone-cards.md) with your instructor:
 
 - CRM role/permission change;
-- Community Launch configurator visual update;
+- Community Launch responsive preview and intentional theme change;
 - inquiry-email integration change;
 - small repository regression and proposed fix.
 
@@ -53,3 +53,5 @@ Reviewers must ask at least two of these:
 ## Individual scoring
 
 Each learner is assessed on their rotated role, their evidence reasoning, their safe AI use, and their ability to name uncertainty—not the number of defects their team found.
+
+The cards are public and open-book. Cite assistance and produce your own evidence. After the initial verdict, the instructor selects a small changed condition from the card; each learner predicts or explains its effect before verification. Fresh reasoning and an individual defense—not hidden answer files—establish understanding.

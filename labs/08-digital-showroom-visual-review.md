@@ -13,7 +13,7 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-The Community Launch digital showroom has shipped a new configuration overlay. Marketing says it “looks fine,” but an owner reports trouble using it on a phone.
+The Community Launch preview lets visitors choose a package. Marketing says it “looks fine,” but a visitor reports trouble using it on a phone. Test [R7](../fixtures/allocation-requirements.md) against both candidates. There is no menu, modal or overlay in this target.
 
 ## Mission
 
@@ -23,10 +23,14 @@ Conduct a visual, responsive, and keyboard-accessibility review without confusin
 
 | Viewport | Required check |
 | --- | --- |
-| Desktop 1440px | option state, layout, visual baseline comparison |
-| Tablet 768px | readable labels, overlay position, no clipped controls |
-| Mobile 375px | menu/overlay interaction, touch target intent, no horizontal trap |
-| Keyboard-only | visible focus, logical order, ability to select/close |
+| Desktop 1440px | capture each candidate; activate Choose package and verify “Package selected” |
+| Tablet 768px | readable labels, preview containment and reachable controls |
+| Mobile 375px | compare document width to viewport; inspect clipping and reachability of Choose package |
+| Keyboard-only | Tab to Choose package, check visible focus and activate with Enter or Space; verify the resulting text |
+
+Keep OS/browser, viewport and zoom identical for each A/B comparison. Reload before each interaction run. Inspect the caption's computed foreground/background colors; measure contrast before making a numeric claim. A passing keyboard check is valid evidence—do not invent a focus trap.
+
+For an approved intentional change, switch Theme from Community festival to Creative pop-up shop. The heading is designed to change to the selected theme; compare that change separately from layout defects. Candidate B is a comparison implementation, not an automatic accessibility certification.
 
 ## Deliverables
 

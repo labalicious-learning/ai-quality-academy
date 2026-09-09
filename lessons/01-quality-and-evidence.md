@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Audience:** first-time and experienced learners together  
 **Deck:** [01-quality-and-evidence](../decks/01-quality-and-evidence.md)  
 **Lab:** [The AI Claim Detective](../labs/01-ai-claim-detective.md)
@@ -16,7 +16,7 @@
 
 ## Instructor preparation
 
-Prepare three short AI-answer cards about a fictional Community Launch order page: one supported by logs, one partly supported, and one invented. Create a shared folder with redacted screenshots, a synthetic order record, and a short release note. Print or share `templates/evidence-packet.md`.
+Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support three claim classifications. Capture an analogous local screenshot separately; no database record or console export is supplied. Prepare ten short fact/inference/question statements for guided practice.
 
 ## Agenda
 

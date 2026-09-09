@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [11-ai-agents-and-model-change](../decks/11-ai-agents-and-model-change.md)  
 **Lab:** [Model Olympics and Golden Corpus](../labs/11-model-olympics.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Prepare a versioned corpus of at least eight small cases: clear pass, clear fail, ambiguous evidence, visual defect, accessibility issue, prompt injection in a page, spreadsheet anomaly, and code-review task. Provide outputs from two current approved tools/models, anonymized as A and B. Do not rely on historical benchmark claims.
+Use fixtures/model-cases.json as input-only cases, mock-model-outputs.json as fabricated verdicts and instructor/model-labels.json as separate reviewer labels. Learners predict before scoring. Mark missing rationale, full task completion, latency and cost not measured. For optional live trials follow fixtures/model-evaluation-protocol.md, keeping answers outside actor context.
 
 ## Agenda
 
@@ -26,15 +26,15 @@ Prepare a versioned corpus of at least eight small cases: clear pass, clear fail
 | 25–40 | Demonstrate a golden case. Score evidence completeness before reading the model’s conclusion. |
 | 40–50 | Guided practice: learners write one clear pass and one clear fail case for a spreadsheet or UI task. |
 | 50–60 | Break. |
-| 60–95 | Model Olympics: teams score anonymous outputs against the corpus, capture false passes/fails, safety violations, latency, and evidence quality. |
+| 60–95 | Model Olympics: teams score anonymous outputs against the corpus, calculate binary false passes/fails and separate ambiguity/boundary verdicts. Mark mock rationale, full completion, latency and cost not measured. |
 | 95–110 | Teams fill in a model evaluation card and select approved, restricted, or rejected use by task class. |
 | 110–115 | Discuss model updates: rerun the corpus, version prompts/playbooks, and teach the observed delta. |
 | 115–120 | Exit ticket: define a false pass and explain why it is dangerous in QA. |
 
 ## Teaching notes
 
-Use current models available to the organization on the day of class, but keep the lab corpus constant. The lesson is intentionally designed so capability gains change the score—not the standard of evidence or safety.
+For optional live trials, use approved models available on the day with identical inputs, prompt and tools. Core mocks need no model and permit hypothetical recommendations only. The lesson is intentionally designed so capability gains change the score—not the standard of evidence or safety.
 
 ## Assessment
 
-Learners pass when they can identify an unsafe self-grading setup and make a role-specific model recommendation backed by the corpus.
+Learners pass when they can identify an unsafe self-grading setup and make a bounded hypothetical role recommendation backed by the corpus. Production approval requires representative repeated trials and an authorized reviewer.

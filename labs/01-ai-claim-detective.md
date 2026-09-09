@@ -19,14 +19,11 @@ An AI assistant has reviewed a fictional Community Launch allocation page and pr
 
 Classify each claim as **proven**, **plausible but unproven**, or **unsupported**. Produce one evidence packet for the highest-risk proven finding, or a supported no-defect conclusion if none is proven.
 
-## Evidence folder
+## Supplied evidence and your capture
 
-- Screenshot of the allocation page
-- Browser console export
-- One network-response excerpt
-- Synthetic allocation record
-- Release note
-- Three AI-generated claims
+- Read [claim-packet.md](../fixtures/claim-packet.md): E01–E05 contain the requirement, browser observation, fictional network excerpt, explicit absence of database evidence and release note, followed by three claims.
+- Capture your own screenshot of the analogous local allocation failure. Label it with the local candidate, not the packet's fictional build ID.
+- A database record and console export are not supplied. Mark them unavailable; do not manufacture them or treat the local screenshot as evidence about the fictional B27 deployment.
 
 ## Rules
 
@@ -36,7 +33,7 @@ Classify each claim as **proven**, **plausible but unproven**, or **unsupported*
 
 ## Deliverables
 
-1. A one-row claim table: claim, classification, source, and reason.
+1. A three-row claim table: one row per claim, with classification, source, and reason.
 2. A completed [evidence packet](../templates/evidence-packet.md).
 3. One sentence stating what your conclusion does **not** prove.
 

@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [04-requirements-to-test-design](../decks/04-requirements-to-test-design.md)  
 **Lab:** [Allocation-to-Delivery Test Charter](../labs/04-allocation-test-charter.md)
 
@@ -33,4 +33,4 @@ Give teams the fictional Community Launch story: “A concierge can reserve an a
 
 ## Assessment
 
-Use `templates/test-charter.md`. A passing charter has risks tied to a harmed user/business outcome, not merely a long checklist of UI clicks.
+Use `templates/test-charter.md`. A passing charter has risks tied to a harmed user/business outcome, not merely a long checklist of UI clicks. For unresolved R8 rules, accept a decision owner, clarification blocker and conditional test. Never require invented expected outcomes or executed payments.

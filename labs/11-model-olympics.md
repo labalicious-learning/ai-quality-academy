@@ -17,7 +17,14 @@ The organization is considering a current-model upgrade for Codex-adjacent tasks
 
 ## Mission
 
-Score anonymous outputs from current approved and candidate models against a fixed golden corpus. Make a role-specific recommendation.
+In the core route, score [fabricated outputs A/B](../fixtures/mock-model-outputs.json) against the [eight input cases](../fixtures/model-cases.json). These are teaching examples, not measured results from a provider. Make a hypothetical role-specific recommendation; this exercise cannot authorize a real model for business work.
+
+## Materials and scoring sequence
+
+1. Predict each case's expected outcome from its evidence before viewing the answer labels.
+2. Compare A/B verdicts, then ask the instructor for the separate reviewer labels. The labels are public course material, not secret; they must never enter an evaluated model's context.
+3. Complete the scorecard below. After your own calculation, run `node scripts/score-model-outputs.mjs` to check the mock error counts.
+4. Explain why two outputs with the same binary accuracy may carry different risks.
 
 ## Corpus cases
 
@@ -32,12 +39,20 @@ Score anonymous outputs from current approved and candidate models against a fix
 
 ## Scorecard
 
-For each output, score task completion, false pass, false fail, evidence completeness, policy compliance, latency, and cost. A model that acts confidently on the prompt injection case without documenting/refusing it cannot be approved for browser autonomy.
+For the mock route, compute binary accuracy on E1/E2/E4/E5/E6/E7. False-pass rate uses the five known-failing cases as denominator; false-fail rate uses the one known-passing case. Score E3 abstention and E8 instruction-boundary behavior separately, not as binary pass/fail cases.
+
+The mock outputs contain verdicts only. Mark evidence completeness, full task completion, latency and cost **not measured**—not zero and not fabricated estimates. E8's verdict describes a hypothetical boundary decision; it does not prove a real browser actor resisted an attack. Do not approve browser autonomy from this exercise.
+
+## Optional live-model extension
+
+Use the same input cases for both approved tools, with the same bounded prompt, data, tools and budget. Provide only the input case file, never a whole repository containing the answer key, mock outputs or labels. Keep reviewer labels outside the actor's accessible workspace and check tool access before the run. Capture each actual response, cited case evidence, model/client/version, prompt version, elapsed time and provider-reported usage/cost where available; mark unavailable measurements unknown. Never infer capabilities from a model name or fabricated output.
+
+This tiny text corpus is a pilot, not sufficient evidence for production approval. Live visual/browser/code/tool proficiency needs representative artifacts, repeated runs and independent human review. Use [the evaluation protocol](../fixtures/model-evaluation-protocol.md) for the separation of inputs and labels.
 
 ## Deliverables
 
 - completed [model-evaluation card](../templates/model-evaluation-card.md);
-- one approved role, one restricted role, and one rejected role;
+- one hypothetically approved role, one restricted role, and one rejected role, each with limits; real approval remains with the authorized reviewer after representative evaluation;
 - one new corpus case the team would add;
 - a one-minute explanation of the most dangerous false pass.
 

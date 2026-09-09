@@ -28,6 +28,7 @@ jobs:
       - run: npm test
       - run: npm run verify
       - run: npm run build
+      - run: npm run check:labs
       - run: node scripts/check-site.mjs
   build:
     runs-on: ubuntu-latest

@@ -3,7 +3,7 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#172a35;font:18px/1.5 Arial,sans-serif}header{background:#172a35;color:white;padding:32px}main{max-width:1000px;margin:auto;padding:24px}h1{margin:0}h2{font-size:24px}label{display:inline-block;margin:8px}select,input,button,textarea{font:inherit;padding:9px;border:1px solid #789;border-radius:6px}button{background:#168478;color:white;cursor:pointer;margin:5px}button:focus-visible,a:focus-visible{outline:4px solid #e95c22;outline-offset:3px}article{background:white;padding:22px;border-radius:12px;margin:20px 0;box-shadow:0 3px 12px #172a3510}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e8efea;padding:15px}textarea{width:100%;height:140px}.showroom{padding:24px;background:#dce8e5;position:relative}.bad .showroom{width:720px}.bad .caption{color:#c4d2ce}small{display:block}nav a{margin-right:15px}output{display:block}
 </style>
-<header><small>AI QUALITY ACADEMY · LOCAL SIMULATION</small><h1 id="brand">Community Launch Lab</h1><p>Practice with a launch workflow. Every person, event and message is fictional.</p></header>
+<header><small>LABALICIOUS ACADEMY · LOCAL SIMULATION</small><h1 id="brand">Community Launch Lab</h1><p>Practice with a launch workflow. Every person, event and message is fictional.</p></header>
 <main><nav><a href="#crm">CRM</a><a href="#showroom">Showroom</a><a href="#integration">Integration</a></nav>
 <article><h2>Choose your mission</h2>
 <label>Theme <select id="theme"><option>Community festival</option><option>Gaming tournament</option><option>Creative pop-up shop</option><option>Community Launch owners event</option></select></label>
@@ -21,14 +21,35 @@
 const el=id=>document.getElementById(id);
 const options=()=>new URLSearchParams({mode:el('mode').value,tenant:el('tenant').value,role:el('role').value});
 async function request(path,init){const r=await fetch(path+'?'+options(),init);return {status:r.status,body:await r.json()};}
-el('load').onclick=async()=>{const r=await request('/api/allocation');el('allocation').textContent=r.status===200?'Allocation '+r.body.id+': '+r.body.status:'Unable to load allocation';};
-el('list').onclick=async()=>el('contacts').textContent=JSON.stringify(await request('/api/contacts'),null,2);
-el('detail').onclick=async()=>el('contacts').textContent=JSON.stringify(await request('/api/contacts/'+encodeURIComponent(el('contact').value)),null,2);
-el('send').onclick=async()=>el('send-result').textContent=JSON.stringify(await request('/api/send'));
+let selectionVersion=0;
+const pending=new Map();
+async function show(target,path,init,format=r=>JSON.stringify(r,null,2)) {
+  const version=selectionVersion, ticket=Symbol();
+  pending.set(target,ticket);
+  el(target).textContent='Loading…';
+  try {
+    const result=await request(path,init);
+    if(version===selectionVersion && pending.get(target)===ticket) el(target).textContent=format(result);
+  } catch {
+    if(version===selectionVersion && pending.get(target)===ticket) el(target).textContent='Request failed. Check the local server; no API outcome verified.';
+  }
+}
+el('load').onclick=()=>show('allocation','/api/allocation',undefined,r=>r.status===200?'Allocation '+r.body.id+': '+r.body.status:'Unable to load allocation');
+el('list').onclick=()=>show('contacts','/api/contacts');
+el('detail').onclick=()=>show('contacts','/api/contacts/'+encodeURIComponent(el('contact').value));
+el('send').onclick=()=>show('send-result','/api/send');
 el('choose').onclick=()=>el('choice').textContent='Package selected';
-el('ingest').onclick=async()=>el('event-result').textContent=JSON.stringify(await request('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},body:el('event').value}),null,2);
-el('events').onclick=async()=>el('event-result').textContent=JSON.stringify(await request('/api/events'),null,2);
+el('ingest').onclick=()=>show('event-result','/api/events',{method:'POST',headers:{'Content-Type':'application/json'},body:el('event').value});
+el('events').onclick=()=>show('event-result','/api/events');
 el('theme').onchange=()=>el('brand').textContent=el('theme').value;
-el('mode').onchange=()=>{document.body.className=el('mode').value==='buggy'?'bad':'';el('allocation').textContent='Not loaded';};
+function resetObservations(){
+  selectionVersion++;
+  pending.clear();
+  document.body.className=el('mode').value==='buggy'?'bad':'';
+  el('allocation').textContent='Not loaded';
+  for(const id of ['contacts','send-result','event-result']) el(id).textContent='No request yet';
+  el('choice').textContent='No package selected';
+}
+for(const id of ['mode','tenant','role']) el(id).onchange=resetObservations;
 el('mode').onchange();
 </script></html>

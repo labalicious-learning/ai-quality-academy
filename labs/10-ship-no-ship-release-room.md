@@ -13,7 +13,7 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-You are the release-quality team for build `training-2026.09.08.3`. It includes an allocation migration and customer dashboard improvement. You receive a candidate digest, CI artifacts, QA results, and deployment health signals.
+You are the release-quality team for candidate **B27**, whose fictional artifact identifier is **training:27**. These are exercise labels, not real cryptographic digests. It includes an allocation migration and customer dashboard improvement. Your instructor reveals [the supplied evidence](../fixtures/release-rounds.md) one round at a time. Do not substitute the local simulator's build identity for this tabletop candidate.
 
 ## Mission
 

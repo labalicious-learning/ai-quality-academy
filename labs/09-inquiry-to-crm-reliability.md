@@ -13,28 +13,28 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-A synthetic customer sends an inquiry to `info@community-launch.example`. The automation classifies it, creates/updates a CRM contact, applies consent rules, and queues an approved follow-up. Several failure cards are waiting.
+A future service would receive an inquiry at `info@community-launch.example`, update a CRM and send approved follow-up. This lab tests only the included event-processing slice: stored events, consent/confidence decisions, duplicate handling and simulated error recovery. `queued` is a decision flag, not a real queue. There is no contact mutation, classifier model, webhook transport or external send.
 
 ## Mission
 
-Prove the correct business outcome for one healthy flow and one failure/recovery flow.
+Prove the simulated outcome for one healthy flow and one failure/recovery flow, and name the downstream business outcomes you cannot establish. Read [R4–R6](../fixtures/allocation-requirements.md) and the [event case cards](../fixtures/integration-cases.md).
 
 ## Failure cards
 
 - duplicated email delivery;
 - OAuth authorization expired;
-- webhook delivery delayed then retried;
+- delayed redelivery simulated by manually submitting the same event again (not a transport/timing test);
 - malformed attachment;
 - contact has opted out;
 - classification is low-confidence.
 
 ## Steps
 
-1. Draw the path: source, identity/trust boundary, transformation, stored state, notification, audit record.
-2. Run the healthy synthetic case.
-3. Choose one failure card; test recovery and customer-visible effect.
-4. Determine whether the correct action is automatic retry, review queue, clear error, or hold.
-5. Create an evidence packet and a regression-test proposal.
+1. Draw the future business path, marking implemented, simulated and absent components separately.
+2. Start with a fresh server. Select Candidate B and deliver the healthy JSON from the case cards; inspect View stored events, not just the POST response.
+3. Choose a failure card with a different message ID. Record event counts, stored consent/confidence/state/queued fields, and HTTP status before and after the attempt and recovery.
+4. Repeat the same healthy and failure sequence on Candidate A. Candidate event stores are separate; use the same IDs to compare equivalent runs.
+5. Explain the observed decision: retry, reauthorize, review or hold. Do not claim a real review queue or customer message exists. Create an evidence packet and regression proposal.
 
 ## Rules
 
@@ -42,7 +42,7 @@ No real inbox, live OAuth credential, external send, or production CRM record ma
 
 ## Success rubric
 
-“Received HTTP 200” earns no credit by itself. Your proof must cover the final contact/consent/classification state and the correct message/queue behavior.
+“Received HTTP 200” earns no credit by itself. Prove stored event count and relevant consent/confidence/state/queued fields, including absence of a saved event on rejected attempts. Explain recovery and deduplication using observed state. Explicitly mark CRM contact updates, actual classification accuracy, real OAuth, persistent queues and delivered messages as untested. Correctly bounded evidence earns full credit; invented downstream effects do not.
 
 ## Stretch
 

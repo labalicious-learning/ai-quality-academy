@@ -75,9 +75,13 @@ Bound allowed origins/actions, use synthetic accounts, and require human confirm
 
 # Lab: Model Olympics
 
-Score anonymous current-model outputs.
+Core route: score fabricated A/B verdicts.
 
-**Measure:** task completion, false pass/fail, evidence, policy compliance, latency, cost.
+Measure false pass/fail and separate ambiguity/boundary decisions.
+
+Full completion, evidence quality, latency, cost: **not measured**.
+
+Live route: input-only cases; keep labels outside model context.
 
 ---
 

@@ -59,7 +59,9 @@ One event may arrive twice. A success response may be lost. A webhook may be del
 
 # Demo: healthy flow then duplicate event
 
-Observe the final contact, classification, consent, queue/message state, and audit record.
+Inspect stored event count, consent/confidence, processing state and queued decision.
+
+Contact updates, classifier accuracy and real delivery are not implemented.
 
 “Webhook returned 200” is only one piece of evidence.
 
@@ -67,7 +69,7 @@ Observe the final contact, classification, consent, queue/message state, and aud
 
 # Lab: Inquiry-to-CRM Reliability
 
-Choose a healthy flow and a failure card.
+Use the supplied healthy JSON and one failure/recovery card. Mark implemented, simulated and absent components separately.
 
 **Deliver:** integration map, evidence packet, recovery decision, regression candidate.
 

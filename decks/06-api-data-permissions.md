@@ -69,7 +69,9 @@ That is a high-impact QA question.
 
 # Lab: Tenant-Boundary Escape Room
 
-Unlock four proofs: read denial, write denial, allowed owner action, and server-side enforcement.
+Test four controls: list/detail isolation, PATCH permission, positive owner control and UI/API send denial.
+
+PATCH does not persist. Unsupported writes are not authorization tests.
 
 **Deliver:** four-lock evidence table and regression recommendation.
 

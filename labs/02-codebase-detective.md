@@ -21,7 +21,7 @@ Use Codex and repository tools to map the relevant request path and create a foc
 
 ## Steps
 
-1. Read `AGENTS.md`, the issue, and the supplied acceptance criterion.
+1. Read `AGENTS.md`, the report in this handout, [R1](../fixtures/allocation-requirements.md) and [issue G102](../fixtures/github-issues.json). The staff report and concierge issue are different claims; investigate each without assuming either demands a permissions change.
 2. Complete an [AI task brief](../templates/ai-task-brief.md) asking Codex to locate the relevant code and tests.
 3. Ask Codex for a plan before any proposed code change.
 4. Independently verify the files/functions it cites.

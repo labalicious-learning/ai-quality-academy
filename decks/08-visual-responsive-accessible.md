@@ -75,7 +75,7 @@ Confirm with viewport details, DOM/accessibility evidence, keyboard behavior, sc
 
 # Lab: Digital Showroom Visual Review
 
-Review the configurator at 1440px, 768px, and 375px plus keyboard-only flow.
+Review the launch preview at 1440px, 768px and 375px plus keyboard-only package selection.
 
 **Deliver:** annotated evidence and user-impact findings.
 
@@ -83,7 +83,7 @@ Review the configurator at 1440px, 768px, and 375px plus keyboard-only flow.
 
 # Strong finding
 
-> At 375px width, a keyboard user cannot reach the overlay close button after selecting a wheel option; focus remains behind the overlay.
+> At 375px width, the launch preview extends beyond the viewport. Record its measured width and affected content; do not infer a nonexistent overlay or focus trap.
 
 Specific user. Specific condition. Observable impact.
 

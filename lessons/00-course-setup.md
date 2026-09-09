@@ -22,7 +22,7 @@ Confirm the published repository URL is set in the site configuration. Test on t
 | 35–50 | Open course repo; navigate README, folders and issues | Find Session 01 lab and explain public read vs write access |
 | 50–60 | Break; coach installation problems | Triage network vs permissions vs account |
 | 60–80 | Install Node; obtain repo via ZIP, Git CLI or optional Mac/Windows GitHub Desktop | node --version works; package.json is in open folder |
-| 80–95 | Run npm start and open local browser URL | Candidate A loads; learner switches to B |
+| 80–95 | Run npm start and open local browser URL | Candidate B loads a reserved record |
 | 95–110 | Open approved Codex client; sign in; explain one file | Response cites a real path; learner checks it |
 | 110–120 | Personal readiness card and exit demonstration | Start/stop lab and find next session unaided |
 
@@ -37,4 +37,4 @@ Wrong directory: locate package.json before running npm. Missing command: reopen
 Fast finishers create a personal branch and a local learning note; nobody needs write permission to the course organization.
 
 ## Exit evidence
-Show local lab, explain Candidate A vs B, locate next session, name the two account systems. Record ready / coach follow-up with the exact blocker. No grades based on install speed.
+Show local lab, explain the setup example's output, locate next session, name the two account systems. Record ready / coach follow-up with the exact blocker. No grades based on install speed.

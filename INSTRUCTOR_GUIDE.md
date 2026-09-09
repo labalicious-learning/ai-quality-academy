@@ -6,7 +6,7 @@ Start with [Session 00](lessons/00-course-setup.md). The program now has 13 sess
 
 Plan for one lead instructor and one coach for every 12–16 learners. Use tables
 of two or three, a projected screen, a shared Discord channel or equivalent,
-and one sandbox login per learner. Make each activity accessible without prior
+and one local simulator copy per learner (no sandbox login). Make each activity accessible without prior
 coding experience: teams can produce evidence and test designs before they edit
 automation. Offer an advanced extension in every lab rather than moving faster
 through the core exercise.
@@ -40,7 +40,7 @@ Score work on evidence and judgment, not how many bugs a learner reports.
 | AI use | Accepts output | Checks and corrects it | Uses AI efficiently while maintaining a durable playbook/eval |
 | Communication | Vague conclusion | Clear finding and next action | Makes a calibrated ship/no-ship recommendation |
 
-Require 70% overall and no unsafe behavior to graduate. An unsupported or
+For the pilot, privately score sessions 01–12 out of 20 each. Overall score is their equal-weight mean: require at least 14/20 overall, at least 14/20 on the capstone, all required packets accepted, and the separate safety gate. Session 00 is unscored readiness. Permit remediation and equivalent paired/mock/design routes; record unexecuted skills as apprenticeship follow-up, not fictional execution. An unsupported or
 invented finding cannot be "made up" by a large number of lower-risk reports.
 
 ## Instructor response to AI mistakes
@@ -61,7 +61,7 @@ This turns failure into evaluation literacy.
 The program should evolve on a monthly review and on every material model/tool
 change.
 
-1. Run the golden corpus from Lesson 11 with the old and candidate model.
+1. Follow fixtures/model-evaluation-protocol.md: give actors input-only cases and keep reviewer labels outside their access. Classroom mocks are not adoption evidence.
 2. Compare task completion, false pass, false fail, safety-policy compliance,
    evidence completeness, latency, and cost.
 3. Review a representative set of outputs blind, with instructors judging the

@@ -44,7 +44,7 @@ Open a terminal inside that folder. Confirm package.json is present. You do not 
 ```text
 npm start
 ```
-Open http://127.0.0.1:4178. Leave the terminal running. Click Load allocation in Candidate A, then select Candidate B and try again. Observe the difference. Nothing is sent to a real business.
+Open http://127.0.0.1:4178. Leave the terminal running. Select Candidate B, click Load allocation and confirm a reserved record appears. This is a startup check, not an investigation of the teaching defects. Nothing is sent to a real business.
 
 Press Ctrl+C in the terminal to stop. Run npm start again to restart.
 On Mac this is Control+C, not Command+C. In Windows PowerShell, use `npm.cmd` if script policy blocks `npm`; do not weaken execution policy. Command Prompt is also supported.
@@ -61,9 +61,9 @@ Follow the current official quickstart: https://developers.openai.com/codex/quic
 Use the desktop/client route your instructor has approved for your OS. Sign in through its browser/login flow with your own authorized account. The course does not require an API key. Account plan, model availability and tool access vary; your instructor confirms the cohort's setup.
 
 Open your local course folder. Ask:
-> Explain sandbox/domain.mjs in plain language. Do not change files. Cite the function that controls who can send an update, and describe how Candidate A differs from Candidate B.
+> Read only fixtures/setup-example.mjs. Explain describeCount in plain language without changing files. Predict its output for 1 and 3, cite the relevant lines, and tell me how to check your claim.
 
-Open the cited function yourself and verify one claim. Record the model/client shown in your account; do not guess based on the course date.
+Open the cited function yourself, then run `node fixtures/setup-example.mjs` and verify the prediction. This unrelated practice file does not reveal later lab solutions. Record the model/client shown in your account; do not guess based on the course date.
 
 ## 7. Save your readiness card
 This card stays private. Show readiness to your instructor without exposing account or security details. Later labs use [the separate submission workflow](../SUBMISSIONS.md); do not upload this setup card there.

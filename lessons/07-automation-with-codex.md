@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [07-automation-with-codex](../decks/07-automation-with-codex.md)  
 **Lab:** [Build One Durable Regression Check](../labs/07-durable-regression-check.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Provide a local training app and a starter Playwright test that has one missing assertion. Verify the test command and browser install work before class. Supply a short `AGENTS.md`, accepted locator conventions, and a stable synthetic login fixture.
+Use sandbox/starter.spec.mjs and runtime CANDIDATE values buggy and fixed. Preinstall optional Playwright before class if approved. No login fixture or branch switch is needed. Prepare the unexecuted assertion-design route for blocked installations.
 
 ## Agenda
 
@@ -33,4 +33,4 @@ Provide a local training app and a starter Playwright test that has one missing 
 
 ## Assessment
 
-The check must fail for the seeded regression, pass after the fix, use a stable selector, and have an understandable name tied to the user behavior.
+Builder route: the same check must fail Candidate A and pass Candidate B with stable selectors and a meaningful name. Foundation route: grade a precise unexecuted assertion design, predicted A/B results and limits. Do not demand fabricated logs; record actual execution as a later supervised milestone.

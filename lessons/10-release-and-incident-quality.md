@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [10-release-and-incident-quality](../decks/10-release-and-incident-quality.md)  
 **Lab:** [Ship/No-Ship Release Room](../labs/10-ship-no-ship-release-room.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Create a release-room packet: candidate digest, migration status, unit-test result, one failed browser check, deployment health signal, and a plausible but unproven AI incident summary. Use a fictional AWS QA environment; no live cloud access is needed.
+Reveal fixtures/release-rounds.md one round at a time. B27 and training:27 identify the same fictional candidate; training:26 is deliberately mismatched evidence. These labels are not cryptographic digests. No cloud or database action is required.
 
 ## Agenda
 

@@ -1,7 +1,7 @@
 # Lab 6 — Tenant-Boundary Escape Room
 
 **Time:** 35 minutes  
-**Team:** pairs; use supplied sandbox request collection
+**Team:** pairs; use the [portable request runner and collection](../fixtures/authorization-requests.md)
 
 ## Mac / Linux / Windows
 
@@ -17,12 +17,14 @@ Two synthetic organizations, Atlas and Beacon, share one CRM instance. You must 
 
 ## Mission
 
-Complete the escape room by collecting proof for all four locks:
+Run all four locks against both candidates and report whether each control holds or fails. A reproduced violation is a successful investigation, not a reason to invent passing evidence. Use [R1–R2 and the local PATCH contract](../fixtures/allocation-requirements.md):
 
-1. A Beacon staff member cannot list Atlas contacts.
-2. A Beacon staff member cannot change an Atlas allocation by guessing an ID.
-3. A Beacon owner can perform the intended owner action in Beacon.
-4. A forbidden UI action is also forbidden by the API/server.
+1. **Read boundary:** as Beacon staff, list contacts and request A-101 directly. The list must contain only Beacon data; direct Atlas detail must be denied.
+2. **Write-permission boundary:** as Beacon owner, request PATCH authorization for A-101. It must not allow a cross-organization action. Repeat as Beacon staff against B-201 to check role denial independently.
+3. **Positive control:** as Beacon owner, request PATCH authorization for B-201. Expect `allowed:true`, but `persisted:false`. Reread the contact to confirm no mutation occurred.
+4. **UI/API agreement:** as Beacon staff, click Send inquiry update (simulation), then call `/api/send` directly. Both must deny permission under R1. The button is clickable; the response supplies the denial.
+
+PATCH here is an authorization probe, not a record update. Allocation writes are unsupported (405), which does not prove tenant authorization. No part of this exercise proves OAuth, database policies or persistent writes.
 
 ## Rules
 

@@ -19,10 +19,12 @@ npm test
 npm run verify
 ```
 
-For Codex, open a learner copy of this repository in the organization's approved client. Have it inspect sandbox/ and fixtures/allocation-requirements.md. Authenticate through the client's normal sign-in flow; no course script reads credentials. Leave instructor/ out of the learner copy.
+Maintainers/instructors with website dependencies installed and Chrome available also run `npm run check:labs`. It verifies browser journeys, keyboard/viewport behavior and stale-response protection; it is not a substitute for a learner's own evidence. Set CHROME_PATH if Chrome is installed in a nonstandard location. CI runs this check on Mac, Linux and Windows.
+
+For Codex, open a learner copy of this repository in the organization's approved client. Have it inspect sandbox/ and fixtures/allocation-requirements.md. Authenticate through the client's normal sign-in flow; no course script reads credentials. Core labs are open-book, but learners reproduce their own evidence. Live model evaluation uses a separate actor workspace with only approved inputs and prompt, not this whole repository or instructor answers.
 
 ## Concrete material mapping
-This mapping supersedes the original instructor-preparation suggestions in each lesson. Those suggestions describe optional richer deployments. The local track below is the included exercise; no custom cloud deployment is required.
+This mapping names the included local exercises. Handouts, lessons and grading target these materials; richer connected deployments are optional extensions, never unstated requirements.
 
 | Lesson | Included material | Mode |
 | --- | --- | --- |
@@ -31,13 +33,13 @@ This mapping supersedes the original instructor-preparation suggestions in each 
 | 3 | fixtures/inquiries.csv, budget.csv, discord-thread.md, github-issues.json, source-register.md | files/Sheets/Docs |
 | 4 | fixtures/allocation-requirements.md; test-charter template | design and clarification |
 | 5 | local CRM panel, both candidates, roles and tenants | bounded browser exploration |
-| 6 | /api/contacts and /api/contacts/A-101 with mode/tenant/role selectors | simulated API authorization |
+| 6 | fixtures/authorization-requests.md; scripts/lab-request.mjs | simulated read/PATCH/send authorization |
 | 7 | sandbox/starter.spec.mjs, plus built-in npm test | optional Playwright or assertion design |
 | 8 | local launch preview, 375/768/1440 viewports, keyboard | visual and interaction review |
-| 9 | inbox simulator JSON; mode candidates; /api/events | in-memory integration simulation |
+| 9 | fixtures/integration-cases.md; inbox JSON; /api/events | stored events and decision flags, not CRM writes |
 | 10 | fixtures/release-rounds.md | tabletop exercise |
-| 11 | fixtures/model-cases.json, mock-model-outputs.json | scoring; optional real approved-model runs |
-| 12 | four instructor capstone cards | integrated practical assessment |
+| 11 | input-only model-cases.json, mock-model-outputs.json; model-evaluation-protocol.md | offline scoring; optional bounded live trials |
+| 12 | fixtures/capstone-cards.md; instructor follow-up | open-book practical plus changed-condition defense |
 
 ## Three participation routes
 - Foundation: browser, files and evidence writing. Code is explained with Codex; learner can demonstrate understanding without typing syntax.
@@ -58,7 +60,7 @@ npm install --save-dev @playwright/test
 npx playwright install chromium
 npx playwright test sandbox/starter.spec.mjs
 ```
-The starter deliberately passes on a broken journey because it only checks a heading. Learners improve it, observe a failure on Candidate A, then select Candidate B to prove the fixed result. See instructor answer key for intended assertion. This dependency is optional and requires a one-time network download.
+The starter deliberately passes on a broken journey because it only checks a heading. Learners improve it, observe a failure on Candidate A, then select Candidate B to prove the fixed result. Use R3 to design the assertion before instructor debrief. This dependency is optional and requires a one-time network download.
 
 ## Shared API example
 With the local server running, these Node commands work in bash/zsh, PowerShell and Command Prompt:

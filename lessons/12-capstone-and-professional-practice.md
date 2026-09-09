@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [12-capstone-and-professional-practice](../decks/12-capstone-and-professional-practice.md)  
 **Lab:** [Defensible QA Verdict](../labs/12-defensible-qa-verdict.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Prepare four capstone cards at different levels: a CRM role change, a configurator visual update, an email intake integration, and a small code regression. Each card must have acceptance criteria, a sandbox target, synthetic accounts/data, and at least one hidden defect or ambiguity. Recruit one reviewer per four teams.
+Assign fixtures/capstone-cards.md. These are public/open-book tasks, not hidden exams. Choose a changed condition after the initial verdict and assess fresh reasoning. Provide one reviewer per four teams, with parallel panels for larger cohorts.
 
 ## Agenda
 
@@ -25,9 +25,9 @@ Prepare four capstone cards at different levels: a CRM role change, a configurat
 | 10–20 | Explain capstone rules, evidence bar, role rotation, and review cadence. |
 | 20–70 | Teams plan and execute. Instructor acts only as product owner for clarifying questions; teams own their AI task briefs and evidence. |
 | 70–80 | Break and evidence organization. |
-| 80–105 | Five-minute team verdicts plus three minutes of reviewer questions. Required: risk, evidence, uncertainty, and next action. |
-| 105–115 | Individual retrospective: strongest skill, most useful AI habit, and one skill to practice next. |
-| 115–120 | Graduation recognition and placement into supervised real-work queues. |
+| 80–112 | Up to four teams per panel: five-minute verdict plus three-minute changed-condition defense per team. Require risk, evidence, uncertainty and next action. |
+| 112–117 | Individual written retrospective: strongest skill, useful AI habit and next skill. |
+| 117–120 | Completion recognition and supervised apprenticeship next steps. |
 
 ## Assessment
 

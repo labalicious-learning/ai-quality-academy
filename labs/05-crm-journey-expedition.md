@@ -1,7 +1,7 @@
 # Lab 5 — CRM Journey Expedition
 
 **Time:** 35 minutes  
-**Team:** pairs; use only training accounts
+**Team:** pairs; use only simulated identities
 
 ## Mac / Linux / Windows
 
@@ -13,26 +13,26 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-As a concierge, turn a synthetic inquiry into a qualified contact and allocation candidate. As a staff user, verify the appropriate visibility and restrictions.
+As a concierge, inspect an existing synthetic contact, load an allocation, and check permission to send an update. As staff, verify the appropriate visibility and restrictions. Read [requirements R1–R3](../fixtures/allocation-requirements.md) first.
 
 ## Mission
 
-Execute one bounded journey and gather enough evidence to decide whether it works for each role. The sandbox contains hidden defects.
+Execute one bounded journey and gather enough evidence to decide whether it works for each role. This is open-book investigation: known defects still require your own reproduction and evidence. Contact creation, classification, deduplication and real sign-in are outside this browser exercise.
 
 ## Journey checkpoints
 
-1. Sign in with the assigned role and confirm the expected landing page.
-2. Find the synthetic inquiry and classify it.
-3. Create/update the contact without creating duplicates.
-4. View the allocation candidate state.
-5. Attempt one action that the role should not be allowed to perform.
-6. Inspect at least one relevant network/API result and browser console state.
-7. Repeat one meaningful checkpoint at mobile width.
+1. Start the local app. Select Candidate A, Atlas and concierge. Record these selectors with every result; they are not authentication.
+2. Click List contacts, then View contact for A-101. Compare list/detail organization and interest fields. Do not edit the record.
+3. Click Load allocation. Record the visible state and the `/api/allocation` response against R3. Switch driver/verifier here.
+4. Click Send inquiry update (simulation). Compare its permission decision with R1; `sent:false` means no message was sent, even if permission is allowed.
+5. Select staff and repeat the send check. A denial can be correct behavior.
+6. Repeat steps 2–5 on Candidate B. Capture one relevant Network response and console observation; no console error is not proof of success.
+7. Repeat contact lookup or the send check at 375px. Record what you tested and any layout limitation separately from the API outcome.
 
 ## Rules
 
 - Record URLs, expected/observed state, and evidence as you go.
-- Do not use developer tools to alter data or bypass UI/authentication.
+- Use developer tools for inspection only. Do not alter data or claim these selectors prove real authentication.
 - A rendered heading does not prove all required data loaded.
 
 ## Deliverables

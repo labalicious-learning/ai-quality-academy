@@ -10,6 +10,7 @@
     "start": "node sandbox/server.mjs",
     "test": "node --test sandbox/*.test.mjs",
     "verify": "node scripts/verify.mjs",
+    "check:labs": "node scripts/check-labs.mjs",
     "build": "node scripts/build-site.mjs",
     "build:full": "node scripts/build-site.mjs --exports",
     "slides:html": "marp --input-dir decks --output dist/slides --theme-set theme/academy.css --theme academy",

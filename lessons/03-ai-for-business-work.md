@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [03-ai-for-business-work](../decks/03-ai-for-business-work.md)  
 **Lab:** [Operations Intelligence Sprint](../labs/03-operations-intelligence.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Provide synthetic CSV inquiry data, a short set of fake Discord messages, a GitHub issue list, and three public web pages that intentionally disagree. Create a blank decision memo and a spreadsheet with one planted formula error.
+Use the five linked exports in Lab 3. Research sources are fabricated excerpts, not live pages. Recompute the budget instead of assuming CSV totals recalculate. Prepare a plain-text memo; connected-app work is an optional, separately approved extension.
 
 ## Agenda
 

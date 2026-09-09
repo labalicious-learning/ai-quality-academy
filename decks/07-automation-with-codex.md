@@ -73,7 +73,9 @@ Look for dynamic time/data, animation, race conditions, weak locators, external 
 
 # Lab: Build One Durable Regression Check
 
-**Deliver:** minimal test diff, red/green runs, stability rationale, coverage limit.
+**Builder:** minimal test diff, actual A/B red/green runs, stability rationale and coverage limit.
+
+**Foundation:** precise assertion design with predicted A/B results; execution explicitly unverified.
 
 The verifier owns review—not just typing.
 

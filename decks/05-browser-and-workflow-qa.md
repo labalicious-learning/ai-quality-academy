@@ -36,18 +36,18 @@ footer: "© 2026 Jared Cluff · Labalicious · Lesson 5"
 # The journey charter
 
 **User:** concierge  
-**Goal:** qualify inquiry and create allocation candidate  
-**Risk:** wrong data, duplicate contact, unauthorized action, silent backend failure
+**Goal:** inspect contact, allocation and send permission  
+**Risk:** wrong visible data, unauthorized action, silent backend failure
 
 ---
 
 # Demo: verify after every meaningful action
 
-1. Sign in
-2. Find inquiry
-3. Classify/update
-4. Confirm stored result
-5. Attempt denied action
+1. Select simulated tenant and role
+2. List and inspect a contact
+3. Load the allocation
+4. Check simulated send permission
+5. Repeat as staff and in both candidates
 6. Inspect network and console
 
 ---

@@ -25,11 +25,11 @@ footer: "© 2026 Jared Cluff · Labalicious · Lesson 12"
 # Capstone cards
 
 - CRM role/permission change
-- configurator visual update
-- inquiry-email integration
+- launch-preview responsive review
+- event-processing boundaries and recovery
 - small code regression
 
-All work happens in a sandbox with synthetic data.
+Use fixtures/capstone-cards.md: public/open-book work, followed by a changed-condition live defense.
 
 ---
 

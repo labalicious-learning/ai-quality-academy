@@ -2,7 +2,7 @@
 
 **Duration:** 120 minutes  
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Its material mapping supersedes the optional richer sandbox preparation below. Instructor solutions: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
+**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [09-integrations-and-business-ops](../decks/09-integrations-and-business-ops.md)  
 **Lab:** [Inquiry-to-CRM Reliability Lab](../labs/09-inquiry-to-crm-reliability.md)
 
@@ -15,7 +15,7 @@
 
 ## Instructor preparation
 
-Run a synthetic O365/Gmail-like inbox, fake OAuth callback, webhook receiver, and CRM tenant. Seed cases for duplicate inbound emails, expired OAuth authorization, a delayed webhook, a malformed attachment, and an unsubscribed contact. Ensure all outbound messages route to a mail catcher.
+Use fixtures/integration-cases.md and the local inbox JSON field. Reset state and rehearse healthy/failure/recovery attempts. The implemented slice stores events and queued decisions, not contacts or actual queues. OAuth/attachments are outcome simulations; there is no webhook receiver, mail catcher or external send.
 
 ## Agenda
 
@@ -23,14 +23,14 @@ Run a synthetic O365/Gmail-like inbox, fake OAuth callback, webhook receiver, an
 | --- | --- |
 | 0–10 | Arrival: trace “A customer asks about a car” on sticky notes from inbox to follow-up. |
 | 10–25 | Teach integration maps: trigger, payload, trust boundary, transformation, side effect, retry, and customer-visible result. |
-| 25–40 | Demo a healthy email-to-CRM flow, then replay a duplicate event and inspect the audit trail. |
-| 40–50 | Guided practice: write three testable expectations for an OAuth callback without exposing a token. |
+| 25–40 | Demo a healthy event, then replay a duplicate and inspect stored event count and queued decisions. |
+| 40–50 | Guided practice: distinguish a simulated authorization-expired response from the evidence needed to test a real OAuth callback. |
 | 50–60 | Break. |
-| 60–95 | Lab: teams investigate failure cards and prove whether the contact, classification, consent, and follow-up state are correct. |
+| 60–95 | Lab: teams prove stored count, consent/confidence, processing state and queued decisions. Mark absent downstream effects untested. |
 | 95–110 | Teams draw their integration map and identify the most important idempotency/recovery test. |
 | 110–115 | Discuss where AI can classify/summarize safely and where it needs a review queue. |
 | 115–120 | Exit ticket: explain why “webhook returned 200” is not sufficient proof of business success. |
 
 ## Assessment
 
-Teams submit an integration map plus an evidence packet. Their result must distinguish technical delivery, data correctness, and customer outcome.
+Teams submit an integration map plus an evidence packet. Distinguish simulated event processing from untested CRM updates, actual classification, real queues and customer delivery. Full credit requires precise limits, not invented downstream state.

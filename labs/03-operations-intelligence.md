@@ -13,19 +13,21 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-Leadership wants to know which synthetic inquiries should receive a event-order update this week, what is blocking follow-up, and which product issues need engineering attention.
+Leadership wants to know which synthetic inquiries should receive an event-order update this week, what is blocking follow-up, and which product issues need engineering attention.
 
 ## Mission
 
-Turn four messy sources into a reviewable one-page recommendation without altering raw data or inventing decisions.
+Turn five supplied source files into a reviewable one-page recommendation without altering raw data or inventing decisions. This is an introductory export-based workflow, not a test of live connectors.
 
 ## Sources
 
-- `inquiries.csv` with duplicates and inconsistent fields
-- a spreadsheet with a planted formula error
-- a Discord-style operations thread
-- GitHub issue export
-- three conflicting web/research pages
+- [inquiries.csv](../fixtures/inquiries.csv): duplicates and inconsistent fields
+- [budget.csv](../fixtures/budget.csv): spreadsheet export with a planted formula error; `formula_text` records the formula to inspect, and `reported_total` records its reported result
+- [discord-thread.md](../fixtures/discord-thread.md): fabricated operations messages
+- [github-issues.json](../fixtures/github-issues.json): synthetic issue export
+- [source-register.md](../fixtures/source-register.md): three conflicting classroom source excerpts, not live web pages
+
+Recompute budget totals independently; do not assume an imported CSV recalculates `reported_total`. Preserve the original exports. Optional connected-app practice requires an isolated instructor-approved workspace and is assessed separately from this core sprint.
 
 ## Roles
 

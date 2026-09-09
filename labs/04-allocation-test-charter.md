@@ -13,7 +13,7 @@ See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](..
 
 ## Scenario
 
-Feature request: “A concierge can reserve a event allocation after confirming a deposit, and the customer receives an update.” The request is intentionally incomplete.
+Feature request: “A concierge can reserve an event allocation after confirming a deposit, and the customer receives an update.” The request is intentionally incomplete.
 
 ## Mission
 
@@ -39,7 +39,7 @@ Create a risk-based test charter that a manual tester, an automation engineer, a
 
 ## Deliverables and rubric
 
-Pass when risks are tied to people/business outcomes, not generic “test everything” language. Every required coverage area needs an observable expected result.
+Pass when risks are tied to people/business outcomes, not generic “test everything” language. For each coverage area, give either a requirement-backed observable result or an explicit clarification blocker with the decision owner and a conditional test. R8 deliberately leaves deposit/refund/concurrency rules unresolved: a well-scoped question earns full credit; an invented business rule does not. Label proposed criteria as proposals, not approved requirements. This is a design lab; no payment execution is required.
 
 ## Stretch
 

@@ -96,13 +96,13 @@ Keep the terminal running. Ctrl+C stops the lab.
 
 ---
 
-# Meet two candidates
+# Check the startup
 
-**Candidate A** has intentional defects.
+Select **Candidate B** and load an allocation.
 
-**Candidate B** gives a corrected comparison.
+Confirm a reserved record appears.
 
-Load an allocation in each. Describe what you observe.
+Later labs investigate behavior; this is just a startup check.
 
 ---
 
@@ -112,7 +112,9 @@ Use your instructor-approved client and account.
 
 Official setup: https://developers.openai.com/codex/quickstart
 
-Open the course folder. Ask it to explain sandbox/domain.mjs.
+Ask it to read only fixtures/setup-example.mjs.
+
+Predict the output, then run: node fixtures/setup-example.mjs
 
 <!-- Account availability varies. Do not promise a free plan or a specific model. -->
 
