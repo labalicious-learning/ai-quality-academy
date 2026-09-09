@@ -1,5 +1,7 @@
 # Labalicious identity
 
+© 2026 Jared Cluff. All rights reserved, to the extent copyright applies. See [Copyright](COPYRIGHT.md) for scope and AI-generated-material qualifications.
+
 The original Labalicious mark combines a laboratory flask, a checkmark and a curiosity bubble: experiment, verify, learn. The website pairs it with a live-text wordmark for crisp, accessible typography.
 
 Asset: `site/labalicious-logo.png`. Also used as the site favicon. Generated with the built-in image-generation tool, then visually reviewed. No existing company artwork was used as a reference. This is not a trademark clearance opinion.

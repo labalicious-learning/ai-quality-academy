@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** driver and verifier
 
+## Mac / Linux / Windows
+
+Tell Codex whether you use macOS zsh, Linux bash, Windows PowerShell or Command Prompt before requesting commands. Open the extracted repository in your editor, preserve filename case, and run `npm test` (`npm.cmd test` if PowerShell blocks npm). Do not use another learner's absolute paths.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 The training CRM’s “Send inquiry update” button appears to do nothing for staff users. You are asked to investigate the report, not to rush a fix.

@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** pair-programming; starter repository only
 
+## Mac / Linux / Windows
+
+Keep the server running in one terminal and run tests in another. Follow Lab setup for optional Playwright installation and the platform guide for Windows `.cmd`, Linux browser dependencies and per-shell `CANDIDATE` settings. Candidate A/B are runtime choices in the supplied starter, not separate Git branches. If automation installation is blocked, submit the assertion design and mark execution unverified.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 The training app once let a signed-in staff user open an allocation detail page that silently failed to load its record. The UI still showed a page title, so the regression escaped casual testing.

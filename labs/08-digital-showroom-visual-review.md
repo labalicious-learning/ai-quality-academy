@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+## Mac / Linux / Windows
+
+Record OS/browser/version, CSS viewport, zoom and display scaling. Use the platform guide's capture and keyboard routes; on macOS check Keyboard Navigation if Tab skips controls. Compare screenshots within the same OS/browser baseline; font smoothing differences alone are not bugs. The included target is the local launch preview; phone-width emulation is not a real-device test.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 The Community Launch digital showroom has shipped a new configuration overlay. Marketing says it “looks fine,” but an owner reports trouble using it on a phone.

@@ -2,7 +2,7 @@
 marp: true
 theme: academy
 paginate: true
-footer: "AI Quality Academy · Session 00"
+footer: "© 2026 Jared Cluff · Labalicious · Session 00"
 ---
 
 <!-- _class: lead -->
@@ -72,11 +72,13 @@ Start with the route that works on your device.
 
 Node.js 22+ / https://nodejs.org/en/download
 
-Optional GitHub Desktop / https://desktop.github.com/download/
+GitHub Desktop (Mac/Windows) / https://desktop.github.com/download/
 
 Optional editor / https://code.visualstudio.com/download
 
 Check: node --version and npm --version
+
+<!-- Linux: use ZIP or Git CLI. On Windows use npm.cmd if PowerShell blocks npm.ps1. See PLATFORM_GUIDE.md. -->
 
 ---
 

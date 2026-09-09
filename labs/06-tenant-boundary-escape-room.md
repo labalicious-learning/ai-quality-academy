@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** pairs; use supplied sandbox request collection
 
+## Mac / Linux / Windows
+
+Use the cross-platform Node GET examples in the platform guide and Lab setup, or the browser Network panel. Windows PowerShell's `curl` alias and Command Prompt's quoting differ from bash; do not paste Unix curl examples blindly. Record HTTP status as well as body, and use the local simulator for mutations.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 Two synthetic organizations, Atlas and Beacon, share one CRM instance. You must prove that role and organization boundaries hold despite confusing UI hints and deliberately malformed requests.

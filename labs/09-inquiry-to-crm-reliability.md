@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+## Mac / Linux / Windows
+
+Use the inbox simulator's JSON field in your local browser on Mac, Linux or Windows; no mail client or OAuth setup is needed. This avoids shell-specific POST quoting. Keep the local server running, restart it to reset in-memory events, and use the platform guide if you need a different port.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 A synthetic customer sends an inquiry to `info@community-launch.example`. The automation classifies it, creates/updates a CRM contact, applies consent rules, and queues an approved follow-up. Several failure cards are waiting.

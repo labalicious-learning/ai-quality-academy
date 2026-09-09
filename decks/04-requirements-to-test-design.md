@@ -2,7 +2,7 @@
 marp: true
 theme: default
 paginate: true
-footer: "AI Quality Academy · Lesson 4"
+footer: "© 2026 Jared Cluff · Labalicious · Lesson 4"
 ---
 
 <!-- _class: lead -->

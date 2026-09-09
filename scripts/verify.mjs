@@ -10,6 +10,7 @@ for(const file of await walk(root)){
  if(denied.some(s=>text.toLowerCase().includes(s.toLowerCase())))errors.push(path.relative(root,file)+': private project/name marker');
  if(/\/Users\/|BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|AKIA[A-Z0-9]{16}|ghp_[A-Za-z0-9]{30,}/.test(text) && !file.endsWith('verify.mjs'))errors.push(path.relative(root,file)+': local path or credential pattern');
  if(!file.endsWith('.md'))continue;
+ if(path.dirname(file)===path.join(root,'labs') && !text.includes('../PLATFORM_GUIDE.md'))errors.push(path.relative(root,file)+': missing platform guidance link');
  for(const m of text.matchAll(/\]\(([^)]+)\)/g)){
    const link=m[1].split('#')[0];if(!link || /^[a-z]+:/i.test(link))continue;
    try{await stat(path.resolve(path.dirname(file),link));links++;}catch{errors.push(path.relative(root,file)+': missing '+link);}

@@ -25,7 +25,14 @@ const server=http.createServer(async(req,res)=>{
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 let browser;
 try{
- const executablePath=process.env.CHROME_PATH || (process.platform==='darwin'?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':'/usr/bin/google-chrome');
+ const candidates=process.env.CHROME_PATH?[process.env.CHROME_PATH]:process.platform==='darwin'?['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome']:process.platform==='win32'?[
+  path.join(process.env.PROGRAMFILES || 'C:\\Program Files','Google/Chrome/Application/chrome.exe'),
+  path.join(process.env['PROGRAMFILES(X86)'] || 'C:\\Program Files (x86)','Google/Chrome/Application/chrome.exe'),
+  path.join(process.env.LOCALAPPDATA || 'C:\\Users\\Default\\AppData\\Local','Google/Chrome/Application/chrome.exe')
+ ]:['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium','/usr/bin/chromium-browser'];
+ let executablePath;
+ for(const candidate of candidates){try{if((await stat(candidate)).isFile()){executablePath=candidate;break;}}catch{}}
+ assert.ok(executablePath,'Install Chrome or set CHROME_PATH to its executable for course-site checks.');
  browser=await puppeteer.launch({executablePath,headless:true});const page=await browser.newPage();
  const base='http://127.0.0.1:'+server.address().port+'/academy/';
  const errors=[];page.on('pageerror',e=>errors.push(e.message));

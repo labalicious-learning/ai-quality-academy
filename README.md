@@ -14,6 +14,8 @@ All scenarios, people, records and applications are fictional teaching examples.
 
 ## Start here
 
+Mac, Linux and Windows learners: start with the [platform guide](PLATFORM_GUIDE.md). It covers shells, installation, screenshots, API requests and optional browser automation without assuming one operating system.
+
 - [Session 00: your course workspace](labs/00-course-setup.md)
 - [Instructor's Session 00 plan](lessons/00-course-setup.md)
 - [Run the local lab](LAB_SETUP.md)
@@ -27,7 +29,7 @@ The published site links to this repository in its navigation. Learners can read
 ## Local course site
 Install Node.js 22+ from https://nodejs.org/en/download, then:
 
-```bash
+```text
 npm ci
 npm run build
 ```
@@ -35,14 +37,14 @@ npm run build
 Open dist/index.html to browse locally. HTML presentations work offline. Build PDF and image-based PowerPoint exports with npm run build:full (Chrome required). Markdown remains the editable slide source.
 
 ## Local lab
-```bash
+```text
 npm start
 ```
 
 Open http://127.0.0.1:4178. The simulation is intentionally defective in Candidate A. Candidate B provides a corrected comparison. It makes no external calls.
 
 ## Verify
-```bash
+```text
 npm test
 npm run verify
 ```
@@ -61,4 +63,4 @@ npm run verify
 ## Delivery and access
 26 contact hours including setup form a foundation for supervised apprenticeship. Completion does not certify expert performance. Codex access is provided through the learner's or instructor's approved account; the course does not include a paid AI subscription. GitHub, Google and Discord accounts are separate. Optional live integrations require access granted specifically for the course.
 
-Source content is publicly readable; a reuse license has not yet been selected. Third-party dependencies retain their own licenses.
+© 2026 Jared Cluff. All rights reserved. Publicly readable does not mean open-source licensed. See [Copyright](COPYRIGHT.md). Third-party dependencies retain their own licenses.

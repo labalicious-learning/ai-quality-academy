@@ -6,6 +6,12 @@
 
 **Environment/build:**
 
+**OS/version, browser/version, shell (if used):**
+
+**Viewport / zoom / display scaling (visual evidence):**
+
+**Platforms tested and not tested:**
+
 **Risk/severity and rationale:**
 
 **Expected behavior:**

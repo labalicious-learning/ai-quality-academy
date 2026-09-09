@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** pairs; use only training accounts
 
+## Mac / Linux / Windows
+
+Run the local lab on the same computer as your browser. Use developer-tools menus if keyboard shortcuts differ, and record OS/browser/zoom for the mobile-width repeat. For the included sandbox, choose a simulated role and tenant rather than signing into a real account; use the local track in Lab setup for the available checkpoints.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 As a concierge, turn a synthetic inquiry into a qualified contact and allocation candidate. As a staff user, verify the appropriate visibility and restrictions.

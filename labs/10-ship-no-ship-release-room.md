@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of four; facilitator releases evidence in rounds
 
+## Mac / Linux / Windows
+
+Read the release-round exports in the Markdown reader on any OS. No cloud CLI or production deployment is required. Record which operating systems a CI result actually covers; a Linux-only pass cannot establish Windows/Mac compatibility, and an unavailable runner is not a pass.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 You are the release-quality team for build `training-2026.09.08.3`. It includes an allocation migration and customer dashboard improvement. You receive a candidate digest, CI artifacts, QA results, and deployment health signals.

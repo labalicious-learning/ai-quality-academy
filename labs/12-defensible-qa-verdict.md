@@ -3,6 +3,12 @@
 **Time:** 50 minutes of execution plus presentation  
 **Team:** three or four, with individual role rotation
 
+## Mac / Linux / Windows
+
+Choose a capstone executable on your supported workstation using the platform guide. Include OS/browser/shell and tested versus untested platforms in the verdict. Save Markdown/PDF and evidence in portable formats; present from a browser if desktop slide software is unavailable. No score depends on owning a particular OS.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario cards
 
 Choose one card supplied by the instructor:

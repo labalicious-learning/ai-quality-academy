@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** two learners; driver and verifier switch after 17 minutes
 
+## Mac / Linux / Windows
+
+Use the same synthetic claim packet on Mac, Linux or Windows. Follow the platform guide for screenshots and browser developer tools; record OS/browser, viewport and zoom so evidence is comparable.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 An AI assistant has reviewed a fictional Community Launch allocation page and produced three claims. The product owner wants to know whether to hold a release.

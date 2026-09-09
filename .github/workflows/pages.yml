@@ -10,6 +10,25 @@ concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  platforms:
+    name: Platform checks (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run verify
+      - run: npm run build
+      - run: node scripts/check-site.mjs
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -29,7 +48,7 @@ jobs:
           path: dist
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: build
+    needs: [build, platforms]
     runs-on: ubuntu-latest
     permissions:
       pages: write

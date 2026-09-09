@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+## Mac / Linux / Windows
+
+Complete the charter in a plain-text/Markdown editor or an approved browser document on any OS. Include Mac/Linux/Windows and browser differences in your test matrix where relevant, with separate coverage for keyboard settings and rendering. Platform coverage is not proof until tested.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 Feature request: “A concierge can reserve a event allocation after confirming a deposit, and the customer receives an update.” The request is intentionally incomplete.

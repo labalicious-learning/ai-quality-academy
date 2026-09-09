@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of three or four
 
+## Mac / Linux / Windows
+
+Use browser-based Sheets/Docs or the supplied files on any OS; desktop Office is not required. Keep the original CSV unchanged and check UTF-8, separators, date/number locale and leading-zero IDs when importing into Sheets, Excel or LibreOffice. Browser GitHub/Discord or their exports avoid desktop-client requirements.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 Leadership wants to know which synthetic inquiries should receive a event-order update this week, what is blocking follow-up, and which product issues need engineering attention.

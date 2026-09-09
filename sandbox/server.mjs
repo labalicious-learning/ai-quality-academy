@@ -40,5 +40,6 @@ export function createServer() {
   });
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)) {
-  createServer().listen(Number(process.env.ACADEMY_PORT || 4178),'127.0.0.1',()=>console.log('Academy lab: http://127.0.0.1:4178'));
+  const port=Number(process.env.ACADEMY_PORT || 4178);
+  createServer().listen(port,'127.0.0.1',()=>console.log('Academy lab: http://127.0.0.1:'+port));
 }

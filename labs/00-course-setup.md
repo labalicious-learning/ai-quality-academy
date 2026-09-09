@@ -2,6 +2,10 @@
 
 **Time:** 120 minutes with your instructor. Keep this checklist open. Use your own accounts and a local course copy.
 
+## Mac / Linux / Windows
+
+Follow the [platform guide](../PLATFORM_GUIDE.md) for your OS and shell. The core course does not require WSL, Homebrew, Docker or desktop Office. Record your OS, shell and browser on your readiness card; ask a coach before changing managed-device settings.
+
 ## 1. Create your GitHub account
 Open https://github.com/signup. Choose a username and complete email verification. Existing account? Sign in at https://github.com/login instead of making a duplicate.
 
@@ -16,11 +20,12 @@ Public reading does not require membership in the owner's organization. A star b
 
 ## 3. Install the local tools
 Node.js: https://nodejs.org/en/download — install a supported LTS version, version 22 or newer.
-Optional GitHub Desktop: https://desktop.github.com/download/
+Optional GitHub Desktop (macOS/Windows only): https://desktop.github.com/download/
+Linux: use ZIP or optional Git CLI from https://git-scm.com/downloads.
 Optional editor: https://code.visualstudio.com/download
 
 Reopen Terminal (macOS/Linux) or Command Prompt/PowerShell (Windows). Check:
-```bash
+```text
 node --version
 npm --version
 ```
@@ -31,17 +36,20 @@ If an organization-managed device prevents installation, ask your instructor. Yo
 **Simple path:** repository → Code → Download ZIP → extract → open the extracted folder.
 **Git path:** GitHub Desktop → File → Clone repository → URL → paste the exact course URL → choose a local folder.
 
+GitHub Desktop is for Mac/Windows. On any OS with Git installed, run `git clone https://github.com/labalicious-learning/ai-quality-academy.git`, then open the cloned folder. ZIP users on Windows must choose Extract All before opening it. An editor's File → Open Folder followed by Terminal → New Terminal avoids platform-specific path commands.
+
 Open a terminal inside that folder. Confirm package.json is present. You do not need admin rights to the course repository.
 
 ## 5. Run your first lab
-```bash
+```text
 npm start
 ```
 Open http://127.0.0.1:4178. Leave the terminal running. Click Load allocation in Candidate A, then select Candidate B and try again. Observe the difference. Nothing is sent to a real business.
 
 Press Ctrl+C in the terminal to stop. Run npm start again to restart.
+On Mac this is Control+C, not Command+C. In Windows PowerShell, use `npm.cmd` if script policy blocks `npm`; do not weaken execution policy. Command Prompt is also supported.
 For built-in checks, stop the server if desired and run:
-```bash
+```text
 npm test
 npm run verify
 ```
@@ -60,6 +68,7 @@ Open the cited function yourself and verify one claim. Record the model/client s
 ## 7. Save your readiness card
 Create a personal note outside the public repo, or in the ignored submissions/ folder:
 - GitHub account verified: yes / blocked
+- OS/version, shell, browser/version:
 - Course repo located: yes / blocked
 - Local lab starts and stops: yes / blocked
 - Codex can explain a file: yes / blocked
@@ -71,7 +80,7 @@ Do not record passwords, email addresses, tokens or recovery codes.
 ## If something fails
 - “npm not found”: reopen terminal; check Node installation.
 - “package.json not found”: open the extracted course folder, not its parent.
-- “Address already in use”: another server is using the port; ask a coach.
+- “Address already in use”: stop your earlier course server or use the platform guide's per-shell 4179 instructions with a coach. Do not kill unrelated programs.
 - Browser cannot reach localhost: keep npm start running.
 - GitHub works but Codex does not: they have separate logins and entitlements.
 - No AI access yet: finish setup and evidence reading with a partner. Do not buy an unapproved subscription to finish class.

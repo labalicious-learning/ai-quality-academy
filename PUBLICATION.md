@@ -1,5 +1,7 @@
 # Public release scope
 
+© 2026 Jared Cluff. All rights reserved. The repository-wide [copyright notice](COPYRIGHT.md) covers original course content; third-party rights and licenses remain intact.
+
 Only this academy repository and its generated static site are intended for publication. Do not change visibility, organization policy, membership or permissions for other repositories.
 
 This repository starts with fresh Git history. Its published content consists of original teaching text, fictional examples, an original local simulator, original CSS/SVG graphics and build tooling. No private application source, screenshots, company assets, copied architecture documents, internal links, customer records or real incident details are included. Scenario names and release identifiers are fabricated.

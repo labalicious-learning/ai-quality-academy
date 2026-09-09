@@ -3,6 +3,12 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+## Mac / Linux / Windows
+
+The supplied JSON cases and mock outputs can be scored on every OS without installing an AI client. For optional live trials, record OS, client, shell, tools and model alongside results; separate model behavior from platform/tool-access differences. Keep the corpus fixed and do not compare unlike environments as if only the model changed.
+
+See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+
 ## Scenario
 
 The organization is considering a current-model upgrade for Codex-adjacent tasks and a separate browser/analysis tool. Both demos look impressive. You must decide what each is allowed to do.

@@ -2,17 +2,19 @@
 
 New to the course? Begin with [Session 00](labs/00-course-setup.md) for accounts, installation, repository access and your first local run.
 
+All labs support Mac, Linux and Windows. Use the [platform guide](PLATFORM_GUIDE.md) for shell commands, screenshots, keyboard differences, CSV imports, alternate ports and optional-tool requirements. In PowerShell, substitute `npm.cmd` / `npx.cmd` if `.ps1` execution is blocked.
+
 ## Local setup
 Node 22+ and a browser are sufficient for the lab server and core checks. No cloud account, real inbox, CRM, database, or model API key is required for the simulation.
 
 From the repository:
-```bash
+```text
 npm start
 ```
 Open http://127.0.0.1:4178 in your browser. Candidate A contains defects; Candidate B is the fixed comparison. Each learner runs a local copy. Restart the server to clear synthetic events. Ctrl+C stops it.
 
 Run fixture checks:
-```bash
+```text
 npm test
 npm run verify
 ```
@@ -51,7 +53,7 @@ Optional connected practice: with instructor-provided training workspace access,
 
 ## Playwright extension
 In the learner copy only:
-```bash
+```text
 npm install --save-dev @playwright/test
 npx playwright install chromium
 npx playwright test sandbox/starter.spec.mjs
@@ -59,10 +61,10 @@ npx playwright test sandbox/starter.spec.mjs
 The starter deliberately passes on a broken journey because it only checks a heading. Learners improve it, observe a failure on Candidate A, then select Candidate B to prove the fixed result. See instructor answer key for intended assertion. This dependency is optional and requires a one-time network download.
 
 ## Shared API example
-With the local server running:
-```bash
-curl 'http://127.0.0.1:4178/api/contacts/A-101?tenant=Beacon&mode=buggy&role=owner'
-curl 'http://127.0.0.1:4178/api/contacts/A-101?tenant=Beacon&mode=fixed&role=owner'
+With the local server running, these Node commands work in bash/zsh, PowerShell and Command Prompt:
+```text
+node -e "fetch('http://127.0.0.1:4178/api/contacts/A-101?tenant=Beacon&mode=buggy&role=owner').then(async r => console.log(r.status, await r.text())).catch(e => { console.error(e.message); process.exitCode=1; })"
+node -e "fetch('http://127.0.0.1:4178/api/contacts/A-101?tenant=Beacon&mode=fixed&role=owner').then(async r => console.log(r.status, await r.text())).catch(e => { console.error(e.message); process.exitCode=1; })"
 ```
 These use synthetic identities. Do not apply the pattern to another system without authorization.
 
