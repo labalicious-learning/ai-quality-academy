@@ -3,6 +3,7 @@ import path from 'node:path';
 import http from 'node:http';
 import assert from 'node:assert/strict';
 import puppeteer from 'puppeteer-core';
+import {pathToFileURL} from 'node:url';
 const root=path.resolve(import.meta.dirname,'../dist');
 async function walk(dir){const files=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
 let links=0;
@@ -39,6 +40,27 @@ try{
  assert.ok((await page.$$eval('.session:not(.hidden)',s=>s.length))<13);
  await page.goto(base+'labs/00-course-setup.html');
  assert.ok((await page.$eval('h1',e=>e.textContent)).includes('Session 00'));
+ for (const readerUrl of [base+'reader.html',pathToFileURL(path.join(root,'reader.html')).href]) {
+  await page.goto(readerUrl+'#labs%2F00-course-setup.md');
+  await page.waitForSelector('#reader-content h1');
+  assert.ok((await page.$eval('#reader-content h1',e=>e.textContent)).includes('Session 00'));
+  await page.select('#reader-select','README.md');
+  await page.waitForFunction(()=>document.querySelector('#reader-status').textContent==='README.md');
+  const internal=await page.$('#reader-content a[href*=".md"]');
+  assert.ok(internal,'reader has Markdown navigation');
+  await internal.click();
+  await page.waitForFunction(()=>document.querySelector('#reader-status').textContent!=='README.md');
+  await page.evaluate(()=>{
+    const transfer=new DataTransfer();
+    transfer.items.add(new File(['# Local preview\n\n| A | B |\n|---|---|\n| 1 | 2 |\n\n```js\nconst answer = 42;\n```\n\n<script>window.unsafe=true</script>\n\n![remote](https://example.com/tracker.png)\n\n[bad](javascript:alert(1))'], 'sample.md',{type:'text/markdown'}));
+    const input=document.querySelector('#reader-file');input.files=transfer.files;input.dispatchEvent(new Event('change'));
+  });
+  await page.waitForFunction(()=>document.querySelector('#reader-status').textContent==='sample.md');
+  assert.equal(await page.$$eval('#reader-content table',e=>e.length),1);
+  assert.equal(await page.$$eval('#reader-content pre code',e=>e.length),1);
+  assert.equal(await page.$$eval('#reader-content script,#reader-content img,#reader-content a[href^="javascript:"]',e=>e.length),0);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'reader mobile overflow');
+ }
  let slides=0;
  for(const file of await readdir(path.join(root,'slides'))){
    await page.goto(base+'slides/'+file);
@@ -46,5 +68,5 @@ try{
    assert.ok(!results.some(s=>s.over),'slide overflow: '+file);slides+=results.length;
  }
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({localLinks:links,sessions:13,slides,mobile:'passed',search:'passed',pageErrors:0}));
+ console.log(JSON.stringify({localLinks:links,sessions:13,slides,mobile:'passed',search:'passed',markdownReader:'online and offline passed',pageErrors:0}));
 }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}

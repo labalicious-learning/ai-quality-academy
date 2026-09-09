@@ -1,5 +1,6 @@
 {
-  "title": "AI Quality Academy",
-  "repository": null,
+  "title": "Labalicious Academy",
+  "repository": "labalicious-learning/ai-quality-academy",
+  "domain": "learn.labalicious.com",
   "description": "Learn to work with AI. Build judgment. Prove the result."
 }

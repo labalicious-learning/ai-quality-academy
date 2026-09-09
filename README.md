@@ -1,4 +1,12 @@
-# AI Quality Academy
+# Labalicious Academy
+
+Deployment destination: https://learn.labalicious.com
+
+Repository destination: https://github.com/labalicious-learning/ai-quality-academy
+
+## Markdown reader
+
+After `npm run build`, open `dist/reader.html` in your browser. Choose any course document or use **Open a local .md file** to read your own Markdown. It works offline, keeps local files in your browser, renders tables and code, and supports printing to PDF. Raw HTML is disabled and remote images are not loaded. Each built handout links to the reader; this does not change your operating system's default app for `.md` files.
 
 A practical course in using AI across quality assurance and everyday business work. Thirteen two-hour sessions: Session 00 gets you set up; Sessions 01–12 develop investigation, test design, automation and professional judgment.
 

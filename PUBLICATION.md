@@ -7,6 +7,8 @@ This repository starts with fresh Git history. Its published content consists of
 The source scan is a backstop, not a legal ownership opinion. Review new contributions for provenance. Public solutions and synthetic evaluation answers are deliberately included for self-study; do not use them as secret assessment material.
 
 ## Hosting
+Approved destination: https://learn.labalicious.com, with repository https://github.com/labalicious-learning/ai-quality-academy. Configure the custom domain in this repository's Pages settings before adding the `learn` CNAME pointing to `labalicious-learning.github.io`. Leave apex, www, mail and all other DNS records unchanged. Enable HTTPS enforcement after GitHub issues the certificate. These are deployment destinations, not proof that publication has completed.
+
 GitHub Pages hosts the generated site, docs, slides and downloadable handouts. It does not execute the Node API lab. Learners run that lab locally.
 
 Pages configuration: repository Settings → Pages → Source: GitHub Actions.
