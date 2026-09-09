@@ -1,5 +1,7 @@
 # Contributing
 
+This guide is for improving the curriculum. For student assignments, use [Submit and review your work](SUBMISSIONS.md) and the separate submission repository. Do not submit student packets, grades or rosters to this repository.
+
 Report a teaching issue with the session number, expected learning outcome, observed problem and a safe reproduction. Use synthetic examples. Never paste tokens, learner personal information or private employer material.
 
 Work on a branch in your own copy. Keep one lesson or behavior per pull request. Run npm test, npm run verify and npm run build. Include screenshots for visual changes, with only fictional course content visible.

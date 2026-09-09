@@ -28,6 +28,8 @@ For the included local track, use [LAB_SETUP.md](LAB_SETUP.md) and the supplied 
 
 ## Assessment
 
+Use [the submission workflow](SUBMISSIONS.md) and the separate repository's instructor guide. Scores and identities stay private. For a numeric interpretation of the five dimensions below, score each 0–4 (0 missing, 1 developing, 2 partial, 3 ready, 4 strong), equally weighted: total /20; 14/20 is 70%. Require the separate safety gate and individual demonstration. AI feedback and passing structural checks are not grades or acceptance decisions.
+
 Score work on evidence and judgment, not how many bugs a learner reports.
 
 | Dimension | Developing | Ready | Strong |

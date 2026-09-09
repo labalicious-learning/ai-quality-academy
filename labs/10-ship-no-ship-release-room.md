@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Read the release-round exports in the Markdown reader on any OS. No cloud CLI or production deployment is required. Record which operating systems a CI result actually covers; a Linux-only pass cannot establish Windows/Mac compatibility, and an unavailable runner is not a pass.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

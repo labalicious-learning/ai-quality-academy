@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Use the same synthetic claim packet on Mac, Linux or Windows. Follow the platform guide for screenshots and browser developer tools; record OS/browser, viewport and zoom so evidence is comparable.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

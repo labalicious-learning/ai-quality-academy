@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Tell Codex whether you use macOS zsh, Linux bash, Windows PowerShell or Command Prompt before requesting commands. Open the extracted repository in your editor, preserve filename case, and run `npm test` (`npm.cmd test` if PowerShell blocks npm). Do not use another learner's absolute paths.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

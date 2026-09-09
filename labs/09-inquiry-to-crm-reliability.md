@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Use the inbox simulator's JSON field in your local browser on Mac, Linux or Windows; no mail client or OAuth setup is needed. This avoids shell-specific POST quoting. Keep the local server running, restart it to reset in-memory events, and use the platform guide if you need a different port.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

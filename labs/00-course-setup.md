@@ -66,6 +66,8 @@ Open your local course folder. Ask:
 Open the cited function yourself and verify one claim. Record the model/client shown in your account; do not guess based on the course date.
 
 ## 7. Save your readiness card
+This card stays private. Show readiness to your instructor without exposing account or security details. Later labs use [the separate submission workflow](../SUBMISSIONS.md); do not upload this setup card there.
+
 Create a personal note outside the public repo, or in the ignored submissions/ folder:
 - GitHub account verified: yes / blocked
 - OS/version, shell, browser/version:

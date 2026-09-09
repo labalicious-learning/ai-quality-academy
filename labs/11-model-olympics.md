@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 The supplied JSON cases and mock outputs can be scored on every OS without installing an AI client. For optional live trials, record OS, client, shell, tools and model alongside results; separate model behavior from platform/tool-access differences. Keep the corpus fixed and do not compare unlike environments as if only the model changed.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

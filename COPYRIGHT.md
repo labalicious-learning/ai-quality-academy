@@ -8,4 +8,6 @@ Public availability is not an open-source or Creative Commons license. Except as
 
 Third-party software, assets and contributions retain their respective owners' rights and applicable licenses. This notice does not replace dependency licenses, claim ownership of third-party material, transfer contributor rights, or assert exclusive rights in material that is not copyrightable. Preserve third-party notices when distributing generated course assets.
 
+Students and instructors may copy and adapt course templates, fictional fixtures and simulator code for Labalicious coursework, local practice and submission of their own work. Preserve applicable notices. This limited coursework permission does not authorize selling or republishing the complete curriculum. Students retain rights in their original contributions; submission does not assign those rights to Jared Cluff. Public hosting and AI-review permissions are documented separately in the submission repository.
+
 This is a copyright notice, not a copyright registration. AI-assisted or AI-generated material may have different protection depending on human authorship and applicable law. The logo's provenance is recorded in [Brand](BRAND.md). See the [U.S. Copyright Office's AI guidance](https://www.copyright.gov/ai/) for background.

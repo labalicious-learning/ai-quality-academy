@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Use browser-based Sheets/Docs or the supplied files on any OS; desktop Office is not required. Keep the original CSV unchanged and check UTF-8, separators, date/number locale and leading-zero IDs when importing into Sheets, Excel or LibreOffice. Browser GitHub/Discord or their exports avoid desktop-client requirements.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

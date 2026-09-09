@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Record OS/browser/version, CSS viewport, zoom and display scaling. Use the platform guide's capture and keyboard routes; on macOS check Keyboard Navigation if Tab skips controls. Compare screenshots within the same OS/browser baseline; font smoothing differences alone are not bugs. The included target is the local launch preview; phone-width emulation is not a real-device test.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Complete the charter in a plain-text/Markdown editor or an approved browser document on any OS. Include Mac/Linux/Windows and browser differences in your test matrix where relevant, with separate coverage for keyboard settings and rendering. Platform coverage is not proof until tested.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

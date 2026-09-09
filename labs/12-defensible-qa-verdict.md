@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Choose a capstone executable on your supported workstation using the platform guide. Include OS/browser/shell and tested versus untested platforms in the verdict. Save Markdown/PDF and evidence in portable formats; present from a browser if desktop slide software is unavailable. No score depends on owning a particular OS.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

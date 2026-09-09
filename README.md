@@ -14,6 +14,8 @@ All scenarios, people, records and applications are fictional teaching examples.
 
 ## Start here
 
+Finished a lab? See [Submit and review your work](SUBMISSIONS.md). Student work goes to the separate submission repository, not the curriculum.
+
 Mac, Linux and Windows learners: start with the [platform guide](PLATFORM_GUIDE.md). It covers shells, installation, screenshots, API requests and optional browser automation without assuming one operating system.
 
 - [Session 00: your course workspace](labs/00-course-setup.md)

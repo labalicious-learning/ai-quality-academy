@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Keep the server running in one terminal and run tests in another. Follow Lab setup for optional Playwright installation and the platform guide for Windows `.cmd`, Linux browser dependencies and per-shell `CANDIDATE` settings. Candidate A/B are runtime choices in the supplied starter, not separate Git branches. If automation installation is blocked, submit the assertion design and mark execution unverified.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

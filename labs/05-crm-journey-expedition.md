@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Run the local lab on the same computer as your browser. Use developer-tools menus if keyboard shortcuts differ, and record OS/browser/zoom for the mobile-width repeat. For the included sandbox, choose a simulated role and tenant rather than signing into a real account; use the local track in Lab setup for the available checkpoints.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).

@@ -5,6 +5,8 @@
 
 ## Mac / Linux / Windows
 
+**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+
 Use the cross-platform Node GET examples in the platform guide and Lab setup, or the browser Network panel. Windows PowerShell's `curl` alias and Command Prompt's quoting differ from bash; do not paste Unix curl examples blindly. Record HTTP status as well as body, and use the local simulator for mutations.
 
 See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
