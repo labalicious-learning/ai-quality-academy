@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community Launch Lab</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#172a35;font:18px/1.5 Arial,sans-serif}header{background:#172a35;color:white;padding:32px}main{max-width:1000px;margin:auto;padding:24px}h1{margin:0}h2{font-size:24px}label{display:inline-block;margin:8px}select,input,button,textarea{font:inherit;padding:9px;border:1px solid #789;border-radius:6px}button{background:#168478;color:white;cursor:pointer;margin:5px}button:focus-visible,a:focus-visible{outline:4px solid #e95c22;outline-offset:3px}article{background:white;padding:22px;border-radius:12px;margin:20px 0;box-shadow:0 3px 12px #172a3510}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e8efea;padding:15px}textarea{width:100%;height:140px}.showroom{padding:24px;background:#dce8e5;position:relative}.bad .showroom{width:720px}.bad .caption{color:#c4d2ce}small{display:block}nav a{margin-right:15px}output{display:block}
+</style>
+<header><small>AI QUALITY ACADEMY · LOCAL SIMULATION</small><h1 id="brand">Community Launch Lab</h1><p>Practice with a launch workflow. Every person, event and message is fictional.</p></header>
+<main><nav><a href="#crm">CRM</a><a href="#showroom">Showroom</a><a href="#integration">Integration</a></nav>
+<article><h2>Choose your mission</h2>
+<label>Theme <select id="theme"><option>Community festival</option><option>Gaming tournament</option><option>Creative pop-up shop</option><option>Community Launch owners event</option></select></label>
+<label>Candidate <select id="mode"><option value="buggy">Candidate A</option><option value="fixed">Candidate B</option></select></label>
+<label>Organization <select id="tenant"><option>Atlas</option><option>Beacon</option></select></label>
+<label>Training role <select id="role"><option>staff</option><option>concierge</option><option>owner</option></select></label>
+<p>These selectors simulate identities. They are not real login, OAuth or database security.</p></article>
+<article id="crm"><h2>Allocation dashboard</h2><button id="load">Load allocation</button><output id="allocation" aria-live="polite">Not loaded</output>
+<h2>Contacts</h2><button id="list">List contacts</button><label>Contact ID <input id="contact" value="A-101"></label><button id="detail">View contact</button><pre id="contacts">No request yet</pre>
+<button id="send">Send inquiry update (simulation)</button><output id="send-result" aria-live="polite"></output></article>
+<article id="showroom"><h2>Launch preview</h2><div class="showroom"><h3>Your next great experience</h3><p class="caption">Select your preferred package. Spaces are limited.</p><button id="choose">Choose package</button><output id="choice" aria-live="polite">No package selected</output></div></article>
+<article id="integration"><h2>Inbox → CRM simulator</h2><label for="event">Synthetic event JSON</label><textarea id="event">{"messageId":"m-001","consent":false,"confidence":0.95}</textarea><button id="ingest">Deliver event</button><button id="events">View stored events</button><pre id="event-result">No request yet</pre><p>Events stay in memory until the server restarts. Nothing is sent externally.</p></article>
+</main>
+<script>
+const el=id=>document.getElementById(id);
+const options=()=>new URLSearchParams({mode:el('mode').value,tenant:el('tenant').value,role:el('role').value});
+async function request(path,init){const r=await fetch(path+'?'+options(),init);return {status:r.status,body:await r.json()};}
+el('load').onclick=async()=>{const r=await request('/api/allocation');el('allocation').textContent=r.status===200?'Allocation '+r.body.id+': '+r.body.status:'Unable to load allocation';};
+el('list').onclick=async()=>el('contacts').textContent=JSON.stringify(await request('/api/contacts'),null,2);
+el('detail').onclick=async()=>el('contacts').textContent=JSON.stringify(await request('/api/contacts/'+encodeURIComponent(el('contact').value)),null,2);
+el('send').onclick=async()=>el('send-result').textContent=JSON.stringify(await request('/api/send'));
+el('choose').onclick=()=>el('choice').textContent='Package selected';
+el('ingest').onclick=async()=>el('event-result').textContent=JSON.stringify(await request('/api/events',{method:'POST',headers:{'Content-Type':'application/json'},body:el('event').value}),null,2);
+el('events').onclick=async()=>el('event-result').textContent=JSON.stringify(await request('/api/events'),null,2);
+el('theme').onchange=()=>el('brand').textContent=el('theme').value;
+el('mode').onchange=()=>{document.body.className=el('mode').value==='buggy'?'bad':'';el('allocation').textContent='Not loaded';};
+el('mode').onchange();
+</script></html>

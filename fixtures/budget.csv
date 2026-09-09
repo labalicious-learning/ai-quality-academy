@@ -1,0 +1,4 @@
+item,units,unit_cost,formula_text,reported_total
+venue,1,400,=B2*C2,400
+refreshments,40,5,=B3+C3,45
+signage,4,25,=B4*C4,100

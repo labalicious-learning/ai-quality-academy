@@ -1,0 +1,9 @@
+inquiry_id,message_id,contact_id,category,consent,quantity,unit_price,received_date
+I01,M01,C01,event,yes,1,100,2026-07-01
+I02,M02,C02,parts,no,2,25,2026-07-01
+I03,M01,C01,event,yes,1,100,2026-07-01
+I04,M04,C03,event,,1,100,2026-07-02
+I05,M05,C04,merchandise,yes,3,20,2026-07-02
+I06,M06,C05,event,no,1,100,2026-07-03
+I07,M07,C06,parts,yes,0,25,2026-07-03
+I08,M08,C07,event,yes,1,100,2026-07-04

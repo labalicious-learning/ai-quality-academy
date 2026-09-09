@@ -1,0 +1,27 @@
+[
+  {
+    "id": "G101",
+    "title": "Allocation title renders but record request returns 500",
+    "state": "open",
+    "build": "B27",
+    "evidence": "release-rounds.md"
+  },
+  {
+    "id": "G102",
+    "title": "Concierge send-update returns 403",
+    "state": "open",
+    "expected": "Owner and concierge may send in simulation; staff may not"
+  },
+  {
+    "id": "G103",
+    "title": "Mobile launch preview exceeds viewport",
+    "state": "open",
+    "viewport": 375
+  },
+  {
+    "id": "G104",
+    "title": "Propose FAQ refresh",
+    "state": "proposed",
+    "owner": null
+  }
+]

@@ -1,0 +1,2 @@
+const search=document.querySelector('#course-search');
+search?.addEventListener('input',()=>{const query=search.value.toLowerCase().trim();let count=0;for(const card of document.querySelectorAll('.session')){const show=card.textContent.toLowerCase().includes(query);card.classList.toggle('hidden',!show);if(show)count++;}for(const group of document.querySelectorAll('.module'))group.classList.toggle('hidden',!group.querySelector('.session:not(.hidden)'));document.querySelector('#search-status').textContent=count+' sessions shown';});

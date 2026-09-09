@@ -1,0 +1,27 @@
+{
+  "name": "ai-quality-academy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node sandbox/server.mjs",
+    "test": "node --test sandbox/*.test.mjs",
+    "verify": "node scripts/verify.mjs",
+    "build": "node scripts/build-site.mjs",
+    "build:full": "node scripts/build-site.mjs --exports",
+    "slides:html": "marp --input-dir decks --output dist/slides --theme-set theme/academy.css --theme academy",
+    "slides:pdf": "marp --input-dir decks --pdf --output dist/pdf --theme-set theme/academy.css --theme academy",
+    "slides:pptx": "marp --input-dir decks --pptx --output dist/pptx --theme-set theme/academy.css --theme academy"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.5.1",
+    "markdown-it": "14.3.1"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12",
+    "puppeteer-core": "25.10.0"
+  }
+}

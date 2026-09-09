@@ -1,0 +1,19 @@
+/* @theme academy */
+@import 'default';
+section { background:#f6f5ef; color:#172a35; font-family:Arial,sans-serif; padding:64px 76px; font-size:29px; border-top:12px solid #168478; }
+h1 { color:#172a35; font-size:46px; letter-spacing:-1.2px; margin-bottom:34px; }
+h2 { color:#168478; font-size:30px; }
+strong { color:#116b62; }
+section.lead { background:#172a35; color:#f6f5ef; border-top:12px solid #d1f36a; }
+section.lead h1 { color:#f6f5ef; font-size:60px; }
+section.lead h2 { color:#b7ebcd; font-size:23px; letter-spacing:2px; }
+section.lead { background:#172c35; background-image:radial-gradient(circle at 100% 0,#466b63,transparent 55%); border-top-color:#c5edb4; }
+section { background-image:radial-gradient(circle at 98% 97%,#d8eae070 0,transparent 30%); }
+pre { border-radius:12px; }
+footer { color:#607580; font-size:16px; }
+table { font-size:23px; }
+th { background:#172a35!important; color:white; }
+td { background:#fff; }
+blockquote { border-left:7px solid #168478; background:#e8efea; padding:18px 24px; color:#172a35; }
+li { margin-bottom:12px; }
+section::after { color:#168478; font-size:17px; }
