@@ -31,6 +31,12 @@ Give teams the fictional Community Launch story: “A concierge can reserve an a
 | 110–115 | Show how the charter becomes manual test cases, automated checks, and release evidence. |
 | 115–120 | Exit ticket: write one negative acceptance criterion for a workflow they know. |
 
-## Assessment
+## Formative coaching
 
 Use `templates/test-charter.md`. A passing charter has risks tied to a harmed user/business outcome, not merely a long checklist of UI clicks. For unresolved R8 rules, accept a decision owner, clarification blocker and conditional test. Never require invented expected outcomes or executed payments.
+
+## Product Studio connection — Define what quality means
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Write acceptance criteria and a risk-ranked charter for your product. Include success, negative and boundary cases, the first three checks and any unresolved rules requiring instructor input.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

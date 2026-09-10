@@ -40,3 +40,9 @@ Update a release recommendation after each evidence round. Your goal is not to s
 ## Stretch
 
 Propose the smallest production-safe smoke check that would detect recurrence after the release.
+
+## Product Studio homework — Freeze features and rehearse release
+
+Triage known issues, prepare a release candidate and release recommendation, rehearse reset/backup/recovery, and request human release-readiness feedback. Cut stretch features before cutting quality.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

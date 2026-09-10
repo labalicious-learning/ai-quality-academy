@@ -31,6 +31,12 @@ Reveal fixtures/release-rounds.md one round at a time. B27 and training:27 ident
 | 110–115 | Discuss why no model or person gets to relabel a failed required check as passed. |
 | 115–120 | Exit ticket: state the exact evidence you would need to promote a candidate. |
 
-## Assessment
+## Formative coaching
 
 Use `templates/release-recommendation.md`. A learner passes by making a defensible decision; “ship” is not the preferred answer when evidence is incomplete.
+
+## Product Studio connection — Freeze features and rehearse release
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Triage known issues, prepare a release candidate and release recommendation, rehearse reset/backup/recovery, and request human release-readiness feedback. Cut stretch features before cutting quality.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

@@ -35,6 +35,12 @@ Use the five linked exports in Lab 3. Research sources are fabricated excerpts, 
 
 This is the course’s broad-business lesson. Keep it practical: researchers cite sources; spreadsheet users preserve raw data and verify formulas; communicators separate quoted decisions from AI-generated suggestions; developers connect issues, diffs, and tests. Learners should leave seeing AI as an operating layer across work, not just a chatbot.
 
-## Assessment
+## Formative coaching
 
 Teams submit a sourced decision memo, unchanged raw-data file, cleaned analysis, and a one-paragraph automation-boundary statement.
+
+## Product Studio connection — Make a business decision
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Create a small synthetic dataset, checked CSV/spreadsheet analysis, source log and one-page decision memo for your product. Draft a concise mock team update; no live Google/Discord posting required.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

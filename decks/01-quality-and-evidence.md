@@ -61,16 +61,39 @@ Use synthetic data. Do not publish, deploy, send, buy, delete, or change access 
 
 ---
 
-# Pair practice
+# Product Studio: your course-long build
 
-Classify each statement:
+Build software you want to exist, with AI.
 
-- fact
-- inference
-- question
-- unsupported claim
+Your own public repo. Small weekly milestones. Human feedback.
 
-Then explain your classification to a partner.
+Present it personally to **Jared Cluff** for the completion decision.
+
+**The project is the assessment. No separate exam.**
+
+---
+
+# Useful, polished, achievable
+
+One audience · one main journey · three core features.
+
+Saved data, meaningful states, error handling and recovery.
+
+Intentional visual design, keyboard access and mobile layout.
+
+AI helps build it; the app does not need a paid AI feature.
+
+---
+
+# Choose something you care about
+
+Twenty ideas: collections, music, gardens, clubs, creative work…
+
+Or pitch your own idea to the instructor.
+
+Sketch the journey; name the core features and exclusions.
+
+**Discuss today. Approved proposal and kickoff in Session 02.**
 
 ---
 
@@ -109,3 +132,15 @@ How would a customer experience the failure?
 In one sentence: What is the difference between a lead and a defect?
 
 Name one AI safety rule you will follow in every lab.
+
+---
+
+# Before Session 02
+
+Present your one-page proposal and rough wireframe.
+
+Include synthetic data, quality checks, time and budget.
+
+Ask for scope approval before building the product.
+
+Course guide: **COURSE_PROJECT.md** · Ideas: **PROJECT_IDEAS.md**

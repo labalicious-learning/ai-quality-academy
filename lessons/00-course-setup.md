@@ -6,7 +6,7 @@
 **Learner checklist:** [Setup lab](../labs/00-course-setup.md)
 
 ## Outcomes
-Each learner can find the course, sign into their own GitHub account, obtain a local copy, run the simulation, and use an approved Codex client to explain one file. They can distinguish GitHub login, AI login and local server startup.
+Each learner can find the course, sign into their own GitHub account, obtain a local copy, run the simulation, and use Codex or an approved compatible client to explain one file. They distinguish GitHub login, AI client/host access and local server startup. A local-model route need not involve an AI account login.
 
 ## Instructor preflight
 Use the [Mac/Linux/Windows platform guide](../PLATFORM_GUIDE.md). Demonstrate ZIP extraction and the editor's Open Folder → New Terminal route on all three platforms. GitHub Desktop is optional and Mac/Windows-only; Linux uses ZIP or Git CLI. Check PowerShell's npm.cmd fallback and record each learner's OS/shell/browser. Do not score installation speed or ownership of a particular OS.
@@ -23,7 +23,7 @@ Confirm the published repository URL is set in the site configuration. Test on t
 | 50–60 | Break; coach installation problems | Triage network vs permissions vs account |
 | 60–80 | Install Node; obtain repo via ZIP, Git CLI or optional Mac/Windows GitHub Desktop | node --version works; package.json is in open folder |
 | 80–95 | Run npm start and open local browser URL | Candidate B loads a reserved record |
-| 95–110 | Open approved Codex client; sign in; explain one file | Response cites a real path; learner checks it |
+| 95–110 | Open approved client; verify account or local-model route; explain one file | Response cites a real path; learner checks it |
 | 110–120 | Personal readiness card and exit demonstration | Start/stop lab and find next session unaided |
 
 ## Live demonstration script
@@ -38,3 +38,7 @@ Fast finishers create a personal branch and a local learning note; nobody needs 
 
 ## Exit evidence
 Show local lab, explain the setup example's output, locate next session, name the two account systems. Record ready / coach follow-up with the exact blocker. No grades based on install speed.
+
+## Affordable project access
+
+During the existing tool-readiness checks, introduce [the small-model guide](../SMALL_MODEL_GUIDE.md). Qwen3.8-27B is the recommended project model; preflight one compatible client/host route before Session 02. A premium subscription and new hardware are not requirements. Send unresolved installation, account-eligibility or spending issues to a private support appointment, not extra work inside the two-hour agenda. Product selection is introduced in Session 01.

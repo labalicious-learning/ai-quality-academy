@@ -1,57 +1,42 @@
-# Lab 12 — Defensible QA Verdict
+# Lab 12 — Your Product Showcase
 
-**Time:** 50 minutes of execution plus presentation  
-**Team:** three or four, with individual role rotation
+**Time:** prepare during course-long homework; eight-minute individual demo plus four minutes with Jared in your assigned Session 12 slot.
+**Team:** your own product; disclose peer/AI assistance.
 
 ## Mac / Linux / Windows
 
-**Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.
+Use [the platform guide](../PLATFORM_GUIDE.md). Demonstrate on your supported workstation, identify tested and untested OS/browser combinations, and provide portable Markdown/CSV/images. A browser presentation is sufficient; desktop slide software and paid hosting are not required.
 
-Choose a capstone executable on your supported workstation using the platform guide. Include OS/browser/shell and tested versus untested platforms in the verdict. Save Markdown/PDF and evidence in portable formats; present from a browser if desktop slide software is unavailable. No score depends on owning a particular OS.
+## Your mission
 
-See the [platform guide](../PLATFORM_GUIDE.md) and [included local lab track](../LAB_SETUP.md).
+Present the [product you began in Session 02](../COURSE_PROJECT.md) to **Jared Cluff**. Show useful, visually appealing working software and how you built it responsibly using AI. This project is the course assessment: no separate student exam, hidden scenario or surprise live coding task.
 
-## Scenario cards
+## Prepare your handoff
 
-Choose one of the [four runnable capstone cards](../fixtures/capstone-cards.md) with your instructor:
+Use [the showcase template](../templates/project-showcase.md). Link your own public repo, tagged release and exact commit; approved scope; milestone index; feature/fix PRs and substantive human feedback; test charter and reproduced regression; visual/accessibility iterations; data/business artifacts; recovery evidence; AI workflow/cost record; setup and limitations. Do not move application code into the lab-submissions repo.
 
-- CRM role/permission change;
-- Community Launch responsive preview and intentional theme change;
-- inquiry-email integration change;
-- small repository regression and proposed fix.
+## Present in eight minutes
 
-## Mission
+1. **One minute:** audience, problem and three core features.
+2. **Three minutes:** main journey, saved result, useful error/recovery and responsive/keyboard behavior.
+3. **Two minutes:** issue-to-reviewed-PR story and meaningful regression evidence.
+4. **One minute:** small-model use, an AI correction, budget and a business decision.
+5. **One minute:** release, known limits, setup and next improvement.
 
-Deliver a five-minute quality verdict to a mixed audience of product, engineering, and operations reviewers.
+Then discuss your actual decisions with Jared for four minutes. You may use your notes and project evidence. AI helped you build it; you should be able to explain what it does and how you verified it.
 
-## Required artifacts
+## Be ready when the network is not
 
-1. [Test charter](../templates/test-charter.md)
-2. AI task brief showing approved scope and verification plan
-3. One or more evidence packets
-4. One test/automation proposal or a reason manual exploration is better
-5. Ship/fix/investigate recommendation with uncertainty explicitly stated
+Rehearse from clean synthetic data. Keep a local copy and screenshots or a short recording. If working behavior cannot be demonstrated, arrange a follow-up; do not pretend a recording establishes unobserved functionality. Close private tabs, notifications and credential-bearing terminals.
 
-## Presentation structure
+## Where work goes
 
-1. User and business outcome
-2. Top risks and test approach
-3. What happened and the evidence
-4. What remains unknown
-5. Recommendation, owner, and next action
+Your own product repo is the source of truth. Share its full URL and the reviewed release with the instructor through the private cohort channel. An optional Session 12 index/summary packet may use [the existing submission workflow](../SUBMISSIONS.md); no certificate, real name, private feedback or application upload belongs there. Its text-only bot cannot follow links, execute your app or decide completion.
 
-## Review questions
+## After your presentation
 
-Reviewers must ask at least two of these:
+Jared considers the presentation and ongoing reviews, then privately communicates completion or specific revisions/support. He provides the certificate of course completion after approving the work. No numeric grade threshold, automated certificate or separate examination. You can return with improvements.
 
-- What would disprove your conclusion?
-- Which behavior did AI propose, and how did you validate it?
-- Does the evidence show a technical symptom, a customer impact, or both?
-- Why is this a release blocker—or why is it not?
-- What would you automate next?
+The old [simulator cards](../fixtures/capstone-cards.md) are optional rehearsal exercises, not the final product assignment.
 
-## Individual scoring
-
-Each learner is assessed on their rotated role, their evidence reasoning, their safe AI use, and their ability to name uncertainty—not the number of defects their team found.
-
-The cards are public and open-book. Cite assistance and produce your own evidence. After the initial verdict, the instructor selects a small changed condition from the card; each learner predicts or explains its effect before verification. Fresh reasoning and an individual defense—not hidden answer files—establish understanding.
+© 2026 Jared Cluff.

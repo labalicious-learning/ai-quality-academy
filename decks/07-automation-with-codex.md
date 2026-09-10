@@ -92,3 +92,15 @@ It does not prove the whole product is ready.
 # Exit ticket
 
 What makes your regression check deterministic?
+
+---
+
+# Product Studio · Protect your progress
+
+Record a genuine regression failure, repair and passing check. Add CI.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

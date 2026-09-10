@@ -47,3 +47,9 @@ No real inbox, live OAuth credential, external send, or production CRM record ma
 ## Stretch
 
 Define an idempotency key or deduplication signal that would make the duplicate-delivery case safe.
+
+## Product Studio homework — Make failure recoverable
+
+Exercise import/export or an approved equivalent. Test malformed/duplicate input, interruption/retry and safe recovery; show before/after stored state. Synthetic local file exchange is enough.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

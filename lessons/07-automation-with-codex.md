@@ -31,6 +31,12 @@ Use sandbox/starter.spec.mjs and runtime CANDIDATE values buggy and fixed. Prein
 | 110–115 | Explain CI, artifacts, and why a green test alone does not prove broad product quality. |
 | 115–120 | Exit ticket: state what makes the new check deterministic. |
 
-## Assessment
+## Formative coaching
 
 Builder route: the same check must fail Candidate A and pass Candidate B with stable selectors and a meaningful name. Foundation route: grade a precise unexecuted assertion design, predicted A/B results and limits. Do not demand fabricated logs; record actual execution as a later supervised milestone.
+
+## Product Studio connection — Protect your progress
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Add a meaningful regression and own-repo CI. Record actual fail-before/pass-after evidence for a repair, then prove the current checks pass without weakening expected behavior.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

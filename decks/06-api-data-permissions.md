@@ -95,3 +95,15 @@ Avoid sensational claims or live exploitation.
 # Exit ticket
 
 Name two independent layers that should enforce tenant isolation.
+
+---
+
+# Product Studio · Check a real boundary
+
+Validate input and saved state; distinguish real and simulated permissions.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

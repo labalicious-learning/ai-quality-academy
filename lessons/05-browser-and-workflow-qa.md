@@ -31,6 +31,12 @@ Use the included contact lookup, allocation and send-permission controls with R1
 | 110–115 | Discuss what is appropriate for deterministic automation versus human exploration. |
 | 115–120 | Exit ticket: name the one additional evidence source you would collect for a blank page. |
 
-## Assessment
+## Formative coaching
 
 Learners must report at least one finding or a well-supported no-defect conclusion. A screenshot without a reproduction path is incomplete.
+
+## Product Studio connection — Finish one complete journey
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Make a user action lead to a saved, visible result. Record manual evidence and a reproduced issue, then request human feedback on a focused fix/feature PR.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

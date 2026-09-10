@@ -31,6 +31,12 @@ Use the local launch preview, R7 and both candidates. Prepare matched-viewport c
 | 110–115 | Discuss approval of intentional visual baseline changes. |
 | 115–120 | Exit ticket: write one accessibility test that is not a color-contrast scan. |
 
-## Assessment
+## Formative coaching
 
 Teams submit before/after evidence, viewport/device details, and at least one semantic or interaction verification for every visual claim.
+
+## Product Studio connection — Make the product feel intentional
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Refine typography, spacing, color and useful states. Record two design iterations overall, matched before/after captures, keyboard navigation, 375/768/1440-width and zoom checks; fix a real usability issue.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

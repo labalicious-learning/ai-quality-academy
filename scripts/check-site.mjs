@@ -40,6 +40,9 @@ try{
  for(const width of [1440,375]){
   await page.setViewport({width,height:1000});await page.goto(base);
   assert.equal(await page.$$eval('.session',s=>s.length),13);
+  assert.equal(await page.$$eval('.project-spotlight',s=>s.length),1);
+  assert.equal(await page.$eval('.project-spotlight .button',a=>a.getAttribute('href')),'COURSE_PROJECT.html');
+  assert.equal(await page.$eval('.top a[href$="COURSE_PROJECT.html"]',a=>a.textContent),'Your project');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'homepage horizontal overflow');
   await page.screenshot({path:path.join(root,'review/home-'+width+'.png'),fullPage:true});
  }
@@ -47,6 +50,13 @@ try{
  assert.ok((await page.$$eval('.session:not(.hidden)',s=>s.length))<13);
  await page.goto(base+'labs/00-course-setup.html');
  assert.ok((await page.$eval('h1',e=>e.textContent)).includes('Session 00'));
+ for(const doc of ['COURSE_PROJECT','PROJECT_IDEAS','PROJECT_GITHUB','SMALL_MODEL_GUIDE']){
+  for(const width of [1440,375]){
+   await page.setViewport({width,height:1000});await page.goto(base+doc+'.html');
+   assert.ok(await page.$('h1'),'project document heading: '+doc);
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'project document overflow: '+doc+' at '+width);
+  }
+ }
  for (const readerUrl of [base+'reader.html',pathToFileURL(path.join(root,'reader.html')).href]) {
   await page.goto(readerUrl+'#labs%2F00-course-setup.md');
   await page.waitForSelector('#reader-content h1');

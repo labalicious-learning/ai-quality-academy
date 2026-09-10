@@ -93,3 +93,15 @@ Use training roles and synthetic data only.
 # Exit ticket
 
 For a blank page, what additional evidence source would you collect first—and why?
+
+---
+
+# Product Studio · Finish one complete journey
+
+One complete saved-data journey, one reproduced issue, one reviewed PR.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

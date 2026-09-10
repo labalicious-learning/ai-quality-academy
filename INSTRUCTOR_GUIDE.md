@@ -26,22 +26,28 @@ For the included local track, use [LAB_SETUP.md](LAB_SETUP.md) and the supplied 
    evidence.
 5. Give students the course safety card before tool access.
 
-## Assessment
+## Project-based completion, not exams
 
-Use [the submission workflow](SUBMISSIONS.md) and the separate repository's instructor guide. Scores and identities stay private. For a numeric interpretation of the five dimensions below, score each 0–4 (0 missing, 1 developing, 2 partial, 3 ready, 4 strong), equally weighted: total /20; 14/20 is 70%. Require the separate safety gate and individual demonstration. AI feedback and passing structural checks are not grades or acceptance decisions.
+[Product Studio](COURSE_PROJECT.md) is the individual course assessment. Introduce it in Session 01; approve each pitch before Session 02 kickoff. Each learner builds in their own public repo, with an equivalent private route arranged when necessary. Practice lab packets are formative coaching, not scored examinations or a points-based graduation gate.
 
-Score work on evidence and judgment, not how many bugs a learner reports.
+Review evidence and judgment over time: problem framing, test design, reproducibility, AI use, communication, GitHub practice and product usability. Use [the project review checklist](templates/project-review.md) with **ready for next step / revise and return / instructor support needed**. Match expectations to the approved scope. Fabricated evidence, unsafe handling and unverified claims need correction, not compensating points. Software regression tests remain required engineering work; there is no separate test of the learner.
 
-| Dimension | Developing | Ready | Strong |
-| --- | --- | --- | --- |
-| Problem framing | Restates a request | Names user, goal, and risk | Identifies assumptions and failure boundaries |
-| Test design | Happy path only | Covers positive, negative, and edge cases | Prioritizes by customer/business risk |
-| Evidence | Screenshot or assertion alone | Reproducible steps with relevant evidence | Triangulates UI, data, logs, and expected behavior |
-| AI use | Accepts output | Checks and corrects it | Uses AI efficiently while maintaining a durable playbook/eval |
-| Communication | Vague conclusion | Clear finding and next action | Makes a calibrated ship/no-ship recommendation |
+Jared Cluff reviews progress, hears each individual final presentation and decides **complete / revision or support needed**. He alone authorizes the certificate of course completion. No AI-issued certificate, numeric threshold, hidden defense or claim of expert qualification. Offer coaching, equivalents and a follow-up presentation for gaps.
 
-For the pilot, privately score sessions 01–12 out of 20 each. Overall score is their equal-weight mean: require at least 14/20 overall, at least 14/20 on the capstone, all required packets accepted, and the separate safety gate. Session 00 is unscored readiness. Permit remediation and equivalent paired/mock/design routes; record unexecuted skills as apprenticeship follow-up, not fictional execution. An unsupported or
-invented finding cannot be "made up" by a large number of lower-risk reports.
+## Project review operations
+
+Before the cohort, privately establish a submission/contact channel, learner aliases, review appointments and an approved model route. Preflight Qwen3.8-27B using [the small-model guide](SMALL_MODEL_GUIDE.md); record actual compatibility, account eligibility and spending ceilings. Do not require hardware purchases or a premium subscription.
+
+- Session 01 → 02: review one-page proposals and wireframes between classes; confirm three core features, exclusions, synthetic data, OS/run approach and budget.
+- Each session: scan the milestone index and address one blocker. Use coaches for triage; schedule focused reviews outside the two-hour lesson when needed.
+- Sessions 02, 05 and 10–12: ensure substantive human PR feedback at kickoff, working slice and release; add a visual/recovery review in Sessions 08–09.
+- Record exact repository/PR URLs and head SHAs. Public feedback is artifact-focused; identities, decisions, accommodations and coaching stay private.
+- Review student source before any execution. Use an isolated, credential-free environment; never run untrusted installs or workflows on a privileged instructor machine.
+- Use [the showcase plan](lessons/12-capstone-and-professional-practice.md): at most six 12-minute individual presentations in one two-hour block. Book additional blocks/appointments with Jared for larger cohorts; parallel coach panels cannot replace presenting to him.
+
+Copy [the empty progress register](templates/project-progress.csv) and [certificate template](templates/course-completion-certificate.md) to approved **private** storage. Never commit filled records. For each review record alias, repo, milestone, reviewed SHA, observed evidence, next action and follow-up. After presentation, Jared records the final decision/date and any revisions privately. Issue the certificate only after his approval, using the learner's privately supplied preferred certificate name. Deliver privately; public sharing or promotional use requires a separate choice.
+
+The repository supplies templates, not a credential-issuing service or hosted student records system. Do not award a certificate simply because CI or packet-safety checks are green.
 
 ## Instructor response to AI mistakes
 

@@ -91,3 +91,15 @@ It requires a named approver, reason, incident record, and mandatory follow-up. 
 # Exit ticket
 
 What exact evidence must exist before you promote a candidate?
+
+---
+
+# Product Studio · Freeze features and rehearse release
+
+Freeze features. Triage issues. Rehearse recovery. Request release review.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

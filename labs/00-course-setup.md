@@ -55,10 +55,10 @@ npm run verify
 ```
 The basic lab uses Node's built-in libraries. npm ci is only needed for rebuilding the website/slides.
 
-## 6. Set up Codex
+## 6. Set up Codex or an approved compatible client
 Follow the current official quickstart: https://developers.openai.com/codex/quickstart
 
-Use the desktop/client route your instructor has approved for your OS. Sign in through its browser/login flow with your own authorized account. The course does not require an API key. Account plan, model availability and tool access vary; your instructor confirms the cohort's setup.
+Use the client/host route approved for your OS and budget. Codex remains the main teaching client; [the small-model guide](../SMALL_MODEL_GUIDE.md) also covers Qwen3.8-27B through OpenCode, local inference and verified custom-provider routes. No premium subscription is mandatory. A hosted API route may need a dedicated capped key; local inference need not. Sign in or connect through the client, never through a course file. Your instructor confirms actual model/tool compatibility before Session 02.
 
 Open your local course folder. Ask:
 > Read only fixtures/setup-example.mjs. Explain describeCount in plain language without changing files. Predict its output for 1 and 3, cite the relevant lines, and tell me how to check your claim.
@@ -73,7 +73,7 @@ Create a personal note outside the public repo, or in the ignored submissions/ f
 - OS/version, shell, browser/version:
 - Course repo located: yes / blocked
 - Local lab starts and stops: yes / blocked
-- Codex can explain a file: yes / blocked
+- Approved AI client/model can explain a file: yes / blocked
 - One claim I checked:
 - One question for my instructor:
 
@@ -89,3 +89,7 @@ Do not record passwords, email addresses, tokens or recovery codes.
 
 ## Ready for Session 01
 You can start the lab, find the next handout, and explain where the files live.
+
+## Before Session 01: a product you might enjoy building
+
+Browse [Product Studio](../COURSE_PROJECT.md), [the idea bank](../PROJECT_IDEAS.md) and [small-model setup options](../SMALL_MODEL_GUIDE.md). You do not need to buy a subscription or create the product repo today. Bring an idea to Session 01; instructor approval and kickoff happen by Session 02. Arrange help privately if accounts, hardware or cost block your route.

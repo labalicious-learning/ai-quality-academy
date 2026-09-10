@@ -4,6 +4,8 @@ Teaching baseline: summer 2026-era agent workflows. Documentation verified Septe
 
 The course teaches multimodal evidence, repository exploration and edits, executing code/tests, structured data work, tool use, reusable instructions, connectors/MCP, browser assistance where enabled, and bounded multistep execution. A model's reasoning ability, the client's tools, and the user's account permissions are separate prerequisites. There is no promise that every learner has every connector or that native Discord/Google access exists.
 
+The project recommendation is **Qwen3.8-27B**, released in summer 2026. The [small-model guide](SMALL_MODEL_GUIDE.md), checked September 10, 2026, records the exact model, source links, hosted/local options, budget and required client compatibility check. No live model evaluation is implied by documentation review. Keep model choice separate from the Codex/OpenCode/Claude Code client and hosting provider.
+
 Current official sources:
 - https://learn.chatgpt.com/guides/best-practices — task scope, reasoning effort, repository guidance and verification.
 - https://learn.chatgpt.com/docs/extend/mcp?surface=cli — tool/context connections and configuration.

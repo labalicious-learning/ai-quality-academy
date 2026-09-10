@@ -97,3 +97,15 @@ The same intent should survive the whole lifecycle.
 # Exit ticket
 
 Write one negative acceptance criterion for a workflow you know.
+
+---
+
+# Product Studio · Define what quality means
+
+Acceptance criteria → risk charter → first three meaningful checks.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

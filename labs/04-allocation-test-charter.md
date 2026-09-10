@@ -44,3 +44,9 @@ Pass when risks are tied to people/business outcomes, not generic “test everyt
 ## Stretch
 
 Mark each case: manual exploratory, deterministic automated, AI-assisted exploration, or human approval. Defend the boundary.
+
+## Product Studio homework — Define what quality means
+
+Write acceptance criteria and a risk-ranked charter for your product. Include success, negative and boundary cases, the first three checks and any unresolved rules requiring instructor input.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

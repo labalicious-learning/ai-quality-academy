@@ -42,3 +42,9 @@ A successful team is able to say “we do not yet know” precisely. A speculati
 ## Stretch
 
 Have Codex propose a small test addition. Review the diff for scope, selector/fixture stability, and whether the expected behavior is actually specified.
+
+## Product Studio homework — Kick off your own repository
+
+Finish the approved-proposal PR, three initial issues, README and project instructions. Confirm your client/model/host and spending ceiling. Build only the first small approved slice; arrange human feedback on the kickoff PR.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

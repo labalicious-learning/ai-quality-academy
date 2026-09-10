@@ -1,8 +1,8 @@
-# Capstone cards — investigate, defend, adapt
+# Optional simulator practice cards — investigate and explain
 
 Choose one card with your instructor. All targets run at http://127.0.0.1:4178 (or your approved alternate port). Start from a fresh server, record course commit and environment, and use only fictional inputs. Both candidates are available. Public/open-book material is allowed with attribution; copied answers do not replace fresh evidence.
 
-Spend 10 minutes planning, 30 executing and 10 assembling evidence. Rotate driver/verifier midway through execution. Follow [Lab 12's artifact and presentation requirements](../labs/12-defensible-qa-verdict.md). Each learner must explain a decision and respond to a small changed condition after the initial verdict.
+These are optional coached rehearsal exercises, not the course assessment. The individual [Product Studio](../COURSE_PROJECT.md) and [final presentation](../labs/12-defensible-qa-verdict.md) replace the old shared capstone. For practice, spend 10 minutes planning, 30 executing and 10 assembling an evidence packet; rotate driver/verifier. The follow-up suggestions below are openly discussed practice variations, not a required surprise defense.
 
 ## C1 — Permission verdict with independent controls
 
@@ -39,4 +39,4 @@ Spend 10 minutes planning, 30 executing and 10 assembling evidence. Rotate drive
 
 ## Fair review
 
-All cards share the five-dimension rubric, safety gate and individual explanation. Grade design-only or paired routes fairly and record unexecuted skills for supervised follow-up. A team can earn full credit for a supported no-defect result or a well-scoped uncertainty. The instructor chooses the follow-up after reviewing initial evidence; public card availability is not treated as exam secrecy.
+Use the five coaching dimensions, public-safety boundaries and a supportive discussion of evidence. Support design-only or paired practice routes and record unexecuted skills for follow-up. A supported no-defect result or well-scoped uncertainty can be excellent work. There are no points, exam secrecy or certificate decisions attached to these optional cards.

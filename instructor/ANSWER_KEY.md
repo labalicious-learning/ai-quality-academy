@@ -49,12 +49,8 @@ Same accuracy conceals different risk. These tiny fabricated samples do not just
 Use model-labels.json only on the reviewer side. Input-only cases live in fixtures/model-cases.json. `node scripts/score-model-outputs.mjs` verifies mock arithmetic. Full task completion and evidence rationale are also not measured; E8's verdict is not observed browser safety. Follow fixtures/model-evaluation-protocol.md for optional live trials.
 An actor and a judge can share mistakes even when separated; evidence and independent checks remain necessary.
 
-## 12 · Capstone cards
-Assign [the runnable cards](../fixtures/capstone-cards.md). C1 requires independent positive and negative controls, not a single denial. C2 distinguishes approved heading changes from overflow and demonstrates keyboard operation. C3 tests the 0.799/0.8 boundary, opt-out, accepted replay and recovery after rejection. C4 reviews the weak heading assertion and the separate value of UI and response checks.
+## 12 · Individual product showcase
 
-Choose a card-specific changed condition after the initial verdict: role/tenant for C1, viewport/theme for C2, input/order for C3, removed assertion for C4. Do not vary irrelevant roles in the visual exercise. Require individual prediction and explanation. The tasks are public/open-book; assess transfer, not secrecy. Four teams need 32 minutes of presentations/defense; use parallel panels for larger groups.
+There is no single product answer key. Review [the shared expectations](../COURSE_PROJECT.md) against each learner's approved scope and exact revision. Jared hears the final presentation and privately decides completion after longitudinal review. Use [the project review checklist](../templates/project-review.md). No exam, changed-condition defense or points threshold.
 
-## Scoring: 20 points
-Score five dimensions 0–4 each: problem/risk framing, test coverage, reproducible evidence, AI/tool use, communication.
-0 absent; 1 unsupported; 2 partly correct with material gaps; 3 correct and reproducible; 4 correct with explicit limits and useful follow-up.
-Proposed pilot threshold: 14/20 plus no fabricated evidence and no unauthorized external action. Reassess after remediation. This is course completion, not a claim of top-tier professional readiness.
+The [old runnable cards](../fixtures/capstone-cards.md) remain optional rehearsal/coaching exercises, not the course assessment. For practice: C1 needs positive and negative controls; C2 distinguishes approved headings from overflow; C3 checks the confidence boundary, opt-out, replay and rejection recovery; C4 compares a weak heading assertion with meaningful UI/response checks. Never substitute a shared simulator card for the learner's approved product without privately agreeing an accommodation.

@@ -46,3 +46,9 @@ Classify each claim as **proven**, **plausible but unproven**, or **unsupported*
 ## Stretch
 
 Ask an approved AI tool to rewrite the most overconfident claim as a calibrated finding. Review every word against the sources.
+
+## Product Studio homework — Pitch your product
+
+Complete the proposal and one rough wireframe after class. Pick from the 20 ideas or propose your own; present the user, main journey, three core features, exclusions and budget to the instructor before Session 02.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

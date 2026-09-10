@@ -24,7 +24,7 @@ Maintainers/instructors with website dependencies installed and Chrome available
 For Codex, open a learner copy of this repository in the organization's approved client. Have it inspect sandbox/ and fixtures/allocation-requirements.md. Authenticate through the client's normal sign-in flow; no course script reads credentials. Core labs are open-book, but learners reproduce their own evidence. Live model evaluation uses a separate actor workspace with only approved inputs and prompt, not this whole repository or instructor answers.
 
 ## Concrete material mapping
-This mapping names the included local exercises. Handouts, lessons and grading target these materials; richer connected deployments are optional extensions, never unstated requirements.
+This mapping names the practice exercises and final showcase. Handouts and formative coaching target the stated materials; richer connected deployments are optional extensions, never unstated requirements. The individual [course project](COURSE_PROJECT.md) has its own repo, scope and milestone evidence.
 
 | Lesson | Included material | Mode |
 | --- | --- | --- |
@@ -39,14 +39,14 @@ This mapping names the included local exercises. Handouts, lessons and grading t
 | 9 | fixtures/integration-cases.md; inbox JSON; /api/events | stored events and decision flags, not CRM writes |
 | 10 | fixtures/release-rounds.md | tabletop exercise |
 | 11 | input-only model-cases.json, mock-model-outputs.json; model-evaluation-protocol.md | offline scoring; optional bounded live trials |
-| 12 | fixtures/capstone-cards.md; instructor follow-up | open-book practical plus changed-condition defense |
+| 12 | Own product repo, release and [showcase guide](labs/12-defensible-qa-verdict.md) | Individual presentation to Jared after ongoing review; no separate exam |
 
-## Three participation routes
+## Three practice-lab participation routes
 - Foundation: browser, files and evidence writing. Code is explained with Codex; learner can demonstrate understanding without typing syntax.
 - Builder: add an assertion, run tests, review a diff.
 - Stretch: repeat experiment with another allowed model/tool, or automate a workflow and quantify errors.
 
-Learners choose festival, gaming tournament, creative pop-up, or community event as the business theme. Names change, but the underlying requirements and assessment remain equivalent.
+Learners choose festival, gaming tournament, creative pop-up, or community event as the practice theme. Names change, but requirements and coaching remain equivalent. These practice routes do not silently waive the agreed working-product expectations; arrange project equivalents privately with the instructor.
 
 ## Business apps without enrollment friction
 Core path uses the supplied exports. Learners can import CSV into their training Google Sheets account and paste the approved memo into a training Google Doc. GitHub and Discord exercises use exports unless the instructor has created an isolated course repo/channel and granted access. Lack of a connector does not prevent the lesson.
@@ -71,6 +71,6 @@ node -e "fetch('http://127.0.0.1:4178/api/contacts/A-101?tenant=Beacon&mode=fixe
 These use synthetic identities. Do not apply the pattern to another system without authorization.
 
 ## Instructor setup before every cohort
-Run npm test and npm run verify. Open both candidates, deliver one event and restart. Confirm the approved Codex account works. Print/download slides. Complete CAPABILITY_BASELINE.md's actual model/tool card. Have the export-only business path ready if a live app is unavailable.
+Run npm test and npm run verify. Open both candidates, deliver one event and restart. Confirm the approved client/model route works using [the small-model guide](SMALL_MODEL_GUIDE.md); Qwen3.8-27B is recommended, with compatible hosted/local clients and no mandatory premium subscription. Print/download slides. Complete CAPABILITY_BASELINE.md's actual model/tool card. Have the export-only business path ready if a live app is unavailable.
 
 The full production systems mentioned in original plans—real OAuth, Postgres RLS, payments, AWS release lanes—are discussed using requirements and evidence packets. This local app does not implement them and must not be used to claim they have been tested.

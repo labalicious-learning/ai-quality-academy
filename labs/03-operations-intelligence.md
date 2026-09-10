@@ -50,3 +50,9 @@ The memo must make it easy for a manager to trace every number and decision to a
 ## Stretch
 
 Sketch a safe recurring workflow: input location, validation, human approval, output destination, audit record, and failure route.
+
+## Product Studio homework — Make a business decision
+
+Create a small synthetic dataset, checked CSV/spreadsheet analysis, source log and one-page decision memo for your product. Draft a concise mock team update; no live Google/Discord posting required.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

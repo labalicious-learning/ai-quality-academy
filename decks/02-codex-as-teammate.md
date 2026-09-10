@@ -72,6 +72,44 @@ It should not pretend to know missing business rules.
 
 ---
 
+# Small models, serious work
+
+**Recommended: Qwen3.8-27B** · summer 2026 release
+
+Local if your hardware supports it; capped hosting otherwise.
+
+Model ≠ hosting provider ≠ coding client ≠ authorized tools.
+
+Verify one file → edit → check loop before starting.
+
+---
+
+# Spend on progress, not retries
+
+Good fit: bounded features, tests, docs and structured data.
+
+Watch for invented rules, lost context and repeated tool errors.
+
+Give relevant files, one outcome and an observable check.
+
+After two failed attempts: narrow the task and ask for help.
+
+---
+
+# Your route and your budget
+
+OpenCode + OpenRouter is a documented hosted route.
+
+Codex custom/local endpoints need a compatibility check.
+
+Claude Code + Qwen is not guaranteed; verify or use another client.
+
+Suggested project target $10; agreed cap, no automatic premium fallback.
+
+**No subscription or new hardware purchase is required.**
+
+---
+
 # Lab: Codebase Detective
 
 **Mission:** investigate, do not rush a fix.
@@ -142,3 +180,15 @@ Use extra reasoning or parallel work when it improves measured outcomes.
 # Exit ticket
 
 Write a task brief asking Codex to **find**, not fix, a suspected regression.
+
+---
+
+# Kickoff: your product repository
+
+Approved proposal → your own public repo → three initial issues.
+
+Create a topic branch; open a focused README/proposal PR.
+
+Review the diff, invite feedback and record the next small task.
+
+**Code stays in your repo. Practice packets go to lab-submissions.**

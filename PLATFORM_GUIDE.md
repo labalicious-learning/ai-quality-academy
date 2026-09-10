@@ -128,6 +128,8 @@ Without that setting, the starter selects Candidate A. Record which candidate wa
 
 ## Codex and business apps
 
+Codex is the main teaching client, not a mandatory premium subscription. See [the small-model guide](SMALL_MODEL_GUIDE.md) for Qwen3.8-27B, OpenCode, local inference and verified custom-provider routes. Preflight the actual OS, client, model and host combination. A Mac, Linux or Windows computer need not be able to run 27B locally to take the capped hosted route. Never mix Windows and WSL dependencies or credentials.
+
 Use the current [Codex quickstart](https://developers.openai.com/codex/quickstart) to select an instructor-approved client for your OS. Do not assume a desktop-only client exists on every platform. For native Windows, follow the [official Windows sandbox guidance](https://developers.openai.com/codex/windows); WSL is not a requirement of these labs. If an instructor deliberately uses WSL, keep Node, dependencies and the repository inside that environment instead of sharing `node_modules` with native Windows. Confirm browser-to-server connectivity with the instructor.
 
 Before asking AI to run commands, tell it your OS, shell, working folder and allowed actions. Require commands for that shell, inspect them, then verify the results. If approved AI access is unavailable, pair on an approved workstation or use supplied model outputs; do not disable safeguards or buy an unapproved subscription.

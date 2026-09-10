@@ -35,6 +35,12 @@ Use fixtures/model-cases.json as input-only cases, mock-model-outputs.json as fa
 
 For optional live trials, use approved models available on the day with identical inputs, prompt and tools. Core mocks need no model and permit hypothetical recommendations only. The lesson is intentionally designed so capability gains change the score—not the standard of evidence or safety.
 
-## Assessment
+## Formative coaching
 
 Learners pass when they can identify an unsafe self-grading setup and make a bounded hypothetical role recommendation backed by the corpus. Production approval requires representative repeated trials and an authorized reviewer.
+
+## Product Studio connection — Improve the workflow, not the bill
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Compare two brief/context versions on one small product task using the same inexpensive model and starting revision. Record actual outcomes, retries and costs; update the playbook. Prepare your final release and showcase.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

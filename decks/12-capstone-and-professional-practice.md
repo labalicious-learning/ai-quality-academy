@@ -7,98 +7,116 @@ footer: "© 2026 Jared Cluff · Labalicious · Lesson 12"
 
 <!-- _class: lead -->
 
-# Defensible QA Verdict
+# Your Product Showcase
 
-## Lesson 12 · Show your judgment
-
----
-
-# Today’s outcome
-
-- Plan and execute a scoped QA investigation
-- Use AI safely across work surfaces
-- Present evidence, uncertainty, and next action
-- Identify your apprenticeship track
+## Lesson 12 · Build it. Prove it. Present it.
 
 ---
 
-# Capstone cards
+# This product is the assessment
 
-- CRM role/permission change
-- launch-preview responsive review
-- event-processing boundaries and recovery
-- small code regression
+Your software. Your public repository. Your decisions.
 
-Use fixtures/capstone-cards.md: public/open-book work, followed by a changed-condition live defense.
+AI assistance is encouraged and disclosed.
 
----
+Jared reviews your progress and hears your final presentation.
 
-# The required artifact set
-
-1. Test charter
-2. AI task brief
-3. Evidence packet(s)
-4. Automation proposal or manual rationale
-5. Ship/fix/investigate recommendation
+**No separate exam. No surprise coding challenge.**
 
 ---
 
-# Five-minute verdict structure
+# Eight minutes to tell the story
 
-1. User and business outcome
-2. Top risks and approach
-3. Evidence and result
-4. Limits/unknowns
-5. Recommendation, owner, next action
+1 minute: audience, problem and scope.
 
----
+3 minutes: working journey, saved result, error and recovery.
 
-# Reviewer questions
+2 minutes: GitHub review story and meaningful regression.
 
-- What would disprove your conclusion?
-- How did you validate the AI’s contribution?
-- Is this a technical symptom, customer impact, or both?
-- Why does it block—or not block—a release?
+1 minute: AI correction, cost and business decision.
+
+1 minute: handoff, limits and next improvement.
 
 ---
 
-# Quality professionals communicate uncertainty
+# Show something people can use
 
-Strong QA does not mean “I found bugs.”
+Clear visual hierarchy and consistent navigation.
 
-It means “Here is what we know, how we know it, what we do not know, and the safest next step.”
+Readable mobile layout, keyboard access and helpful states.
 
----
+Synthetic data with a complete end-to-end journey.
 
-# Apprenticeship tracks
-
-- Exploratory/product QA
-- Automation and test infrastructure
-- Integration/operations QA
-- Accessibility and visual QA
-- AI evaluation and safety
+Polish supports usefulness; screenshots alone do not prove it.
 
 ---
 
-# Your permanent operating method
+# Open the evidence
 
-Outcome → context → constraints → plan → evidence → review → durable playbook
+Issue → topic branch → focused PR → human feedback → fix.
 
-Tools and models will change. This method should not.
+A real defect and its fail-before / pass-after regression.
 
----
+Design iterations, boundary checks and recovery.
 
-# Individual reflection
-
-- My strongest QA skill:
-- The AI habit I will keep:
-- The next skill I will practice:
-- The work track I want to explore:
+Link exact revisions; state what was not tested.
 
 ---
 
-<!-- _class: lead -->
+# Explain your AI workflow
 
-# Graduation
+Which model, client and host did you use?
 
-## Trust is the skill.
+What did AI get wrong, and how did you catch it?
+
+How did smaller tasks and durable context help?
+
+What did it cost? Which measurements are missing?
+
+---
+
+# Four minutes with Jared
+
+Discuss choices already represented in your product.
+
+Explain one tradeoff, correction or remaining limitation.
+
+Use your notes and evidence; this is not a memory quiz.
+
+Ask for advice on the next useful improvement.
+
+---
+
+# A reliable handoff
+
+Reviewed release, setup/run/check/reset instructions.
+
+Safe sample data, source acknowledgments and known limits.
+
+Local demo is valid; paid hosting is not required.
+
+Keep a backup demo and close private tabs and notifications.
+
+---
+
+# Completion and next steps
+
+Jared decides after ongoing review and your presentation.
+
+Ready: certificate of course completion, issued privately.
+
+Needs work: clear revisions, coaching and another review.
+
+No points threshold, automatic certificate or public ranking.
+
+---
+
+# Skills that keep growing
+
+Exploratory QA · automation · integration reliability
+
+Accessibility · visual quality · AI evaluation
+
+Outcome → context → constraints → evidence → review
+
+**Models change. Keep improving the workflow.**

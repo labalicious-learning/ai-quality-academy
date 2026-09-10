@@ -42,3 +42,9 @@ For an approved intentional change, switch Theme from Community festival to Crea
 ## Stretch
 
 Use an AI visual review to generate hypotheses. Validate or reject each one through DOM, keyboard, or reproducible viewport evidence.
+
+## Product Studio homework — Make the product feel intentional
+
+Refine typography, spacing, color and useful states. Record two design iterations overall, matched before/after captures, keyboard navigation, 375/768/1440-width and zoom checks; fix a real usability issue.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

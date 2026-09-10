@@ -108,7 +108,9 @@ Later labs investigate behavior; this is just a startup check.
 
 # Bring Codex into the workspace
 
-Use your instructor-approved client and account.
+Use Codex or an approved compatible client/host route.
+
+Local/capped Qwen3.8-27B options: **SMALL_MODEL_GUIDE.md**
 
 Official setup: https://developers.openai.com/codex/quickstart
 
@@ -116,7 +118,7 @@ Ask it to read only fixtures/setup-example.mjs.
 
 Predict the output, then run: node fixtures/setup-example.mjs
 
-<!-- Account availability varies. Do not promise a free plan or a specific model. -->
+<!-- Preflight the exact model/client route. No mandatory premium subscription; hosted usage may require a capped key. -->
 
 ---
 

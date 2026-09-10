@@ -107,3 +107,15 @@ Do not restart the curriculum. Keep the standard, update the tool.
 # Exit ticket
 
 Define false pass. Why is it especially dangerous for release QA?
+
+---
+
+# Product Studio · Improve the workflow, not the bill
+
+Same cheap model, same task; compare two briefs. Measure, then keep what helps.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

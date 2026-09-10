@@ -102,3 +102,15 @@ Know what to automate, what to review, what to preserve, and when to stop.
 # Exit ticket
 
 Name one workflow AI can accelerate and the evidence/approval it still needs.
+
+---
+
+# Product Studio · Make a business decision
+
+Synthetic data → checked analysis → decision memo → mock team update.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

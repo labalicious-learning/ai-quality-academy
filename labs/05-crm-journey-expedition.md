@@ -45,3 +45,9 @@ Execute one bounded journey and gather enough evidence to decide whether it work
 ## Stretch
 
 Ask AI to propose two alternate routes a real user might take. Choose one to test and explain why its risk justifies the time.
+
+## Product Studio homework — Finish one complete journey
+
+Make a user action lead to a saved, visible result. Record manual evidence and a reproduced issue, then request human feedback on a focused fix/feature PR.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

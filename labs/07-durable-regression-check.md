@@ -46,3 +46,9 @@ If installation is blocked, the equivalent foundation submission is a precise as
 ## Stretch
 
 Add a deliberately broken variant and explain why the test fails for the right reason.
+
+## Product Studio homework — Protect your progress
+
+Add a meaningful regression and own-repo CI. Record actual fail-before/pass-after evidence for a repair, then prove the current checks pass without weakening expected behavior.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

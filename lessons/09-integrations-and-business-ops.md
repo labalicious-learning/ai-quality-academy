@@ -31,6 +31,12 @@ Use fixtures/integration-cases.md and the local inbox JSON field. Reset state an
 | 110–115 | Discuss where AI can classify/summarize safely and where it needs a review queue. |
 | 115–120 | Exit ticket: explain why “webhook returned 200” is not sufficient proof of business success. |
 
-## Assessment
+## Formative coaching
 
 Teams submit an integration map plus an evidence packet. Distinguish simulated event processing from untested CRM updates, actual classification, real queues and customer delivery. Full credit requires precise limits, not invented downstream state.
+
+## Product Studio connection — Make failure recoverable
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Exercise import/export or an approved equivalent. Test malformed/duplicate input, interruption/retry and safe recovery; show before/after stored state. Synthetic local file exchange is enough.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

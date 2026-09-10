@@ -31,6 +31,12 @@ Use fixtures/authorization-requests.md and scripts/lab-request.mjs. Verify all f
 | 110–115 | Explain responsible disclosure and why only sandbox testing is allowed. |
 | 115–120 | Exit ticket: name two independent layers that should enforce tenant isolation. |
 
-## Assessment
+## Formative coaching
 
 Use the evidence-packet template. Credit is awarded for correct proof of isolation too: QA should be able to establish that a control works, not only find breakage.
+
+## Product Studio connection — Check a real boundary
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Exercise validation, persistence and malformed input in your product. If it has accounts, test appropriate positive/negative permissions too; otherwise diagram a hypothetical permission boundary and label it unimplemented.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

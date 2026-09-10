@@ -10,11 +10,13 @@ After `npm run build`, open `dist/reader.html` in your browser. Choose any cours
 
 A practical course in using AI across quality assurance and everyday business work. Thirteen two-hour sessions: Session 00 gets you set up; Sessions 01–12 develop investigation, test design, automation and professional judgment.
 
-All scenarios, people, records and applications are fictional teaching examples. This repository contains no production application code, internal architecture documents, company data or private repository history.
+All supplied scenarios, people, records and applications are fictional teaching examples. Learner products use synthetic data. This repository contains no production application code, internal architecture documents, company data or private repository history.
 
 ## Start here
 
-Finished a lab? See [Submit and review your work](SUBMISSIONS.md). Student work goes to the separate submission repository, not the curriculum.
+Your main assessment is [Product Studio](COURSE_PROJECT.md): build your own software in a personal public repo, get feedback throughout the course, and present it to Jared for the course-completion decision. No separate student exam. Start with [20 project ideas](PROJECT_IDEAS.md) and the [small-model guide](SMALL_MODEL_GUIDE.md), recommending Qwen3.8-27B.
+
+Finished a practice lab? See [Submit and review your work](SUBMISSIONS.md). Practice packets go to the separate submission repository; product code and milestones go to each learner's own repository. Neither belongs in the curriculum.
 
 Mac, Linux and Windows learners: start with the [platform guide](PLATFORM_GUIDE.md). It covers shells, installation, screenshots, API requests and optional browser automation without assuming one operating system.
 
@@ -63,6 +65,6 @@ npm run verify
 - .github/workflows/ — verification and GitHub Pages deployment
 
 ## Delivery and access
-26 contact hours including setup form a foundation for supervised apprenticeship. Completion does not certify expert performance. Codex access is provided through the learner's or instructor's approved account; the course does not include a paid AI subscription. GitHub, Google and Discord accounts are separate. Optional live integrations require access granted specifically for the course.
+26 contact hours including setup form a foundation for supervised apprenticeship. Completion does not certify expert performance. Use an approved Codex or compatible alternative client with capped hosted or locally served inference; the course does not require a premium AI subscription. Follow the small-model guide and instructor setup check. GitHub, Google and Discord accounts are separate. Optional live integrations require access granted specifically for the course.
 
 © 2026 Jared Cluff. All rights reserved. Publicly readable does not mean open-source licensed. See [Copyright](COPYRIGHT.md). Third-party dependencies retain their own licenses.

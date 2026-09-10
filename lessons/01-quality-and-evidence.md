@@ -12,25 +12,26 @@
 - distinguish a request, observation, hypothesis, finding, and verdict;
 - write a defect report another person can reproduce;
 - use an AI assistant without treating its answer as proof; and
-- name data/actions that are off limits in a training environment.
+- name data/actions that are off limits in a training environment; and
+- pitch a right-sized individual product and explain how completion will be reviewed.
 
 ## Instructor preparation
 
-Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support three claim classifications. Capture an analogous local screenshot separately; no database record or console export is supplied. Prepare ten short fact/inference/question statements for guided practice.
+Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support three claim classifications. Capture an analogous local screenshot separately; no database record or console export is supplied. Prepare a few fact/inference/question statements. Read [Product Studio](../COURSE_PROJECT.md), [20 ideas](../PROJECT_IDEAS.md) and the proposal template. Show a simple polished fictional app concept, an oversized proposal and how to cut scope. Arrange proposal review appointments before Session 02; don't require all individual pitches during class.
 
 ## Agenda
 
 | Time | Facilitation |
 | --- | --- |
-| 0–10 | Arrival: show a beautiful but wrong AI answer. Ask, “Would you ship on this?” Learners vote and explain why. |
-| 10–25 | Teach the ladder: observation → hypothesis → reproducible finding → evidence-backed recommendation. Emphasize that confidence is not evidence. |
-| 25–40 | Live demo: ask an approved assistant to summarize a small bug packet; compare its claims to the sources. Model the phrase “I cannot prove that from the supplied evidence.” |
-| 40–50 | Pairs classify ten statements as fact, inference, question, or unsupported claim. Review together. |
-| 50–60 | Break. Instructor privately checks that every learner can explain why screenshots alone may mislead. |
-| 60–95 | Run the lab in pairs. Driver reads sources; verifier maintains the evidence table. Switch at midpoint. |
-| 95–110 | Gallery walk: teams review another team’s packet and circle one claim that lacks proof. |
-| 110–115 | Debrief: what AI behavior was useful? What behavior would be dangerous? |
-| 115–120 | Exit ticket: one sentence distinguishing a lead from a defect, plus one safety rule. |
+| 0–10 | Arrival: a beautiful but wrong AI answer. Would you ship it? Explain why. |
+| 10–25 | Observation → hypothesis → finding → recommendation. Classify a few statements; confidence is not evidence. |
+| 25–35 | Demo a sourced bug summary and identify unsupported claims. |
+| 35–50 | Introduce Product Studio: individual product, own public repo, weekly reviews, visual quality and final presentation to Jared. No separate exam. Explore the idea bank and modest scope. |
+| 50–60 | Break. |
+| 60–95 | Run the evidence lab in pairs; switch driver/verifier halfway. |
+| 95–105 | Peer review: identify one claim missing proof and improve it. |
+| 105–115 | Sketch a main product journey and name three core features. Explain the proposal/approval handoff before Session 02. |
+| 115–120 | Ungraded reflection: one evidence rule, one safety boundary and next step for the pitch. |
 
 ## Teaching notes
 
@@ -38,6 +39,12 @@ Keep the first session human-centered: good QA protects a customer from a bad ex
 
 If students finish early, ask them to improve an overconfident AI answer using only citations to the supplied sources. If students need support, give them the sentence starters: “I observed…”, “I expected… because…”, and “This evidence does not establish…”.
 
-## Assessment
+## Formative coaching
 
 A learner is ready to continue when their packet includes an expected outcome, observed outcome, reproducible steps, and a clear limit on what the evidence does not prove.
+
+## Product Studio connection — Pitch your product
+
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Complete the proposal and one rough wireframe after class. Pick from the 20 ideas or propose your own; present the user, main journey, three core features, exclusions and budget to the instructor before Session 02.
+
+Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

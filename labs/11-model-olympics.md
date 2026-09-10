@@ -59,3 +59,9 @@ This tiny text corpus is a pilot, not sufficient evidence for production approva
 ## Stretch
 
 Design a test that detects whether a model has silently stopped citing the supplied evidence after a version update.
+
+## Product Studio homework — Improve the workflow, not the bill
+
+Compare two brief/context versions on one small product task using the same inexpensive model and starting revision. Record actual outcomes, retries and costs; update the playbook. Prepare your final release and showcase.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

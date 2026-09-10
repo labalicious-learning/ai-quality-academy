@@ -1,34 +1,41 @@
-# Lesson 12 — Capstone and Professional Practice
+# Lesson 12 — Product Showcase and Professional Practice
 
-**Duration:** 120 minutes  
+**Duration:** 120 minutes per showcase block; at most six individual presentations.
+**Deck:** [Product showcase](../decks/12-capstone-and-professional-practice.md)
+**Lab:** [Your final product presentation](../labs/12-defensible-qa-verdict.md)
 
-**Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
-**Deck:** [12-capstone-and-professional-practice](../decks/12-capstone-and-professional-practice.md)  
-**Lab:** [Defensible QA Verdict](../labs/12-defensible-qa-verdict.md)
+## Outcomes
 
-## Learners will be able to
-
-- independently frame and test a feature/business workflow;
-- use AI responsibly across investigation, documentation, and optional automation;
-- deliver a concise evidence-backed QA verdict to a product/engineering audience; and
-- identify their next apprenticeship track: exploratory QA, automation, integration QA, accessibility/visual QA, or AI evaluation.
+Learners demonstrate their own useful, visually appealing software; connect GitHub history, QA evidence and AI-assisted decisions; explain limitations and hand off a reproducible release. Jared Cluff reviews the final presentation alongside progress across the course and decides on the certificate of course completion. No separate exam or surprise coding challenge.
 
 ## Instructor preparation
 
-Assign fixtures/capstone-cards.md. These are public/open-book tasks, not hidden exams. Choose a changed condition after the initial verdict and assess fresh reasoning. Provide one reviewer per four teams, with parallel panels for larger cohorts.
+Use [Product Studio](../COURSE_PROJECT.md), [review checklist](../templates/project-review.md) and [showcase template](../templates/project-showcase.md). Review repositories and evidence before presentation day; eight demo minutes cannot substitute for ongoing inspection. Confirm release SHAs, synthetic data, local fallback, accessibility arrangements and each learner's appointment.
+
+Schedule six learners or fewer per block, each with eight minutes to demonstrate and four minutes to discuss the work with Jared. For larger cohorts book additional two-hour blocks or individual appointments **with Jared present**. Parallel coach panels and team presentations cannot replace an individual's presentation to him. Additional showcase blocks extend delivery time for larger cohorts; the standard 26 contact hours include one block.
+
+Use isolated, credential-free environments for student code; no secrets or personal account access on demo machines. Prepare a private progress/decision register. Do not announce certificates automatically before Jared's review.
 
 ## Agenda
 
 | Time | Facilitation |
 | --- | --- |
-| 0–10 | Arrival: revisit Lesson 1’s question, “Would you ship on this?” Learners state how their answer process has changed. |
-| 10–20 | Explain capstone rules, evidence bar, role rotation, and review cadence. |
-| 20–70 | Teams plan and execute. Instructor acts only as product owner for clarifying questions; teams own their AI task briefs and evidence. |
-| 70–80 | Break and evidence organization. |
-| 80–112 | Up to four teams per panel: five-minute verdict plus three-minute changed-condition defense per team. Require risk, evidence, uncertainty and next action. |
-| 112–117 | Individual written retrospective: strongest skill, useful AI habit and next skill. |
-| 117–120 | Completion recognition and supervised apprenticeship next steps. |
+| 0–10 | Welcome and expectations: useful product, evidence, growth and honest limitations. Confirm presentation order. |
+| 10–20 | Demo setup and fallback checks; close private tabs/notifications and load synthetic data. |
+| 20–56 | Three individual slots, 12 minutes each: eight-minute demo and four-minute conversation with Jared. |
+| 56–66 | Break. |
+| 66–102 | Three more individual slots, 12 minutes each. Unused slots become coached follow-up, not new assessed tasks. |
+| 102–112 | Written reflection, apprenticeship interests and one concrete next skill. |
+| 112–120 | Explain private completion/revision communication and follow-up appointments. Celebrate shared progress without public marks. |
 
-## Assessment
+## What to discuss
 
-Use all templates. A capstone must include a test charter, a credible evidence packet, an AI-use record, and a release/fix recommendation calibrated to uncertainty. Grade individuals through role rotation and the retrospective, not only team polish.
+Ask about decisions already represented in the product: who benefits, why a feature was cut, what a regression proves, what the model got wrong, what changed after review and what remains risky. This is a supportive conversation grounded in the learner's work, not an unseen test.
+
+A polished UI alone is insufficient; neither is a passing CI badge on an unusable app. Look for the agreed working journey, visual/accessibility care, GitHub practice, business artifacts, verified AI use and safe recovery.
+
+## Completion and support
+
+Record **complete / revision or support needed** privately with evidence and next action. Only Jared authorizes a certificate after the presentation and longitudinal review. No numeric threshold or automatic issue on a bot's recommendation. Arrange a follow-up if the product cannot be demonstrated or needs correction. Certificate templates are filled and delivered privately.
+
+© 2026 Jared Cluff.

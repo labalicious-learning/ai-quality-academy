@@ -92,3 +92,15 @@ Specific user. Specific condition. Observable impact.
 # Exit ticket
 
 Write one accessibility test that an automated color check would miss.
+
+---
+
+# Product Studio · Make the product feel intentional
+
+Two design iterations; keyboard, mobile, zoom and useful error states.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**

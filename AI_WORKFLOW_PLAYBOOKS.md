@@ -6,6 +6,8 @@ OpenAI’s current documentation groups work across connected data, code, analys
 
 ## The universal work contract
 
+For the individual product, use [the small-model guide](SMALL_MODEL_GUIDE.md): Qwen3.8-27B is recommended, with a compatible client and local or capped hosted inference. These contracts also apply in OpenCode or another approved client; the example Codex wording does not require a premium model or live business connector. Use portable exports when a tool is unavailable.
+
 Every workflow starts with the same five questions:
 
 1. **Outcome:** What reviewable artifact or action should exist?

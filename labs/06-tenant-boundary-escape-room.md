@@ -41,3 +41,9 @@ PATCH here is an authorization probe, not a record update. Allocation writes are
 ## Stretch
 
 Describe which layer would still protect data if a client-side role check accidentally disappeared.
+
+## Product Studio homework — Check a real boundary
+
+Exercise validation, persistence and malformed input in your product. If it has accounts, test appropriate positive/negative permissions too; otherwise diagram a hypothetical permission boundary and label it unimplemented.
+
+Budget two to three hours, including evidence and review preparation; ask for coaching or scope adjustment if blocked. Record progress using [the milestone template](../templates/project-milestone.md) in **your own product repository**, not the practice packet. See [the complete project roadmap](../COURSE_PROJECT.md), [GitHub workflow](../PROJECT_GITHUB.md) and [small-model guide](../SMALL_MODEL_GUIDE.md). The practice lab above remains separate from your individual product.

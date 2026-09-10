@@ -86,3 +86,15 @@ Low confidence, ambiguity, consent, financial commitments, and external sends be
 # Exit ticket
 
 Why is a technical success status not sufficient proof of business success?
+
+---
+
+# Product Studio · Make failure recoverable
+
+Import/export, duplicate handling and a demonstrated recovery path.
+
+Apply today’s skill to your own product as homework.
+
+Link the issue, PR, evidence and next question in your milestone record.
+
+**Course project → COURSE_PROJECT.md**
