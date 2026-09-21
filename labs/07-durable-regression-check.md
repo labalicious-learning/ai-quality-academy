@@ -41,7 +41,7 @@ Add one small, deterministic check that proves the allocation record loaded and 
 - explanation of why the locator/fixture is stable;
 - a one-sentence statement of what the test does not cover.
 
-If installation is blocked, the equivalent foundation submission is a precise assertion design: selector, response/status condition, expected A/B results and an explanation of why it detects the failure. Mark all execution unverified. Grade that design on reasoning, not fabricated red/green logs; record hands-on automation execution as a separate apprenticeship follow-up.
+If installation is blocked, the equivalent foundation submission is a precise assertion design: selector, response/status condition, expected A/B results and an explanation of why it detects the failure. Mark all execution unverified. Review that design for reasoning, not fabricated red/green logs; record hands-on automation execution as a separate apprenticeship follow-up.
 
 ## Stretch
 

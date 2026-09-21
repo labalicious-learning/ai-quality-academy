@@ -26,26 +26,41 @@ For the included local track, use [LAB_SETUP.md](LAB_SETUP.md) and the supplied 
    evidence.
 5. Give students the course safety card before tool access.
 
-## Project-based completion, not exams
+## Course completion and project-based certification
 
 [Product Studio](COURSE_PROJECT.md) is the individual course assessment. Introduce it in Session 01; approve each pitch before Session 02 kickoff. Each learner builds in their own public repo, with an equivalent private route arranged when necessary. Practice lab packets are formative coaching, not scored examinations or a points-based graduation gate.
 
 Review evidence and judgment over time: problem framing, test design, reproducibility, AI use, communication, GitHub practice and product usability. Use [the project review checklist](templates/project-review.md) with **ready for next step / revise and return / instructor support needed**. Match expectations to the approved scope. Fabricated evidence, unsafe handling and unverified claims need correction, not compensating points. Software regression tests remain required engineering work; there is no separate test of the learner.
 
-Jared Cluff reviews progress, hears each individual final presentation and decides **complete / revision or support needed**. He alone authorizes the certificate of course completion. No AI-issued certificate, numeric threshold, hidden defense or claim of expert qualification. Offer coaching, equivalents and a follow-up presentation for gaps.
+Use [the two-award policy](CREDENTIALS.md). Jared records **course complete / course activities outstanding** separately from **AIQAA certified / not yet demonstrated / review pending**. Completion recognizes finished learning activities and presentation, not an approved product-quality verdict. Certification requires course completion plus all AIQAA-1.0 areas demonstrated through product quality, real development history, GitHub understanding and the other course skills.
+
+He authorizes each award separately. No automatic issuer, numeric threshold, hidden defense or claim of external accreditation. A learner may receive the completion certificate while addressing certification gaps. Offer specific feedback, equivalents and follow-up without repeating already demonstrated work.
 
 ## Project review operations
+
+At each session, use the published lab’s session guide to orient learners. Fit its optional recall prompt into arrival/discussion and its next-step reflection into closing/debrief; retain the 120-minute agenda. [Learner support](LEARNER_SUPPORT.md) includes a safe help-request pattern, catch-up route and accommodations guidance. Practice feedback is descriptive coaching, not points or an additional exam. Have learners apply the correction to their existing artifact rather than fill another form.
+
+Learners can prepare a focused Markdown note from the dashboard’s **Prepare a project review** link. This is local preparation, not intake, an AI grade or an instructor workspace. Review the original artifacts and exact commits; the helper does not fetch or verify them. Keep decisions in approved private storage. The [Shift Garden example](EXAMPLE_PROJECT.md) illustrates boundary evidence with runnable negative/corrected snapshots; its staged conversation and snapshots do not establish learner history or certification eligibility.
+
+Use [the operational rubric](AIQAA_RUBRIC.md) and [project assessment agreement](templates/project-assessment-agreement.md). Approve scope and competency mappings at Session 02; finish concrete acceptance cases in Session 04 before assessing completed features. Do not invent final-day requirements or waive a core criterion. Freeze the version and record equivalent evidence routes.
+
+Before first issuance, calibrate with [the fictional examples](AIQAA_CALIBRATION.md), double-review the first three projects and disputes, then sample at least one in five by the preselected review queue order. Preserve independent initial judgments and reconcile disagreements using actual evidence. This is a pilot standard; measure reviewer agreement and time rather than claiming reliability in advance. Schedule detailed reviews outside the eight-minute demos. Reuse project artifacts to keep the evidence burden proportionate.
+
+Record all 21 rows using [the private worksheet](templates/aiqaa-evidence-review.md). Every required condition must be supported; a missing observation is unverified. The [optional local consistency checker](AIQAA_DECISION_TOOL.md) aggregates human findings, cannot validate their truth and cannot issue awards. Keep it out of student-facing CI and public records. AI assistance is not an independent second reviewer.
 
 Before the cohort, privately establish a submission/contact channel, learner aliases, review appointments and an approved model route. Preflight Qwen3.8-27B using [the small-model guide](SMALL_MODEL_GUIDE.md); record actual compatibility, account eligibility and spending ceilings. Do not require hardware purchases or a premium subscription.
 
 - Session 01 → 02: review one-page proposals and wireframes between classes; confirm three core features, exclusions, synthetic data, OS/run approach and budget.
 - Each session: scan the milestone index and address one blocker. Use coaches for triage; schedule focused reviews outside the two-hour lesson when needed.
 - Sessions 02, 05 and 10–12: ensure substantive human PR feedback at kickoff, working slice and release; add a visual/recovery review in Sessions 08–09.
-- Record exact repository/PR URLs and head SHAs. Public feedback is artifact-focused; identities, decisions, accommodations and coaching stay private.
+- Record repository/PR URLs and reviewed SHAs at early planning, working-slice, test/fix and release stages. Discuss an issue-to-release chain throughout these checkpoints. Counts, dates or an AI summary alone do not prove development or understanding; contextualize squashed/offline history.
+- Public feedback is artifact-focused; identities, separate award decisions, accommodations and coaching stay private.
 - Review student source before any execution. Use an isolated, credential-free environment; never run untrusted installs or workflows on a privileged instructor machine.
 - Use [the showcase plan](lessons/12-capstone-and-professional-practice.md): at most six 12-minute individual presentations in one two-hour block. Book additional blocks/appointments with Jared for larger cohorts; parallel coach panels cannot replace presenting to him.
 
-Copy [the empty progress register](templates/project-progress.csv) and [certificate template](templates/course-completion-certificate.md) to approved **private** storage. Never commit filled records. For each review record alias, repo, milestone, reviewed SHA, observed evidence, next action and follow-up. After presentation, Jared records the final decision/date and any revisions privately. Issue the certificate only after his approval, using the learner's privately supplied preferred certificate name. Deliver privately; public sharing or promotional use requires a separate choice.
+Copy [the progress register](templates/project-progress.csv), [two-decision review](templates/aiqaa-certification-review.md), [completion certificate](templates/course-completion-certificate.md) and [AIQAA certificate](templates/aiqaa-certificate.md) to approved **private** storage. Never commit filled records. Record evidence, SHAs and follow-up, then each award's decision and issuance date separately. AIQAA records also identify the criteria version and reviewed release/commit. Confirm the working certification title before issuance.
+
+Use the learner's privately supplied certificate name and deliver privately. Public sharing or promotional use requires a separate choice. A completion-only certificate must not say Labalicious Certified AIQAA.
 
 The repository supplies templates, not a credential-issuing service or hosted student records system. Do not award a certificate simply because CI or packet-safety checks are green.
 

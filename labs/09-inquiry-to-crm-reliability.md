@@ -42,7 +42,7 @@ No real inbox, live OAuth credential, external send, or production CRM record ma
 
 ## Success rubric
 
-“Received HTTP 200” earns no credit by itself. Prove stored event count and relevant consent/confidence/state/queued fields, including absence of a saved event on rejected attempts. Explain recovery and deduplication using observed state. Explicitly mark CRM contact updates, actual classification accuracy, real OAuth, persistent queues and delivered messages as untested. Correctly bounded evidence earns full credit; invented downstream effects do not.
+“Received HTTP 200” is insufficient evidence by itself. Prove stored event count and relevant consent/confidence/state/queued fields, including absence of a saved event on rejected attempts. Explain recovery and deduplication using observed state. Explicitly mark CRM contact updates, actual classification accuracy, real OAuth, persistent queues and delivered messages as untested. Correctly bounded evidence is ready for review; invented downstream effects need correction. Use this for coaching, not a numeric grade.
 
 ## Stretch
 

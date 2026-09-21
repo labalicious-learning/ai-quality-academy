@@ -16,6 +16,9 @@ Use an alias publicly. See [Product Studio](../COURSE_PROJECT.md).
 - Spending target, ceiling and no-cost fallback:
 - Weekly time and first small deliverable:
 - Own public repo URL, or “created at kickoff”:
+- Plan to preserve early, intermediate, test/fix and release history with instructor checkpoints:
+- I understand [completion and certification](../CREDENTIALS.md) are separate:
+- Initial [assessment agreement](project-assessment-agreement.md): scope/skill mappings at kickoff; exact outcomes finalized with the instructor in Session 04:
 - Asset/source attribution plan:
 
 Instructor privately records approval/date, agreed scope/equivalents and follow-up. Publish the agreed requirements, not private coaching. Revisit approval before material scope, cost or data changes.

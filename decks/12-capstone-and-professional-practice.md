@@ -19,7 +19,7 @@ Your software. Your public repository. Your decisions.
 
 AI assistance is encouraged and disclosed.
 
-Jared reviews your progress and hears your final presentation.
+Jared reviews your product, development history and GitHub practice.
 
 **No separate exam. No surprise coding challenge.**
 
@@ -55,7 +55,7 @@ Polish supports usefulness; screenshots alone do not prove it.
 
 Issue → topic branch → focused PR → human feedback → fix.
 
-A real defect and its fail-before / pass-after regression.
+A project defect or labeled approved control: fail before / pass after.
 
 Design iterations, boundary checks and recovery.
 
@@ -99,15 +99,50 @@ Keep a backup demo and close private tabs and notifications.
 
 ---
 
-# Completion and next steps
+# Course completion ≠ skills certification
 
-Jared decides after ongoing review and your presentation.
+**Completion certificate:** finished learning activities and presentation.
 
-Ready: certificate of course completion, issued privately.
+**Labalicious Certified AIQAA:** demonstrated product quality,
+development over time and learned GitHub/QA skills.
 
-Needs work: clear revisions, coaching and another review.
+Jared records and authorizes each award separately.
 
-No points threshold, automatic certificate or public ranking.
+---
+
+# Show the evolution, not a commit counter
+
+Early plan → intermediate build → test/fix → reviewed release.
+
+Explain a diff, review response and meaningful verification.
+
+Use real PRs, milestone evidence and instructor checkpoints.
+
+A polished final upload alone cannot establish learned practice.
+
+---
+
+# Review the evidence, not an impression
+
+Frozen agreement + release revision + all 21 criteria.
+
+Demonstrated: observed conditions hold.
+
+Not yet: a condition failed. Unverified: evidence is unresolved.
+
+**All required criteria demonstrated; Jared authorizes the award.**
+
+---
+
+# Not yet certified? Keep improving.
+
+Completed coursework still receives its completion certificate.
+
+Certification gaps get clear feedback and another review.
+
+No separate exam, points average or mandatory premium model.
+
+Private decisions and issuance; no automatic certification.
 
 ---
 

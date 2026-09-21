@@ -51,6 +51,6 @@ An actor and a judge can share mistakes even when separated; evidence and indepe
 
 ## 12 · Individual product showcase
 
-There is no single product answer key. Review [the shared expectations](../COURSE_PROJECT.md) against each learner's approved scope and exact revision. Jared hears the final presentation and privately decides completion after longitudinal review. Use [the project review checklist](../templates/project-review.md). No exam, changed-condition defense or points threshold.
+There is no single product answer key. Review [the shared expectations](../COURSE_PROJECT.md) against each learner's approved scope and exact revision. Jared hears the final presentation and records course completion separately from AIQAA certification under [the credential policy](../CREDENTIALS.md). Product quality and development/GitHub evidence determine certification, not whether finished coursework is acknowledged. Use [the project review checklist](../templates/project-review.md). No exam, changed-condition defense or points threshold.
 
 The [old runnable cards](../fixtures/capstone-cards.md) remain optional rehearsal/coaching exercises, not the course assessment. For practice: C1 needs positive and negative controls; C2 distinguishes approved headings from overflow; C3 checks the confidence boundary, opt-out, replay and rejection recovery; C4 compares a weak heading assertion with meaningful UI/response checks. Never substitute a shared simulator card for the learner's approved product without privately agreeing an accommodation.

@@ -38,4 +38,14 @@ for(const file of (await readdir(path.join(root,'labs'))).filter(n=>n.endsWith('
 for(const file of ['INSTRUCTOR_GUIDE.md','LEARNING_DESIGN.md','SUBMISSIONS.md','instructor/ANSWER_KEY.md']){
  if(/14\/20|70%|mean of private/.test(await readFile(path.join(root,file),'utf8')))errors.push(file+': obsolete numeric completion gate');
 }
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log('Verified sessions 00–12, '+links+' links, 20 project ideas, 12 milestones, two-hour agendas, and publication checks.');
+const credentials=await readFile(path.join(root,'CREDENTIALS.md'),'utf8');
+for(const term of ['Certificate of Course Completion','Labalicious Certified AIQAA','AIQAA-1.0','development over time']){
+ if(!credentials.includes(term))errors.push('CREDENTIALS.md: missing award-policy concept '+term);
+}
+const register=await readFile(path.join(root,'templates/project-progress.csv'),'utf8');
+const columns=register.trim().split(',');
+for(const name of ['completion_decision','completion_certificate_issued_date','aiqaa_decision','aiqaa_certificate_issued_date','aiqaa_reviewed_release_sha']){
+ if(!columns.includes(name))errors.push('project-progress.csv: missing separate award field '+name);
+}
+if(register.trim().split(/\r?\n/).length!==1)errors.push('project-progress.csv: publish the empty header only; learner records belong in private storage');
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log('Verified sessions 00–12, '+links+' links, 20 ideas, 12 milestones, two-hour agendas, separate awards, and publication checks.');

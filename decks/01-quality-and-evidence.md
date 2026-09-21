@@ -67,9 +67,34 @@ Build software you want to exist, with AI.
 
 Your own public repo. Small weekly milestones. Human feedback.
 
-Present it personally to **Jared Cluff** for the completion decision.
+Present it personally to **Jared Cluff** for review.
 
 **The project is the assessment. No separate exam.**
+
+---
+
+# Two achievements, not one
+
+**Course completion:** you finished the learning activities.
+
+**Labalicious Certified AIQAA:** you demonstrated the skills.
+
+Certification reviews product quality, real development history
+and learned GitHub/QA practice.
+
+You can complete the course while still working toward certification.
+
+---
+
+# Same skills. Your own product.
+
+21 clear criteria; no average that hides a missing skill.
+
+Agree your workflows, expected results and evidence early.
+
+Demonstrated · not yet demonstrated · unverified.
+
+**The project is the certification assessment. No separate test.**
 
 ---
 

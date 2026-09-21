@@ -183,6 +183,32 @@ Write a task brief asking Codex to **find**, not fix, a suspected regression.
 
 ---
 
+# Real history, not a commit-count target
+
+Plan → working slice → tests and fixes → reviewed release.
+
+Keep focused branches, PRs, feedback and actual revisions.
+
+Explain one issue-to-release chain and the diff it contains.
+
+Squash merges are fine when evidence remains traceable.
+
+**No manufactured milestones. No surprise Git quiz.**
+
+---
+
+# Agree the destination before judging the result
+
+Session 02: approved scope, environments and skill mappings.
+
+Session 04: exact inputs, expected results and recovery rules.
+
+Keep the agreement version with your project evidence.
+
+**Different products. Same skills. No surprise final-day bar.**
+
+---
+
 # Kickoff: your product repository
 
 Approved proposal → your own public repo → three initial issues.

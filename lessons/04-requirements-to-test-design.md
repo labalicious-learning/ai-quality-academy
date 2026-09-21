@@ -40,3 +40,5 @@ Use `templates/test-charter.md`. A passing charter has risks tied to a harmed us
 Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Write acceptance criteria and a risk-ranked charter for your product. Include success, negative and boundary cases, the first three checks and any unresolved rules requiring instructor input.
 
 Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.
+
+As this session's project homework, finalize [the assessment agreement](../templates/project-assessment-agreement.md): concrete initial state, inputs, visible/saved results, reset and environment for each core case; map [all 21 rubric criteria](../AIQAA_RUBRIC.md) to evidence. The instructor confirms unresolved rules and equivalent routes before feature assessment. This formalizes existing requirements work; reuse the charter rather than adding a separate assignment.

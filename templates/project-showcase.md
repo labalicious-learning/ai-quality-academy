@@ -6,8 +6,8 @@ See [Session 12](../labs/12-defensible-qa-verdict.md). Prepare eight minutes of 
 
 1. **0–1 — Why:** audience, problem and approved scope.
 2. **1–4 — Show:** main journey with synthetic data; empty/error state, persistence, recovery and narrow-screen/keyboard behavior. Working software, not only slides.
-3. **4–6 — Prove:** one issue → branch → reviewed PR → fix, plus a meaningful regression. Explain a real defect you corrected.
-4. **6–7 — AI and business:** an AI mistake you caught, small-model workflow, spending/measurement limits and an artifact-informed business decision.
+3. **4–6 — Prove:** one issue → branch → reviewed PR → fix, plus a meaningful regression. Explain the project defect or preapproved, openly labeled negative control under Q2.
+4. **6–7 — AI and business:** independently challenged AI output under A2 (identify any approved negative-control route), small-model workflow, spending/measurement limits and an artifact-informed business decision.
 5. **7–8 — Handoff:** release, limits, next useful improvement and how another person runs it.
 
 ## Evidence index
@@ -15,7 +15,10 @@ See [Session 12](../labs/12-defensible-qa-verdict.md). Prepare eight minutes of 
 - Product repo URL and release tag/commit:
 - Demo URL or exact local setup/start instructions:
 - Approved requirements and progress index:
+- Approved assessment agreement version/SHA and [rubric](../AIQAA_RUBRIC.md) evidence map; unresolved cases identified honestly:
 - Issues and at least three substantive human review links:
+- Early plan, intermediate build, test/fix and release snapshots with reviewed SHAs:
+- One issue → branch → PR → feedback → fix → release chain I can explain:
 - Test charter, defect, red/green evidence and current CI:
 - Visual iterations and accessibility/responsive checks:
 - Data analysis, source log, decision memo and team update:
@@ -30,6 +33,6 @@ Rehearse from clean synthetic data on the documented platform. Freeze a candidat
 
 ## Afterward
 
-Record product improvements in your repo. Jared privately communicates completion or revisions and follow-up. Provide the name for your certificate through the private instructor process. Never commit certificates, identity mappings or completion decisions here.
+Record product improvements in your repo. Jared privately records separate decisions under [the credential policy](../CREDENTIALS.md): completion for finished course activities, and AIQAA certification for demonstrated product quality and skills. You may be course complete while certification needs further work; gaps get specific follow-up. Provide the name for your certificate through the private instructor process. Never commit certificates, identity mappings or completion decisions here.
 
 © 2026 Jared Cluff.

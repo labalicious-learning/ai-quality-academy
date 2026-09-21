@@ -14,7 +14,7 @@ Students retain rights in their original work. The course grants permission to u
 
 Follow [Product Studio](COURSE_PROJECT.md) and [the product GitHub workflow](PROJECT_GITHUB.md). Code, feature PRs and weekly milestone records live in each learner's own repo. Share full repository/PR URLs privately with the instructor and maintain a public-safe progress index there. The existing packet bot does not clone, run or follow links to product repositories.
 
-The optional Session 12 packet is an index/summary for the same intake structure, not a new application upload or a certificate request. Human product reviews and the presentation to Jared are arranged separately. No public certificate, identity mapping or completion decision. Practice packet acceptance is not a numeric graduation gate.
+The optional Session 12 packet is an index/summary for the same intake structure, not a new application upload or a certificate request. Human product reviews and the presentation to Jared are arranged separately. [Course completion and AIQAA certification](CREDENTIALS.md) are distinct: completion does not assert that product quality or GitHub skills met the certification standard. No public certificate, identity mapping or completion decision. Practice packet acceptance is not a numeric graduation gate.
 
 ## One packet per practice lab
 
@@ -54,7 +54,7 @@ Draft → public-safety/completeness check → peer reproduction → optional in
 
 The deterministic bot checks file limits, structure, common credential patterns and relative links without executing artifacts. Green means ready for human inspection, not correct or safe beyond doubt. AI review requires provider setup, separate student consent and instructor approval of the exact commit; otherwise peer and human review remain fully available. AI offers cited coaching, never grades or merges. It cannot claim to have run tests or inspected images.
 
-Revise on the same PR branch. Each commit gets its own review; acceptance of an old commit is not acceptance of a new one. Instructors record progress and completion decisions privately and merge only the reviewed public-safe packet. Do not post numeric grades or learner rankings.
+Revise on the same PR branch. Each commit gets its own review; acceptance of an old commit is not acceptance of a new one. Instructors record progress, course-completion and certification decisions privately and merge only the reviewed public-safe packet. Do not post numeric grades or learner rankings.
 
 Submission queue: https://github.com/labalicious-learning/lab-submissions/pulls
 

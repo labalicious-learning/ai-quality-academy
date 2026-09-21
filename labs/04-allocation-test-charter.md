@@ -39,7 +39,7 @@ Create a risk-based test charter that a manual tester, an automation engineer, a
 
 ## Deliverables and rubric
 
-Pass when risks are tied to people/business outcomes, not generic “test everything” language. For each coverage area, give either a requirement-backed observable result or an explicit clarification blocker with the decision owner and a conditional test. R8 deliberately leaves deposit/refund/concurrency rules unresolved: a well-scoped question earns full credit; an invented business rule does not. Label proposed criteria as proposals, not approved requirements. This is a design lab; no payment execution is required.
+Ready for review when risks are tied to people/business outcomes, not generic “test everything” language. For each coverage area, give either a requirement-backed observable result or an explicit clarification blocker with the decision owner and a conditional test. R8 deliberately leaves deposit/refund/concurrency rules unresolved: a well-scoped question demonstrates good reasoning; an invented business rule does not. Label proposed criteria as proposals, not approved requirements. This is a design lab; no payment execution or separate learner examination is required.
 
 ## Stretch
 

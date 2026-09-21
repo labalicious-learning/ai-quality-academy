@@ -3,6 +3,7 @@
 Copy to `docs/milestone-NN.md` in your product repo; index it in `docs/progress.md`. See [the milestone map](../COURSE_PROJECT.md).
 
 - Goal and acceptance criteria:
+- Assessment agreement version, case IDs and [rubric criterion IDs](../AIQAA_RUBRIC.md) supported by this milestone:
 - Issue, branch, PR URL and exact reviewed commit:
 - What works; what remains design only:
 - Evidence: steps, synthetic input, expected/actual result, artifact paths:
@@ -12,6 +13,8 @@ Copy to `docs/milestone-NN.md` in your product repo; index it in `docs/progress.
 - Important AI correction or rejected suggestion and why:
 - Milestone and cumulative cost, or “not measured” with reason:
 - Human feedback and resulting change (no private notes):
+- How this diff advances the previous milestone; one GitHub decision I can explain:
+- Commit/PR history retained; squash/rebase/offline-work context if relevant:
 - Business/QA lesson applied:
 - Next small issue and instructor question:
 - Public-safety check: files, screenshots, diff, data and licenses inspected:

@@ -4,6 +4,10 @@ import http from 'node:http';
 import assert from 'node:assert/strict';
 import puppeteer from 'puppeteer-core';
 import {pathToFileURL} from 'node:url';
+import {checkLearningPath} from './check-path.mjs';
+import {checkReviewAndExample} from './check-review.mjs';
+import {checkHandouts} from './check-handouts.mjs';
+import {checkToday} from './check-today.mjs';
 const root=path.resolve(import.meta.dirname,'../dist');
 async function walk(dir){const files=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
 let links=0;
@@ -20,7 +24,7 @@ const server=http.createServer(async(req,res)=>{
   if(!u.pathname.startsWith('/academy/')){res.writeHead(404);return res.end();}
   const file=path.resolve(root,decodeURIComponent(u.pathname.slice('/academy/'.length)) || 'index.html');
   if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end();}
-  try{const body=await readFile(file);const type={'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml'}[path.extname(file)] || 'application/octet-stream';res.writeHead(200,{'Content-Type':type});res.end(body);}catch{res.writeHead(404);res.end();}
+  try{const body=await readFile(file);const type={'.html':'text/html','.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml'}[path.extname(file)] || 'application/octet-stream';res.writeHead(200,{'Content-Type':type});res.end(body);}catch{res.writeHead(404);res.end();}
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 let browser;
@@ -37,10 +41,15 @@ try{
  const base='http://127.0.0.1:'+server.address().port+'/academy/';
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await mkdir(path.join(root,'review'),{recursive:true});
+ let slides=0;
+ if(!process.argv.includes('--path-only')){
  for(const width of [1440,375]){
   await page.setViewport({width,height:1000});await page.goto(base);
   assert.equal(await page.$$eval('.session',s=>s.length),13);
   assert.equal(await page.$$eval('.project-spotlight',s=>s.length),1);
+  assert.equal(await page.$$eval('.enrollment',s=>s.length),1);
+  assert.equal(await page.$eval('.enrollment .button',a=>a.getAttribute('href')),'SIGNUP.html');
+  assert.equal(await page.$eval('.top a[href$="SIGNUP.html"]',a=>a.textContent),'Course signup');
   assert.equal(await page.$eval('.project-spotlight .button',a=>a.getAttribute('href')),'COURSE_PROJECT.html');
   assert.equal(await page.$eval('.top a[href$="COURSE_PROJECT.html"]',a=>a.textContent),'Your project');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'homepage horizontal overflow');
@@ -48,9 +57,13 @@ try{
  }
  await page.type('#course-search','Codex');
  assert.ok((await page.$$eval('.session:not(.hidden)',s=>s.length))<13);
+ await page.goto(base+'SIGNUP.html');
+ const signupConfig=JSON.parse(await readFile(path.resolve(root,'../site.config.json'),'utf8'));
+ assert.equal(await page.$eval('main a[href^="https://docs.google.com/forms/"]',a=>a.href),signupConfig.signupUrl);
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'signup page mobile overflow');
  await page.goto(base+'labs/00-course-setup.html');
  assert.ok((await page.$eval('h1',e=>e.textContent)).includes('Session 00'));
- for(const doc of ['COURSE_PROJECT','PROJECT_IDEAS','PROJECT_GITHUB','SMALL_MODEL_GUIDE']){
+ for(const doc of ['COURSE_PROJECT','PROJECT_IDEAS','PROJECT_GITHUB','SMALL_MODEL_GUIDE','CREDENTIALS','AIQAA_RUBRIC','AIQAA_CALIBRATION','AIQAA_DECISION_TOOL','templates/project-assessment-agreement','templates/aiqaa-evidence-review','templates/course-completion-certificate','templates/aiqaa-certificate','templates/aiqaa-certification-review']){
   for(const width of [1440,375]){
    await page.setViewport({width,height:1000});await page.goto(base+doc+'.html');
    assert.ok(await page.$('h1'),'project document heading: '+doc);
@@ -78,12 +91,17 @@ try{
   assert.equal(await page.$$eval('#reader-content script,#reader-content img,#reader-content a[href^="javascript:"]',e=>e.length),0);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'reader mobile overflow');
  }
- let slides=0;
  for(const file of await readdir(path.join(root,'slides'))){
    await page.goto(base+'slides/'+file);
    const results=await page.$$eval('section',ss=>ss.map(s=>({over:s.scrollHeight>s.clientHeight+2 || s.scrollWidth>s.clientWidth+2})));
    assert.ok(!results.some(s=>s.over),'slide overflow: '+file);slides+=results.length;
  }
  assert.deepEqual(errors,[]);
- console.log(JSON.stringify({localLinks:links,sessions:13,slides,mobile:'passed',search:'passed',markdownReader:'online and offline passed',pageErrors:0}));
+ }
+ const today=await checkToday(browser,base,root);
+ const learningPath=await checkLearningPath(browser,base,root);
+ const reviewAndExample=await checkReviewAndExample(browser,base,root);
+ const handouts=await checkHandouts(browser,base,root);
+ const pathOnly=process.argv.includes('--path-only');
+ console.log(JSON.stringify({localLinks:links,sessions:13,slides:pathOnly?null:slides,mobile:'passed',search:pathOnly?'not run (path-only)':'passed',markdownReader:pathOnly?'not run (path-only)':'online and offline passed',today,learningPath,reviewAndExample,handouts,pageErrors:0}));
 }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}

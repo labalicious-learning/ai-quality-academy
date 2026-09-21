@@ -33,7 +33,7 @@ Use sandbox/starter.spec.mjs and runtime CANDIDATE values buggy and fixed. Prein
 
 ## Formative coaching
 
-Builder route: the same check must fail Candidate A and pass Candidate B with stable selectors and a meaningful name. Foundation route: grade a precise unexecuted assertion design, predicted A/B results and limits. Do not demand fabricated logs; record actual execution as a later supervised milestone.
+Builder route: the same check must fail Candidate A and pass Candidate B with stable selectors and a meaningful name. Foundation route: review a precise unexecuted assertion design, predicted A/B results and limits. Do not demand fabricated logs; record actual execution as a later supervised milestone.
 
 ## Product Studio connection — Protect your progress
 

@@ -9,6 +9,9 @@
 Each learner can find the course, sign into their own GitHub account, obtain a local copy, run the simulation, and use Codex or an approved compatible client to explain one file. They distinguish GitHub login, AI client/host access and local server startup. A local-model route need not involve an AI account login.
 
 ## Instructor preflight
+
+During the existing course-navigation activity, show **My learning path** in the site navigation. Learners may privately track lessons, project milestones, evidence and feedback using [the planner guide](../LEARNING_PATH.md). Demonstrate export/restore and explain shared-browser privacy; self-tracked progress is not instructor approval or certification. No added lesson time or assessed deliverable.
+
 Use the [Mac/Linux/Windows platform guide](../PLATFORM_GUIDE.md). Demonstrate ZIP extraction and the editor's Open Folder → New Terminal route on all three platforms. GitHub Desktop is optional and Mac/Windows-only; Linux uses ZIP or Git CLI. Check PowerShell's npm.cmd fallback and record each learner's OS/shell/browser. Do not score installation speed or ownership of a particular OS.
 
 Confirm the published repository URL is set in the site configuration. Test on the operating systems in the cohort. Arrange approved AI seats before class; do not promise free access. Verify relevant age/account eligibility and school/guardian arrangements through the provider's current terms for your cohort. No shared instructor password. Prepare a paired/browser-reading route for restricted school devices.

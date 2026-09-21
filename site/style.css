@@ -22,4 +22,6 @@ select:focus-visible{outline:3px solid #bb5a24;outline-offset:5px}
 .project-spotlight .project-budget{grid-column:1/-1;border-top:1px solid #536971;padding-top:18px;font-size:14px}
 .document{overflow-wrap:anywhere}
 .document pre{overflow-wrap:normal}
+.enrollment{margin:0 0 32px;background:#e5eee8}.enrollment .actions{align-items:center;margin-top:18px}.enrollment .actions>a:not(.button){font-size:14px}.enrollment p:last-child{font-size:14px;color:var(--muted)}
 @media(max-width:700px){.project-spotlight{grid-template-columns:1fr;padding:24px}.project-path{margin-top:10px}}
+.skip-link{position:fixed;top:10px;left:16px;z-index:1000;padding:12px 20px;background:#fff;color:#126b62;border:2px solid #126b62;border-radius:8px;transform:translateY(-180%)}.skip-link:focus{transform:none}:is(summary,textarea):focus-visible{outline:3px solid #bb5a24;outline-offset:4px}

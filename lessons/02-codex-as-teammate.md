@@ -29,10 +29,14 @@ Preflight clients before class using [the small-model guide](../SMALL_MODEL_GUID
 | 40–50 | Product kickoff part 1: confirm approval, create own public repo and initial issues. Unapproved pitches receive scope coaching; no product implementation yet. |
 | 50–60 | Break. |
 | 60–95 | Codebase Detective lab in pairs; inspect claims and run a check. Switch roles after planning. |
-| 95–115 | Product kickoff part 2: create topic branch, sanitized README/proposal PR and focused review request. Coaches check selected model/host and budget records; finish pending human review after class. |
+| 95–115 | Product kickoff part 2: create topic branch, sanitized README/proposal PR and focused review request. Coaches check model/host and budget records, capture the kickoff PR/head SHA, and explain how genuine history supports certification; finish pending human review after class. |
 | 115–120 | Each learner identifies their first small product task, verification step and next review. |
 
+Read [the certification evidence standard](../CREDENTIALS.md). In the existing kickoff, show why a focused diff, linked issue and review response matter more than commit counts. Record the first checkpoint; do not introduce an extra exam or extend the agenda.
+
 ## Teaching notes
+
+Start [the assessment agreement](../templates/project-assessment-agreement.md) from the approved proposal: scope, environments and evidence routes for all rubric areas. Exact acceptance cases are finalized with the instructor during Session 04; no one needs to invent a full test suite at kickoff.
 
 Use practical repository habits: provide relevant file paths and docs, split work into bounded tasks, keep repository instructions current, and run the project’s verification commands after a change. Modern Codex workflows support durable project context and tool-connected tasks; the course keeps human review and explicit boundaries at the center.
 

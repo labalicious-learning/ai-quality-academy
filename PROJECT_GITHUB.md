@@ -127,6 +127,12 @@ This runs **your own** project checks on a hosted runner with read-only reposito
 
 CI on Linux is not evidence of Windows or Mac success. Test locally on your documented OS and arrange cross-platform checks with classmates; record actual outcomes and remaining limits. Add a three-OS matrix only when it supports your approved product and budget. No particular operating system earns preference.
 
+## Development history is certification evidence
+
+[Course completion and AIQAA certification](CREDENTIALS.md) are separate. Certification reviews both your software and how you built it. Preserve early planning, an intermediate working slice, test/fix iterations and release preparation in actual commits, PRs and instructor checkpoints. Explain a real issue-to-release chain, the diff, feedback and check; no surprise Git command quiz.
+
+Do not optimize for a commit count or manufacture history after finishing the app. Squash merges are fine when discussion, changes and reviewed revisions remain traceable. Record genuine offline work and explain cleanup of reviewed history. Missing evidence needs real further iteration and review, not fake backdated milestones.
+
 ## Submission and release
 
 The lab-submissions repo remains for **practice packets**; the product repo is the source of truth for software, history and milestones. Follow [the submission guide](SUBMISSIONS.md) for the optional Session 12 summary/index packet. Existing bots do not follow your project links or run your code. A successful packet check is not product review.

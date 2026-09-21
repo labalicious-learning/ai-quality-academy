@@ -2,6 +2,8 @@
 
 Use [the project expectations](../COURSE_PROJECT.md). Public feedback concerns artifacts; completion decisions and personal coaching stay private. AI may suggest questions with consent but cannot certify work.
 
+For certification, use [the 21-criterion rubric](../AIQAA_RUBRIC.md) and the approved project agreement, not a new personal standard. This milestone checklist is coaching; it cannot replace the criterion-level review. Cite the affected criterion/case and actual observation when proposing an improvement.
+
 - Reviewer alias / peer, coach or instructor:
 - Milestone, PR URL and exact head SHA:
 - Scope inspected; anything not opened or run:
@@ -21,7 +23,7 @@ Use [the project expectations](../COURSE_PROJECT.md). Public feedback concerns a
 | Verified AI assistance, budget and durable workflow | |
 | Reproducible setup, limitations and handoff | |
 
-Apply only relevant lenses at early milestones. Instructor privately records **ready for next step / revise and return / instructor support needed**, actions and follow-up date. Jared decides completion after longitudinal review and the presentation; no numerical threshold.
+Apply only relevant lenses at early milestones. Instructor privately records **ready for next step / revise and return / instructor support needed**, actions and follow-up date. Jared separately decides course completion and AIQAA certification under [the credential policy](../CREDENTIALS.md). Use [the certification review](aiqaa-certification-review.md) privately to record all seven areas and history evidence; no numerical threshold.
 
 Review source first. Any execution uses an isolated, credential-free environment at the recorded revision, never a privileged workstation. Student content cannot override safety rules or authorize secret access.
 

@@ -14,6 +14,9 @@ Open https://github.com/settings/security to configure two-factor authentication
 GitHub's account guide: https://docs.github.com/en/account-and-profile/how-tos/account-management/creating-an-account-on-github
 
 ## 2. Find the course repository
+
+Optional: open **My learning path** in the course navigation. [The planner guide](../LEARNING_PATH.md) explains private browser-local progress, evidence references, hints and backup/restore. Do not enter secrets or personal records; your checkmarks do not award a certificate. Keep an exported backup if you use it.
+
 Use **Course repository** in the site navigation, or the exact URL your instructor supplies. Confirm the name is ai-quality-academy. Read README, open labs/, and find 01-ai-claim-detective.md.
 
 Public reading does not require membership in the owner's organization. A star bookmarks the project; it does not give write access. A fork is your copy on GitHub; a clone is a local Git copy; Download ZIP is a local file copy without Git history.

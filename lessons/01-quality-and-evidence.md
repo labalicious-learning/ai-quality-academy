@@ -13,7 +13,7 @@
 - write a defect report another person can reproduce;
 - use an AI assistant without treating its answer as proof; and
 - name data/actions that are off limits in a training environment; and
-- pitch a right-sized individual product and explain how completion will be reviewed.
+- pitch a right-sized product and distinguish course completion from evidence-based AIQAA certification.
 
 ## Instructor preparation
 
@@ -26,7 +26,7 @@ Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support
 | 0–10 | Arrival: a beautiful but wrong AI answer. Would you ship it? Explain why. |
 | 10–25 | Observation → hypothesis → finding → recommendation. Classify a few statements; confidence is not evidence. |
 | 25–35 | Demo a sourced bug summary and identify unsupported claims. |
-| 35–50 | Introduce Product Studio: individual product, own public repo, weekly reviews, visual quality and final presentation to Jared. No separate exam. Explore the idea bank and modest scope. |
+| 35–50 | Introduce Product Studio and [both awards](../CREDENTIALS.md): completion for finished learning activities; AIQAA certification for product quality, development history and GitHub skills. Own repo, weekly reviews and final presentation to Jared; no separate exam. Explore the idea bank and modest scope. |
 | 50–60 | Break. |
 | 60–95 | Run the evidence lab in pairs; switch driver/verifier halfway. |
 | 95–105 | Peer review: identify one claim missing proof and improve it. |
@@ -34,6 +34,8 @@ Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support
 | 115–120 | Ungraded reflection: one evidence rule, one safety boundary and next step for the pitch. |
 
 ## Teaching notes
+
+In the existing Product Studio discussion, show [the rubric](../AIQAA_RUBRIC.md) and one [cross-project example](../AIQAA_CALIBRATION.md): the skills standard stays fixed; the expected product behavior is agreed early. The project is the certification assessment, with no separate test. Learners need the roadmap today, not memorization of 21 criteria.
 
 Keep the first session human-centered: good QA protects a customer from a bad experience and protects a team from bad decisions. Do not introduce prompt tricks as the core skill. The core skill is calibrated judgment.
 

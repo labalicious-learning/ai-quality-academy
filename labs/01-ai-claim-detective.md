@@ -39,9 +39,11 @@ Classify each claim as **proven**, **plausible but unproven**, or **unsupported*
 
 ## Success rubric
 
-| 0 points | 1 point | 2 points |
+| Needs another look | Making progress | Ready for review |
 | --- | --- | --- |
 | Claims accepted/rejected by intuition | Some sources cited | Every claim has a precise evidence-based classification and limitation |
+
+Use these descriptions for coaching, not a numeric grade or separate certification test. Choose the next evidence improvement with your reviewer.
 
 ## Stretch
 

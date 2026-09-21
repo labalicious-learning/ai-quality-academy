@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="assets/path.css">
+<h1>Prepare a project review</h1>
+<p class="path-lead">Give your reviewer a clear question, a frozen version and evidence they can inspect.</p>
+<aside class="path-notice"><strong>Private preparation → deliberate sharing.</strong> Nothing is uploaded or posted. This creates a project-review note, not a complete <a href="SUBMISSIONS.html">lab submission</a>, grade or certificate. Your planner feedback stays out. Links and commits are not fetched or verified.</aside>
+<p class="path-links"><a href="my-path.html">← My learning path</a><a href="EXAMPLE_PROJECT.html">See a worked example</a><a href="LEARNING_PATH.html">Privacy and backup guide</a></p>
+<noscript>This local tool requires JavaScript. Use the <a href="templates/project-review.html">project review template</a> instead.</noscript>
+<div id="review-app" hidden>
+<p id="review-status" role="status" aria-live="polite">Start with a milestone. Only choose evidence you intend to share.</p>
+<form id="review-form" class="path-panel">
+<h2>1 · Freeze the context</h2>
+<div class="path-form-grid">
+<label>Project milestone<select name="session" id="review-session" required></select></label>
+<label>Public project repository URL<input name="repo" type="url" maxlength="2000" placeholder="https://github.com/your-alias/your-project" required></label>
+<label>Course commit (full SHA)<input name="courseSha" maxlength="40" minlength="40" pattern="[a-fA-F0-9]{40}" required></label>
+<label>Project commit (full SHA)<input name="projectSha" maxlength="40" minlength="40" pattern="[a-fA-F0-9]{40}" required></label>
+</div>
+<p>In each trusted local repository, run <code>git rev-parse HEAD</code>. Confirm the project commit is pushed and contains the evidence you reference. A SHA alone does not prove that work was reviewed.</p>
+<h2>2 · Tell the reviewer what matters</h2>
+<p>Use fictional data and repository-relative artifact paths. Be specific and honest: “not run yet” is better than an invented result. These fields will all be shared.</p>
+<div id="review-narrative" class="path-form-grid"></div>
+<h2>3 · Choose evidence explicitly</h2>
+<p id="review-source-status" role="status"></p>
+<p>References come from saved planner entries for this milestone. None are selected automatically. Notes remain private unless you tick their separate inclusion box. Linked files must also be inspected for public safety.</p>
+<div id="review-evidence"></div>
+<button type="submit">Generate preview</button>
+</form>
+<aside class="path-notice"><p id="review-draft-status" role="status">Unfinished public-facing fields can be recovered in this browser. Evidence choices and sharing approval are never recovered.</p><button id="review-discard" type="button">Discard these form drafts</button></aside>
+<section class="path-panel" aria-labelledby="review-preview-title">
+<h2 id="review-preview-title">4 · Inspect the exact Markdown</h2>
+<p>The privacy check only catches some obvious mistakes. Read every line and inspect linked content yourself. Local drafts are plaintext browser data, not encrypted storage.</p>
+<label>Generated project-review note<textarea id="review-preview" rows="22" readonly placeholder="Your preview appears here after validation."></textarea></label>
+<label class="path-check"><input id="review-ack" type="checkbox" disabled>I inspected this exact note and its referenced artifacts, removed private information, and approve downloading it for review.</label>
+<button id="review-download" type="button" disabled>Download project-review.md</button>
+<p>Download is not submission. Inspect the saved file, then attach it to your project’s review PR or use the instructor-approved channel. The normal lab intake still requires its manifest, evidence files and AI-use note.</p>
+</section>
+</div>
+<script src="assets/path-core.js"></script>
+<script src="assets/review-core.js"></script>
+<script src="assets/form-drafts.js"></script>
+<script src="assets/review.js"></script>

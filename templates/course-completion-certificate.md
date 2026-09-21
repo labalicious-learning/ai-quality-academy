@@ -2,7 +2,7 @@
 
 ## Labalicious — AI & QA Academy
 
-This certifies that **[learner's privately supplied certificate name]** has completed the course through an individually built, AI-assisted software project, ongoing instructor review and a final product presentation.
+This recognizes that **[learner's privately supplied certificate name]** has completed the Labalicious AI & QA Academy learning activities, including individual project work and presentation, or approved equivalent activities.
 
 **Project:** [product title]
 
@@ -12,10 +12,10 @@ This certifies that **[learner's privately supplied certificate name]** has comp
 
 **Signature:** [Jared's signature, added privately after approval]
 
-This recognizes course completion, not professional licensure or certification of expert performance.
+This recognizes course completion only. It does **not** confer Labalicious Certified AIQAA status or certify that the product met the separate skills-certification standard.
 
 ---
 
-Instructor template only. Copy into approved private storage before filling, sign only after Jared's completion decision, and deliver privately. Never commit a filled certificate or learner identity mapping. Public sharing or marketing reuse requires a separate choice. Remove this instruction paragraph from the privately issued copy.
+Instructor template only. Apply [the two-award policy](../CREDENTIALS.md). Copy into approved private storage before filling, sign after Jared's course-completion decision, and deliver privately. Certification may remain not yet demonstrated. Never commit a filled certificate or learner identity mapping. Public sharing or marketing reuse requires a separate choice. Remove this instruction paragraph from the privately issued copy.
 
 © 2026 Jared Cluff.

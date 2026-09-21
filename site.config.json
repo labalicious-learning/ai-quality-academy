@@ -2,5 +2,7 @@
   "title": "Labalicious Academy",
   "repository": "labalicious-learning/ai-quality-academy",
   "domain": "learn.labalicious.com",
+  "publicSchedule": [],
+  "signupUrl": "https://docs.google.com/forms/d/e/1FAIpQLScVJesx9_APnWuo5c6mMMG6k1hFAt6tNbSn5w_PtmiTLFGgbg/viewform",
   "description": "Learn to work with AI. Build judgment. Prove the result."
 }
