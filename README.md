@@ -6,6 +6,8 @@ Repository destination: https://github.com/labalicious-learning/ai-quality-acade
 
 ## Course signup
 
+Sharing the course with prospective learners? The build includes a standalone `training.html` brochure. See [the brochure and email guide](MARKETING.md) for preview, publication checks and invitation copy.
+
 Interested in an instructor-led cohort? See [signup and calendar details](SIGNUP.md). Dates are pending; submitting interest does not confirm enrollment. The public lessons and local labs remain available without signing up.
 
 ## My learning path

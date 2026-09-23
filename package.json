@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node sandbox/server.mjs",
-    "test": "node --test sandbox/*.test.mjs scripts/aiqaa-decision.test.mjs scripts/path.test.mjs scripts/review.test.mjs scripts/signup.test.mjs scripts/today.test.mjs examples/shift-garden/core.test.mjs",
+    "test": "node --test sandbox/*.test.mjs scripts/aiqaa-decision.test.mjs scripts/path.test.mjs scripts/review.test.mjs scripts/signup.test.mjs scripts/today.test.mjs scripts/training.test.mjs examples/shift-garden/core.test.mjs",
+    "check:training": "node scripts/check-training.mjs",
     "example": "node scripts/serve-example.mjs",
     "test:path": "node --test scripts/path.test.mjs",
     "check:path": "node scripts/check-site.mjs --path-only",
