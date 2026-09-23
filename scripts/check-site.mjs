@@ -8,6 +8,7 @@ import {checkLearningPath} from './check-path.mjs';
 import {checkReviewAndExample} from './check-review.mjs';
 import {checkHandouts} from './check-handouts.mjs';
 import {checkToday} from './check-today.mjs';
+import {checkTraining} from './check-training.mjs';
 const root=path.resolve(import.meta.dirname,'../dist');
 async function walk(dir){const files=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
 let links=0;
@@ -99,9 +100,10 @@ try{
  assert.deepEqual(errors,[]);
  }
  const today=await checkToday(browser,base,root);
+ const training=await checkTraining(browser,base,root);
  const learningPath=await checkLearningPath(browser,base,root);
  const reviewAndExample=await checkReviewAndExample(browser,base,root);
  const handouts=await checkHandouts(browser,base,root);
  const pathOnly=process.argv.includes('--path-only');
- console.log(JSON.stringify({localLinks:links,sessions:13,slides:pathOnly?null:slides,mobile:'passed',search:pathOnly?'not run (path-only)':'passed',markdownReader:pathOnly?'not run (path-only)':'online and offline passed',today,learningPath,reviewAndExample,handouts,pageErrors:0}));
+ console.log(JSON.stringify({localLinks:links,sessions:13,slides:pathOnly?null:slides,mobile:'passed',search:pathOnly?'not run (path-only)':'passed',markdownReader:pathOnly?'not run (path-only)':'online and offline passed',today,training,learningPath,reviewAndExample,handouts,pageErrors:0}));
 }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}
