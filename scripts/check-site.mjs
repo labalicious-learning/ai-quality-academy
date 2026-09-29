@@ -50,6 +50,9 @@ try{
   assert.equal(await page.$$eval('.enrollment',s=>s.length),1);
   assert.equal(await page.$eval('.enrollment .button',a=>a.getAttribute('href')),'SIGNUP.html');
   assert.equal(await page.$eval('.top a[href$="SIGNUP.html"]',a=>a.textContent),'Course signup');
+  assert.equal(await page.$eval('.top a[href$="DISCORD.html"]',a=>a.textContent),'Discord & help');
+  assert.equal(await page.$eval('.discord-community a',a=>a.getAttribute('href')),'DISCORD.html');
+  assert.match(await page.$eval('#discord-title',e=>e.textContent),/Zoom for classes\. Discord for coaching\./);
   assert.equal(await page.$eval('.project-spotlight .button',a=>a.getAttribute('href')),'COURSE_PROJECT.html');
   assert.equal(await page.$eval('.top a[href$="COURSE_PROJECT.html"]',a=>a.textContent),'Your project');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'homepage horizontal overflow');
@@ -61,6 +64,14 @@ try{
  const signupConfig=JSON.parse(await readFile(path.resolve(root,'../site.config.json'),'utf8'));
  assert.equal(await page.$eval('main a[href^="https://docs.google.com/forms/"]',a=>a.href),signupConfig.signupUrl);
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'signup page mobile overflow');
+ for(const width of [1440,375]){
+  await page.setViewport({width,height:1000});await page.goto(base+'DISCORD.html');
+  assert.match(await page.$eval('main',e=>e.textContent),/Zoom for classes\. Discord for coaching\./);
+  assert.equal(await page.$$eval('main a[href^="https://discord.com/channels/"]',a=>a.length),7);
+  assert.equal(await page.$$eval('iframe',a=>a.length),0);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Discord guide overflow at '+width);
+  await page.screenshot({path:path.join(root,'review/discord-'+width+'.png'),fullPage:true});
+ }
  await page.goto(base+'labs/00-course-setup.html');
  assert.ok((await page.$eval('h1',e=>e.textContent)).includes('Session 00'));
  for(const doc of ['COURSE_PROJECT','PROJECT_IDEAS','PROJECT_GITHUB','SMALL_MODEL_GUIDE','CREDENTIALS','AIQAA_RUBRIC','AIQAA_CALIBRATION','AIQAA_DECISION_TOOL','templates/project-assessment-agreement','templates/aiqaa-evidence-review','templates/course-completion-certificate','templates/aiqaa-certificate','templates/aiqaa-certification-review']){

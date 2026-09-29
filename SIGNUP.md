@@ -14,6 +14,10 @@ Build useful software with AI, practice QA, and learn with instructor feedback a
 
 If Google asks you to sign in or the form is unavailable, contact your instructor through your existing private course channel. Do not post your email address or signup details in a public GitHub issue. A Google sign-in prompt alone does not confirm that your account has permission to respond.
 
+## Discord and optional office hours
+
+**Zoom for classes; invitation-only Discord for coaching.** Zoom meeting details are shared privately with approved learners. Read [Discord access, course channels and office hours](DISCORD.md). After enrollment approval, request the server invitation through your existing private instructor contact. Jared verifies enrollment before assigning Learner access. Discord membership does not reserve a seat, send calendar invitations or replace the course submission workflow. Public lessons remain available without Discord.
+
 ## Keep private information private
 
 Signup details are handled separately from the public course repository. Read the form's privacy and course-communications notice before submitting. Do not put personal details, passwords, credentials, private feedback, or real customer data in public coursework. Contact your instructor privately for signup corrections or withdrawal.

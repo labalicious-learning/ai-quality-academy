@@ -10,6 +10,8 @@ Interested in an instructor-led cohort? See [signup and calendar details](SIGNUP
 
 ## My learning path
 
+**Zoom for classes; invitation-only Discord for coaching.** See [Discord and optional office hours](DISCORD.md) for enrollment-based access, channel links and safe screen sharing. Meeting details and server invitations are shared privately. Public lessons do not require Discord.
+
 The planner now opens to **Today**: your next action, preparation and project milestone, with evidence, feedback, progress and backup tools in expandable sections. Existing saved progress remains compatible. Public class dates appear in the learner's local timezone only after the instructor publishes them; the default is **Dates not announced yet**.
 
 Each published lab now includes a session guide: purpose, evidence target, preparation links, a short recall prompt, a supported route and direct links to its activity, deliverables, lesson and slides. Long handouts have section navigation and keyboard skip links. Start with [learner support](LEARNER_SUPPORT.md) if you are blocked or catching up. These aids add no exam, paid service or required worksheet.

@@ -21,6 +21,8 @@ Use **Course repository** in the site navigation, or the exact URL your instruct
 
 Public reading does not require membership in the owner's organization. A star bookmarks the project; it does not give write access. A fork is your copy on GitHub; a clone is a local Git copy; Download ZIP is a local file copy without Git history.
 
+For instructor-led cohorts, find **Discord & help** in the site navigation or open the [Discord guide](../DISCORD.md). Request an invitation privately, then wait for Jared to verify enrollment and assign Learner access. Check that you can find ask-for-help and Office Hours. If access is pending, record the blocker privately and continue the local setup; Discord access is not a new assessed deliverable.
+
 ## 3. Install the local tools
 Node.js: https://nodejs.org/en/download — install a supported LTS version, version 22 or newer.
 Optional GitHub Desktop (macOS/Windows only): https://desktop.github.com/download/
