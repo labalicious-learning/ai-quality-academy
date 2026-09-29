@@ -25,6 +25,8 @@ These routes change scaffolding, not the approved project criteria. No route aut
 
 ## Ask for help with a useful packet
 
+Approved cohort members can use **ask-for-help** in [our Discord](DISCORD.md). The guide explains access, optional Thursday/Saturday office hours, safe screen sharing, and written alternatives when voice is not suitable. For personal, enrollment or safety concerns, use your existing private instructor contact—not a course thread or public GitHub issue.
+
 Send only the minimum safe context through the instructor-approved channel:
 
 ```text

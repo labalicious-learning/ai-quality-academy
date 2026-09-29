@@ -10,6 +10,8 @@ Each learner can find the course, sign into their own GitHub account, obtain a l
 
 ## Instructor preflight
 
+During the existing course-navigation activity, show [Discord & help](../DISCORD.md): how to request an invitation privately, why new arrivals see only welcome, where to ask questions, and how to find optional office hours. Demonstrate sharing one safe application window while the learner retains keyboard/mouse control. Offer written help when voice or account access is unsuitable; do not add lesson time or make Discord an assessment requirement.
+
 During the existing course-navigation activity, show **My learning path** in the site navigation. Learners may privately track lessons, project milestones, evidence and feedback using [the planner guide](../LEARNING_PATH.md). Demonstrate export/restore and explain shared-browser privacy; self-tracked progress is not instructor approval or certification. No added lesson time or assessed deliverable.
 
 Use the [Mac/Linux/Windows platform guide](../PLATFORM_GUIDE.md). Demonstrate ZIP extraction and the editor's Open Folder → New Terminal route on all three platforms. GitHub Desktop is optional and Mac/Windows-only; Linux uses ZIP or Git CLI. Check PowerShell's npm.cmd fallback and record each learner's OS/shell/browser. Do not score installation speed or ownership of a particular OS.
