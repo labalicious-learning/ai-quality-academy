@@ -4,7 +4,9 @@ Build useful software with AI, practice QA, and learn with instructor feedback a
 
 **Schedule pending.** This is an interest/signup form, not a confirmed course place. Dates have not been announced here.
 
-[Open the student signup form on Google Forms](https://docs.google.com/forms/d/e/1FAIpQLScVJesx9_APnWuo5c6mMMG6k1hFAt6tNbSn5w_PtmiTLFGgbg/viewform)
+[Apply for Round 1 — 10 student places](https://docs.google.com/forms/d/e/1FAIpQLScqYZ0fUAQ9H3da6v82KcInl-smJgai3-iCh2nMUHT0Teb65g/viewform)
+
+The first signup round has 10 places. A second round of 5 places will open later; the cohort has 15 student places total. Submitting this form requests instructor review and does not reserve a seat. Please submit once, even if you see another signup link.
 
 ## What happens next
 
