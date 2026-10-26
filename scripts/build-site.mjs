@@ -89,7 +89,8 @@ for(const name of (await readdir('decks')).filter(n=>n.endsWith('.md')).sort()){
  for(const ext of ['pdf','pptx']){try{await stat(path.join(out,ext,slug+'.'+ext));downloadFiles.push(ext+'/'+slug+'.'+ext);}catch{}}
  const classId=name.slice(0,2);
  const lesson='lessons/'+name,labPath='labs/'+lab;
- const resources=collectResources([[lesson,readerDocs[lesson]],[labPath,readerDocs[labPath]]],sessionGuides[id].prep,new Set(docs));
+ const collected=collectResources([[lesson,readerDocs[lesson]],[labPath,readerDocs[labPath]]],sessionGuides[id].prep,new Set(docs));
+ const resources=[...new Set([...sessionGuides[id].prep.filter(f=>collected.includes(f)),...collected])];
  await writeFile(path.join(out,'sessions',classId+'.html'),document('Session '+classId+' materials',sessionBody({id:classId,title,guide:sessionGuides[id],lab:labPath,lesson,resources,titles,downloads:downloadFiles}),'../'));
  classLinks.push('<li><a href="sessions/'+classId+'.html">Session '+classId+' · '+escape(title)+'</a></li>');
  cards.push('<article class="session"><span class="num">'+classId+'</span><span class="meta">2 hours · '+(id===0?'Setup':'Hands-on')+'</span><h3>'+escape(title)+'</h3><p>'+descriptions[id]+'</p><nav><a class="class-materials-link" href="sessions/'+classId+'.html">All class materials →</a><a href="labs/'+lab.replace('.md','.html')+'">Open lab →</a><a href="slides/'+slug+'.html">Slides</a><a href="lessons/'+slug+'.html">Lesson plan</a></nav>'+(downloads?'<div class="downloads">Download: '+downloads+'</div>':'')+'</article>');
