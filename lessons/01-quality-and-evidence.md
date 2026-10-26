@@ -17,6 +17,8 @@
 
 ## Instructor preparation
 
+Use the [Session 01 teaching guide](../instructor/01-teaching-guide.md) for the opening, staged evidence demonstration, safety wording and recording checklist. Pre-open all linked materials before class; keep the existing two-hour agenda and hands-on time.
+
 Use fixtures/claim-packet.md and the evidence-packet template. E01–E05 support three claim classifications. Capture an analogous local screenshot separately; no database record or console export is supplied. Prepare a few fact/inference/question statements. Read [Product Studio](../COURSE_PROJECT.md), [20 ideas](../PROJECT_IDEAS.md) and the proposal template. Show a simple polished fictional app concept, an oversized proposal and how to cut scope. Arrange proposal review appointments before Session 02; don't require all individual pitches during class.
 
 ## Agenda

@@ -98,6 +98,26 @@ try{
  }
  assert.deepEqual(errors,[]);
  }
+ for(const width of [1440,375]){
+  await page.setViewport({width,height:1000});
+  await page.goto(base+'materials.html');
+  assert.equal(await page.$$eval('main a[href^="sessions/"]',a=>a.length),13);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'materials index overflow');
+  for(let id=0;id<13;id++){
+   const key=String(id).padStart(2,'0');
+   await page.goto(base+'sessions/'+key+'.html');
+   for(const section of ['students','teachers','recordings'])assert.ok(await page.$('#'+section),'class section '+key+' '+section);
+   assert.equal(await page.$$eval('#students a[href*="instructor/"]',a=>a.length),0,'no instructor context in student list');
+   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'session materials overflow '+key);
+   if(id===1){
+    assert.ok(await page.$('#students a[href="../fixtures/claim-packet.html"]'));
+    assert.ok(await page.$('#teachers a[href="../instructor/01-teaching-guide.html"]'));
+    await page.screenshot({path:path.join(root,'review/session-01-'+width+'.png'),fullPage:true});
+   }
+  }
+ }
+ await page.goto(base);
+ assert.equal(await page.$$eval('.class-materials-link',a=>a.length),13);
  const today=await checkToday(browser,base,root);
  const learningPath=await checkLearningPath(browser,base,root);
  const reviewAndExample=await checkReviewAndExample(browser,base,root);

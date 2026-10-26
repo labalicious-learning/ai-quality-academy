@@ -6,6 +6,7 @@ import {renderHandout,decorateLab} from './handouts.mjs';
 import {sessionGuides} from './session-guides.mjs';
 import {signupSection} from './signup.mjs';
 import {courseContext} from './course-context.mjs';
+import {collectResources,resourceList,sessionBody} from './class-materials.mjs';
 const root=path.resolve(import.meta.dirname,'..');process.chdir(root);
 const out=path.join(root,'dist');await mkdir(out,{recursive:true});
 const config=JSON.parse(await readFile('site.config.json','utf8'));
@@ -14,7 +15,7 @@ const repoUrl=repository?'https://github.com/'+repository:null;
 const md=new MarkdownIt({html:false,linkify:true});
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const nav=(prefix='')=>'<header class="top"><a class="wordmark" href="'+prefix+'index.html"><img class="brand-logo" src="'+prefix+'assets/labalicious-logo.png" alt="" width="52" height="52"><span>Labalicious<small>AI & QA ACADEMY</small></span></a><nav aria-label="Main navigation"><a href="'+prefix+'labs/00-course-setup.html">Start here</a>'+(config.signupUrl?'<a href="'+prefix+'SIGNUP.html">Course signup</a>':'')+'<a href="'+prefix+'my-path.html">My learning path</a><a href="'+prefix+'index.html#sessions">Sessions</a><a href="'+prefix+'COURSE_PROJECT.html">Your project</a><a href="'+prefix+'SUBMISSIONS.html">Submit work</a><a href="'+prefix+'reader.html">Markdown reader</a>'+(repoUrl?'<a href="'+repoUrl+'">Course repository ↗</a>':'')+'</nav></header>';
-const footer=(prefix='')=>'<footer><span>© 2026 Jared Cluff. All rights reserved.<br>Learn by doing. Every example is fictional.</span><nav><a href="'+prefix+'COPYRIGHT.html">Copyright</a><a href="'+prefix+'INSTRUCTOR_GUIDE.html">Instructor guide</a><a href="'+prefix+'PUBLICATION.html">About this course</a></nav></footer>';
+const footer=(prefix='')=>'<footer><span>© 2026 Jared Cluff. All rights reserved.<br>Learn by doing. Every example is fictional.</span><nav><a href="'+prefix+'materials.html">All course materials</a><a href="'+prefix+'COPYRIGHT.html">Copyright</a><a href="'+prefix+'INSTRUCTOR_GUIDE.html">Instructor guide</a><a href="'+prefix+'PUBLICATION.html">About this course</a></nav></footer>';
 function document(title,body,prefix=''){return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+escape(title)+' · Labalicious Academy</title><link rel="icon" type="image/png" href="'+prefix+'assets/labalicious-logo.png"><link rel="stylesheet" href="'+prefix+'assets/style.css"><link rel="stylesheet" href="'+prefix+'assets/handout.css"><a class="skip-link" href="#main-content">Skip to content</a>'+nav(prefix)+'<main class="document" id="main-content" tabindex="-1"><a class="breadcrumb" href="'+prefix+'index.html">← All sessions</a>'+body+'</main>'+footer(prefix)+'</html>';}
 await cp('site',path.join(out,'assets'),{recursive:true});
 await writeFile(path.join(out,'assets/course-context.js'),'window.CourseContext='+JSON.stringify(courseContext(config)).replaceAll('<','\\u003c')+';');
@@ -37,11 +38,13 @@ const lessonFiles=(await readdir('lessons')).filter(n=>n.endsWith('.md')).sort()
 const docs=(await readdir(root)).filter(n=>n.endsWith('.md'));
 for(const dir of roots)for(const name of await readdir(dir))docs.push(dir+'/'+name);
 const readerDocs={};
+const titles={};
 for(const file of docs){
  const source=await readFile(file,'utf8');const prefix=file.includes('/')?'../':'';
  if(file.endsWith('.md')){
    readerDocs[file]=source;
    const title=source.match(/^# (.+)$/m)?.[1] || path.basename(file);
+   titles[file]=title;
    const rendered=renderHandout(md,source);
    let html=file.startsWith('labs/')?decorateLab(rendered,sessionGuides[Number(path.basename(file).slice(0,2))],{labs:labFiles,lessons:lessonFiles}):rendered.html;
    html=html.replace(/href="([^"]+)"/g,(all,href)=>{
@@ -50,7 +53,8 @@ for(const file of docs){
      return 'href="'+href.replace(/\.md(?=#|$)/,'.html')+'"';
    });
    if(file==='labs/00-course-setup.md' && repoUrl)html=html.replace('<h1>','<p>Course repository: <a href="'+repoUrl+'">'+repoUrl+'</a></p><h1>');
-   html='<p><a href="'+prefix+'reader.html#'+encodeURIComponent(file)+'">Open in Markdown reader</a></p>'+html;
+   const classId=/^(?:labs|lessons)\/(\d{2})-/.exec(file)?.[1];
+   html=(classId?'<p class="material-note"><a href="../sessions/'+classId+'.html">Session '+classId+' · All class materials →</a></p>':'')+'<p><a href="'+prefix+'reader.html#'+encodeURIComponent(file)+'">Open in Markdown reader</a></p>'+html;
    const target=path.join(out,file.replace(/\.md$/,'.html'));await mkdir(path.dirname(target),{recursive:true});await writeFile(target,document(title,html,prefix));
  }
  const raw=path.join(out,file);await mkdir(path.dirname(raw),{recursive:true});await writeFile(raw,source);
@@ -73,14 +77,25 @@ const descriptions=[
 'Present your own polished software, GitHub history and quality evidence to Jared.'
 ];
 const cards=[];
+const classLinks=[];
+await mkdir(path.join(out,'sessions'),{recursive:true});
 for(const name of (await readdir('decks')).filter(n=>n.endsWith('.md')).sort()){
  const id=Number(name.slice(0,2));const slug=name.slice(0,-3);
  const title=(await readFile('lessons/'+name,'utf8')).match(/^# (.+)$/m)[1].replace(/^(Lesson|Session) \d+ — /,'');
  const lab=(await readdir('labs')).find(n=>n.startsWith(name.slice(0,2)));
  let downloads='';
+ const downloadFiles=[];
  for(const ext of ['pdf','pptx']){try{await stat(path.join(out,ext,slug+'.'+ext));downloads+='<a href="'+ext+'/'+slug+'.'+ext+'">'+ext.toUpperCase()+'</a> ';}catch{}}
- cards.push('<article class="session"><span class="num">'+name.slice(0,2)+'</span><span class="meta">2 hours · '+(id===0?'Setup':'Hands-on')+'</span><h3>'+escape(title)+'</h3><p>'+descriptions[id]+'</p><nav><a href="labs/'+lab.replace('.md','.html')+'">Open lab →</a><a href="slides/'+slug+'.html">Slides</a><a href="lessons/'+slug+'.html">Lesson plan</a></nav>'+(downloads?'<div class="downloads">Download: '+downloads+'</div>':'')+'</article>');
+ for(const ext of ['pdf','pptx']){try{await stat(path.join(out,ext,slug+'.'+ext));downloadFiles.push(ext+'/'+slug+'.'+ext);}catch{}}
+ const classId=name.slice(0,2);
+ const lesson='lessons/'+name,labPath='labs/'+lab;
+ const collected=collectResources([[lesson,readerDocs[lesson]],[labPath,readerDocs[labPath]]],sessionGuides[id].prep,new Set(docs));
+ const resources=[...new Set([...sessionGuides[id].prep.filter(f=>collected.includes(f)),...collected])];
+ await writeFile(path.join(out,'sessions',classId+'.html'),document('Session '+classId+' materials',sessionBody({id:classId,title,guide:sessionGuides[id],lab:labPath,lesson,resources,titles,downloads:downloadFiles}),'../'));
+ classLinks.push('<li><a href="sessions/'+classId+'.html">Session '+classId+' · '+escape(title)+'</a></li>');
+ cards.push('<article class="session"><span class="num">'+classId+'</span><span class="meta">2 hours · '+(id===0?'Setup':'Hands-on')+'</span><h3>'+escape(title)+'</h3><p>'+descriptions[id]+'</p><nav><a class="class-materials-link" href="sessions/'+classId+'.html">All class materials →</a><a href="labs/'+lab.replace('.md','.html')+'">Open lab →</a><a href="slides/'+slug+'.html">Slides</a><a href="lessons/'+slug+'.html">Lesson plan</a></nav>'+(downloads?'<div class="downloads">Download: '+downloads+'</div>':'')+'</article>');
 }
+await writeFile(path.join(out,'materials.html'),document('All course materials','<h1>All course materials</h1><p>Choose your class for student activities, slides, evidence files, templates and instructor preparation. These are public teaching materials; recordings and learner records are not part of this library.</p><h2>Classes</h2><ul class="material-list">'+classLinks.join('')+'</ul>'+[['Course guides',docs.filter(f=>!f.includes('/'))],['Evidence and sample files',docs.filter(f=>f.startsWith('fixtures/'))],['Templates',docs.filter(f=>f.startsWith('templates/'))],['Public instructor resources',docs.filter(f=>f.startsWith('instructor/'))]].map(([heading,files])=>'<h2>'+heading+'</h2>'+resourceList(files,titles,'')).join('')));
 const modules=[['00 / Get ready',cards.slice(0,1)],['01—04 / Build your foundation',cards.slice(1,5)],['05—08 / Investigate & test',cards.slice(5,9)],['09—12 / Connect, evaluate & deliver',cards.slice(9,13)]];
 const html='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A practical, hands-on course in AI, quality assurance and business work."><title>Labalicious Academy</title><link rel="stylesheet" href="assets/style.css">'+nav()+'<section class="hero"><div><span class="eyebrow">YOUR NEXT SKILL STARTS HERE</span><h1>Work with AI.<br>Think critically.<br><em>Prove the result.</em></h1><p>Learn to turn capable AI into useful work. Build real QA skills through approachable lessons, practical business tasks and experiments you can run yourself.</p><div class="actions"><a class="button" href="labs/00-course-setup.html">Start with Session 00 →</a><a class="button secondary" href="#sessions">Explore the course</a></div></div><img class="hero-art" src="assets/hero.svg" alt="Ask a good question, use AI and tools, then verify the result."></section><div class="stats"><div><strong>13</strong><span>Sessions</span></div><div><strong>2 hours</strong><span>Per session</span></div><div><strong>Hands-on</strong><span>From day one</span></div></div><main class="catalog" id="sessions"><section class="project-spotlight" aria-labelledby="project-title"><div><span class="eyebrow">YOUR COURSE-LONG CREATION</span><h2 id="project-title">Build something you want to exist.</h2><p>Choose your idea. Build with affordable AI. Shape it through feedback. Complete the course, then earn AIQAA certification through review of your product, development history and GitHub skills—no separate exam.</p><div class="actions"><a class="button" href="COURSE_PROJECT.html">Explore Product Studio →</a><a class="project-link" href="PROJECT_IDEAS.html">Find your idea: 20 starting points</a><a class="project-link" href="CREDENTIALS.html">Completion vs. AIQAA certification</a></div></div><ol class="project-path"><li><strong>01 · Imagine</strong><span>Pitch your idea and define the scope.</span></li><li><strong>02–11 · Build & improve</strong><span>Your repo, focused PRs and weekly milestones.</span></li><li><strong>12 · Show your work</strong><span>Present your product and the evidence behind it.</span></li></ol><p class="project-budget"><a href="SMALL_MODEL_GUIDE.html">Qwen3.8-27B · local or capped hosted inference</a><br>No premium subscription or paid app hosting required.</p></section><div class="section-head"><div><span class="eyebrow" style="color:#126b62">THE LEARNING PATH</span><h2>One session. One step forward.</h2><p>Start at zero. Build confidence with every experiment.</p></div><label class="search">Find a topic<input id="course-search" type="search" placeholder="Try Codex, business or browser"></label></div><p id="search-status" aria-live="polite">13 sessions shown</p>'+modules.map(([label,c])=>'<section class="module"><h2 class="module-label">'+label+'</h2><div class="grid">'+c.join('')+'</div></section>').join('')+'<section class="toolstrip"><h2>Skills that travel across your work.</h2><p>Practice with fictional festivals, tournaments and small businesses. Use supplied files or an approved connected workspace.</p><div class="chips"><span>Codex</span><span>Spreadsheets</span><span>Documents</span><span>Research</span><span>GitHub</span><span>Team chat</span><span>Browser & API testing</span></div><p><a href="AI_WORKFLOW_PLAYBOOKS.html">Explore business workflows →</a></p></section><p>26 contact hours build a foundation for supervised practice. Model and tool access depend on your account. The local API lab runs on your computer; all examples are fictional.</p></main>'+footer()+'<script src="assets/site.js"></script></html>';
 await writeFile(path.join(out,'index.html'),html.replace('<title>','<link rel="icon" type="image/png" href="assets/labalicious-logo.png"><title>').replace('<header class="top">','<a class="skip-link" href="#sessions">Skip to course content</a><header class="top">').replace('id="sessions"','id="sessions" tabindex="-1"').replace('<section class="project-spotlight"',signupSection(config)+'<section class="project-spotlight"'));
