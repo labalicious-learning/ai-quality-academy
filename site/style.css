@@ -21,6 +21,10 @@ select:focus-visible{outline:3px solid #bb5a24;outline-offset:5px}
 .project-path span{font-size:14px;color:#ccdade}
 .project-spotlight .project-budget{grid-column:1/-1;border-top:1px solid #536971;padding-top:18px;font-size:14px}
 .document{overflow-wrap:anywhere}
+.material-jumps,.material-actions{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}
+.material-list{padding-left:24px}.material-list li{margin:12px 0}.material-list small{display:block;color:var(--muted);font-size:13px}
+.material-note{padding:20px;border-left:4px solid #126b62;background:#e5eee8;border-radius:8px;margin:24px 0}
+.class-materials-link{font-weight:800}.document section[id]{scroll-margin-top:24px}
 .document pre{overflow-wrap:normal}
 .enrollment{margin:0 0 32px;background:#e5eee8}.enrollment .actions{align-items:center;margin-top:18px}.enrollment .actions>a:not(.button){font-size:14px}.enrollment p:last-child{font-size:14px;color:var(--muted)}
 @media(max-width:700px){.project-spotlight{grid-template-columns:1fr;padding:24px}.project-path{margin-top:10px}}

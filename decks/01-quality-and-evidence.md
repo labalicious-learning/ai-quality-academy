@@ -48,7 +48,9 @@ Ask:
 
 Never put secrets, tokens, private keys, customer data, or production credentials into an AI prompt.
 
-Use synthetic data. Do not publish, deploy, send, buy, delete, or change access without named human approval.
+Use fictional data only—even with a local model or personal project.
+
+Work in the training folder with normal permission checks. Do not publish, deploy, send, buy, delete, or change access without named human approval.
 
 ---
 

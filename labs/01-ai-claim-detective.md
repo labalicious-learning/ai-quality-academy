@@ -27,6 +27,7 @@ Classify each claim as **proven**, **plausible but unproven**, or **unsupported*
 
 ## Rules
 
+- Use fictional data only, including when using a local model. No real passwords, API keys, customer records or production credentials belong in prompts or submissions. Keep access scoped to the training project with normal permission checks.
 - Do not infer a backend result from the page’s appearance.
 - Do not copy customer-like data into a model. Use only the supplied synthetic artifacts.
 - The AI statement itself cannot be evidence.
