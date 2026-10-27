@@ -8,6 +8,10 @@ Open the [slides](../decks/01-quality-and-evidence.md), [student lab](../labs/01
 
 The packet describes fictional build B27. A screenshot of the analogous local simulation is not evidence about that fictional deployment. Preserve that distinction throughout the demonstration.
 
+Open [the student step-by-step guide](../walkthroughs/01-ai-claim-detective.md) before screen sharing. The demo already exists: run `npm start` in the course folder and open http://127.0.0.1:4178. Choose Candidate A / Atlas / concierge, open developer tools → Network, then click Load allocation and inspect `/api/allocation`. Use the local app, not the public course page, for this demonstration. Do not type `GET /api/allocation` into the Console or bypass a paste warning.
+
+Explain that AL-01 is a record ID, allocation means a reserved place/resource, and B27 is the supplied packet's fictional version. HTTP status alone does not establish the whole user outcome or its root cause. The claim packet now labels each evidence item separately so learners can point to one at a time.
+
 ## Open with a concrete question
 
 “An AI tells us a release lost customer money. Do we believe it? A requirement says an allocation must load as reserved. The page shows an error. A network request failed. Nobody inspected the database. What can we responsibly say—and what can't we say yet?
@@ -39,6 +43,8 @@ Do not offer exceptions for temporary credentials, personal projects or local mo
 ## Keep practice separate from the product project
 
 Today's practice produces three classified claims, one evidence packet and one limitation. The course-long product homework produces a proposal and rough wireframe. State the distinction before opening the lab. Protect the 35-minute hands-on period and have driver and verifier switch halfway.
+
+Before releasing the group, have each learner open the walkthrough and identify its first file. Demonstrate creating the blank claim table in local scratch space and saving one line. Ask “Which window do you use next, and what file will you leave with?” Use the walkthrough's checkpoints for coaching. It supplies scaffolding without completing classifications for them. Pair or record a setup blocker if needed; individual installation recovery should not consume the rest of the group's practice period.
 
 Keep project examples short: one audience, one journey, three core features and explicit exclusions. Judge visual quality through readability, layout, meaningful states and accessibility, not whether a color seems AI-generated. A marketplace, real payments or paid AI feature is not needed merely to make a project sufficiently challenging.
 

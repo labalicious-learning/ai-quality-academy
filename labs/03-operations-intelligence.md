@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of three or four
 
+
+## Quick start
+
+**First action:** Preserve the five supplied sources before cleaning or summarizing.
+
+**Finish with:** Raw/working data, source log, decision memo and an automation boundary.
+
+[Step-by-step help for Session 03](../walkthroughs/03-operations-intelligence.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

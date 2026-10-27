@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** two learners; driver and verifier switch after 17 minutes
 
+
+## Quick start
+
+**First action:** Open the supplied claim packet, then write one row for each report.
+
+**Finish with:** Three classified claims, one evidence packet and one limit sentence.
+
+[Step-by-step help for Session 01](../walkthroughs/01-ai-claim-detective.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

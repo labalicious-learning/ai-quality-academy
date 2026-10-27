@@ -24,7 +24,7 @@ export function sessionBody({id,title,guide,lab,lesson,resources,titles,download
  return `<span class="eyebrow">CLASS MATERIALS · SESSION ${esc(id)}</span><h1>${esc(title)}</h1>
 <p>${esc(guide.goal)}</p><nav class="material-jumps" aria-label="Class sections"><a href="#students">For students</a><a href="#teachers">For instructors</a><a href="#recordings">Recordings</a><a href="../materials.html">All course materials</a></nav>
 <section id="students"><h2>For students</h2><p><strong>Your outcome:</strong> ${esc(guide.target)}</p>
-<div class="material-actions"><a class="button" href="../${pageFor(lab)}">Open the lab</a><a class="button secondary" href="../${slides}">Open the slides</a></div>
+<div class="material-actions"><a class="button" href="../${pageFor(lab)}">Open the lab</a><a class="button secondary" href="../${pageFor(lab.replace('labs/','walkthroughs/'))}">Step-by-step help</a><a class="button secondary" href="../${slides}">Open the slides</a></div>
 ${downloads.length?'<p>Slide downloads: '+downloads.map(f=>'<a href="../'+esc(f)+'">'+esc(path.posix.extname(f).slice(1).toUpperCase())+'</a>').join(' · ')+'</p>':''}
 <h3>Files, templates and reference guides</h3><p>Use the lab to determine which files to give your AI assistant. This list is a navigation aid, not permission to load every resource into a model.</p>${resourceList(student,titles)}
 <h3>Homework and submission</h3><p>Follow the homework in this session’s lab. <a href="../COURSE_PROJECT.html">Your course-long product</a> is separate from practice exercises. Use <a href="../SUBMISSIONS.html">the submission guide</a> and <a href="../my-path.html">your learning path</a> to track the next step.</p>

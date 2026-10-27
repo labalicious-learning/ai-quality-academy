@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+
+## Quick start
+
+**First action:** Read R4–R6 and the case cards, then start with an empty local event store.
+
+**Finish with:** Boundary map, healthy/failure/recovery evidence, a packet and regression proposal.
+
+[Step-by-step help for Session 09](../walkthroughs/09-inquiry-to-crm-reliability.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

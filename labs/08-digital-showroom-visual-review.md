@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+
+## Quick start
+
+**First action:** Open the local Launch preview and record your browser/viewport/zoom.
+
+**Finish with:** Matched captures, accessibility evidence, a finding and an intentional-change note.
+
+[Step-by-step help for Session 08](../walkthroughs/08-digital-showroom-visual-review.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

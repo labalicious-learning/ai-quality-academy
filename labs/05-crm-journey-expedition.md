@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** pairs; use only simulated identities
 
+
+## Quick start
+
+**First action:** Start the local app and select Candidate A / Atlas / concierge.
+
+**Finish with:** A journey log, evidence packet, regression idea and product question.
+
+[Step-by-step help for Session 05](../walkthroughs/05-crm-journey-expedition.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

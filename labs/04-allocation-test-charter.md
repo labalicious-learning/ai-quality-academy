@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+
+## Quick start
+
+**First action:** Read the feature request and R8, then copy the charter template.
+
+**Finish with:** A risk-ranked charter covering every required area and your first three tests.
+
+[Step-by-step help for Session 04](../walkthroughs/04-allocation-test-charter.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** pairs; use the [portable request runner and collection](../fixtures/authorization-requests.md)
 
+
+## Quick start
+
+**First action:** Start the local server and open a second terminal for the request runner.
+
+**Finish with:** Four locks compared on both candidates, an evidence report and regression proposal.
+
+[Step-by-step help for Session 06](../walkthroughs/06-tenant-boundary-escape-room.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

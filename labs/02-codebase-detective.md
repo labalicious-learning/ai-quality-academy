@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** driver and verifier
 
+
+## Quick start
+
+**First action:** Open R1 and G102, then trace the Send inquiry update request.
+
+**Finish with:** A task brief, three verified code references, a check result and an open question.
+
+[Step-by-step help for Session 02](../walkthroughs/02-codebase-detective.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

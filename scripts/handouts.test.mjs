@@ -14,6 +14,10 @@ test('every session has a guide anchored to its actual handout and valid prepara
     assert.ok(labs[index].startsWith(guide.id+'-'));assert.ok(lessons[index].startsWith(guide.id+'-'));
     const source=await readFile(new URL('labs/'+labs[index],root),'utf8'),rendered=renderHandout(md,source),html=decorateLab(rendered,guide,{labs,lessons});
     assert.match(html,/not a new submission/);assert.match(html,/does not award a credential/);
+    const walkthrough='walkthroughs/'+labs[index];
+    assert.ok(source.includes('../'+walkthrough),'raw handout needs its help link');
+    assert.ok((await stat(new URL(walkthrough,root))).isFile(),'walkthrough must exist');
+    assert.ok(html.includes('href="../'+walkthrough.replace('.md','.html')+'"'),'visible help link must reach the matching session');
     for(const field of ['goal','target','recall','support'])assert.ok(guide[field].length>30);
     for(const file of guide.prep)assert.ok((await stat(new URL(file,root))).isFile());
     const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,'duplicate ID '+guide.id);
