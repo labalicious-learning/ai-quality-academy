@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of three
 
+
+## Quick start
+
+**First action:** Predict outcomes for the eight input cases before viewing reviewer labels.
+
+**Finish with:** Evaluation card, hypothetical role limits, a new case and a risk explanation.
+
+[Step-by-step help for Session 11](../walkthroughs/11-model-olympics.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

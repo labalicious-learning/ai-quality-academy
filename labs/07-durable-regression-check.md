@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** pair-programming; starter repository only
 
+
+## Quick start
+
+**First action:** Read R3 and the starter test before proposing an assertion.
+
+**Finish with:** A test diff and actual A/B results, or the explicitly unexecuted assertion-design route.
+
+[Step-by-step help for Session 07](../walkthroughs/07-durable-regression-check.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

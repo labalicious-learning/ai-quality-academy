@@ -32,7 +32,7 @@ for(const format of process.argv.includes('--exports')?['html','pdf','pptx']:['h
  if(format!=='html')args.push('--'+format,'--no-parallel','--browser-timeout','90');
  const result=spawnSync(process.execPath,args,{stdio:'inherit'});if(result.status!==0)process.exit(result.status||1);
 }
-const roots=['lessons','labs','templates','fixtures','instructor'];
+const roots=['lessons','labs','walkthroughs','templates','fixtures','instructor'];
 const labFiles=(await readdir('labs')).filter(n=>n.endsWith('.md')).sort();
 const lessonFiles=(await readdir('lessons')).filter(n=>n.endsWith('.md')).sort();
 const docs=(await readdir(root)).filter(n=>n.endsWith('.md'));

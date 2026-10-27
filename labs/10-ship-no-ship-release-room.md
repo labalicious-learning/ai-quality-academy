@@ -3,6 +3,15 @@
 **Time:** 35 minutes  
 **Team:** groups of four; facilitator releases evidence in rounds
 
+
+## Quick start
+
+**First action:** Copy the recommendation template and read only round 1 first.
+
+**Finish with:** Three round-by-round recommendations, an incident update and any override decision.
+
+[Step-by-step help for Session 10](../walkthroughs/10-ship-no-ship-release-room.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 **Submission:** prepare the deliverables below using [the public-safe packet and review workflow](../SUBMISSIONS.md). One PR per lab; private review is equally available. Never publish grades or personal information.

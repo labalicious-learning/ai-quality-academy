@@ -3,6 +3,15 @@
 **Time:** prepare during course-long homework; eight-minute individual demo plus four minutes with Jared in your assigned Session 12 slot.
 **Team:** your own product; disclose peer/AI assistance.
 
+
+## Quick start
+
+**First action:** Open your own product's reviewed release and existing evidence index.
+
+**Finish with:** An eight-minute demo and four-minute discussion of your actual project.
+
+[Step-by-step help for Session 12](../walkthroughs/12-defensible-qa-verdict.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 Use [the platform guide](../PLATFORM_GUIDE.md). Demonstrate on your supported workstation, identify tested and untested OS/browser combinations, and provide portable Markdown/CSV/images. A browser presentation is sufficient; desktop slide software and paid hosting are not required.

@@ -21,7 +21,7 @@ Optional Git CLI: https://git-scm.com/downloads
 
 GitHub Desktop is officially available for macOS and Windows, not Linux. Linux learners do not need an unofficial port. [Official installation guide](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
 
-No course task requires Homebrew, WSL, Docker, a paid desktop office suite or changing your machine's security policy. Managed-device installation may need your administrator's approval. Pair on an approved machine if installation is blocked.
+No course task requires Chocolatey, Homebrew, WSL, Docker, a paid desktop office suite or changing your machine's security policy. On Windows, the prebuilt Node Windows Installer (.msi) avoids a package-manager setup detour. Managed-device installation may need your administrator's approval. Pair on an approved machine if installation is blocked. [Step-by-step setup help](walkthroughs/00-course-setup.md).
 
 ## Common commands
 

@@ -2,6 +2,15 @@
 
 **Time:** 120 minutes with your instructor. Keep this checklist open. Use your own accounts and a local course copy.
 
+
+## Quick start
+
+**First action:** Verify Node, open the course folder and start the local practice app.
+
+**Finish with:** A private readiness card and one checked AI explanation.
+
+[Step-by-step help for Session 00](../walkthroughs/00-course-setup.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
 ## Mac / Linux / Windows
 
 Follow the [platform guide](../PLATFORM_GUIDE.md) for your OS and shell. The core course does not require WSL, Homebrew, Docker or desktop Office. Record your OS, shell and browser on your readiness card; ask a coach before changing managed-device settings.
@@ -23,6 +32,7 @@ Public reading does not require membership in the owner's organization. A star b
 
 ## 3. Install the local tools
 Node.js: https://nodejs.org/en/download — install a supported LTS version, version 22 or newer.
+On Windows, use the prebuilt Windows Installer (.msi) download. Chocolatey and optional native-build tools are not required for this course. If a package-manager installation gets stuck, use [the setup walkthrough](../walkthroughs/00-course-setup.md#3-install-node-and-verify-it) to verify Node and choose the direct installer route with a coach.
 Optional GitHub Desktop (macOS/Windows only): https://desktop.github.com/download/
 Linux: use ZIP or optional Git CLI from https://git-scm.com/downloads.
 Optional editor: https://code.visualstudio.com/download

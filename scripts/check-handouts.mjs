@@ -17,6 +17,16 @@ export async function checkHandouts(browser,base,root){
         await page.click('#session-support summary');assert.equal(await page.$eval('#session-support',e=>e.open),true);
         await page.click('#session-recall summary');assert.equal(await page.$eval('#session-recall',e=>e.open),true);
         const anchor=await page.$eval('.session-guide .session-actions a',e=>e.hash.slice(1));await page.click('.session-guide .session-actions a');assert.equal(await page.evaluate(()=>document.activeElement.id),anchor,'activity link must focus its heading');
+        await Promise.all([page.waitForNavigation(),page.click('.lab-help a')]);
+        assert.ok(new URL(page.url()).pathname.endsWith('/walkthroughs/'+file),'help link opens the matching walkthrough');
+        assert.equal(await page.$$eval('h1',e=>e.length),1,'walkthrough heading');
+        const broken=await page.$$eval('a[href^="#"]',links=>links.filter(a=>!document.getElementById(decodeURIComponent(a.hash.slice(1)))).map(a=>a.hash));assert.deepEqual(broken,[],'walkthrough anchors');
+        for(const width of [1440,375]){
+          await page.setViewport({width,height:1000});
+          assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'walkthrough overflow '+file+' at '+width);
+        }
+        await Promise.all([page.waitForNavigation(),page.click('main a[href="../labs/'+file+'"]')]);
+        assert.ok(new URL(page.url()).pathname.endsWith('/labs/'+file),'walkthrough returns to its lab');
       }
       await page.goto(offline?pathToFileURL(path.join(root,'labs',files[7])).href:base+'labs/'+files[7]);
       await page.keyboard.press('Tab');assert.equal(await page.evaluate(()=>document.activeElement.className),'skip-link');await page.keyboard.press('Enter');assert.equal(await page.evaluate(()=>document.activeElement.id),'main-content');
