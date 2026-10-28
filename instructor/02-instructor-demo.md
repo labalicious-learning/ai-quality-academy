@@ -6,8 +6,8 @@
 
 ## Before class: open these tabs
 
-1. Your local course folder in the editor, with `AGENTS.md` open.
-2. [Requirement R1](../fixtures/allocation-requirements.md) and [issue G102](../fixtures/github-issues.json).
+1. Your local course folder in the editor, with [AGENTS.md — course AI instructions](../AGENTS.md) open (at the top level, beside `package.json`).
+2. [Requirement R1 — who may send](../fixtures/allocation-requirements.md) and [issue G102 — Concierge send-update returns 403](../fixtures/github-issues.json). Find **R1:** and **G102** inside those files; they are labels, not filenames.
 3. `sandbox/index.html`, `sandbox/server.mjs`, `sandbox/domain.mjs` and `sandbox/domain.test.mjs` in that same folder.
 4. Your already working AI client and an ordinary terminal in the course folder.
 5. A scratch copy of the [AI task brief](../templates/ai-task-brief.md), plus a blank `investigation.md` in local `submissions/session-02` scratch space. Follow [the saving guide](../LAB_HELP.md#save-your-work).
@@ -28,8 +28,8 @@ If it starts editing, stop that action and restate the read-only scope. Do not g
 
 | Time | Show and say | Learner checkpoint |
 | --- | --- | --- |
-| 0–2 | Open R1 and G102. “The handout says staff cannot send. G102 says concierge receives 403. Are those the same claim?” R1 permits owner/concierge and denies staff. | Ask someone to explain why denial can be correct for one role. |
-| 2–4 | Show `AGENTS.md`, paste the bounded prompt, and inspect the proposed plan. “We are investigating before changing anything.” | Does the plan respect the no-edit/no-send boundary? |
+| 0–2 | Open [requirement R1](../fixtures/allocation-requirements.md) and [issue G102](../fixtures/github-issues.json). “The handout says staff cannot send. G102 says concierge receives 403. Are those the same claim?” R1 permits owner/concierge and denies staff. | Ask someone to explain why denial can be correct for one role. |
+| 2–4 | Show [AGENTS.md](../AGENTS.md), paste the bounded prompt, and inspect the proposed plan. “We are investigating before changing anything.” | Does the plan respect the no-edit/no-send boundary? |
 | 4–6 | In `sandbox/index.html`, Find `el('send').onclick`. Point to its call to `show('send-result','/api/send')`. The request helper carries the selected candidate, organization and role. | Ask which endpoint the button reaches. |
 | 6–8 | In `sandbox/server.mjs`, Find `url.pathname === '/api/send'`. Show the call to `canSend(role,mode)`, the 200/403 response and `sent:false`. | Ask whether an allowed response proves an email was delivered. It does not; this is a local simulation. |
 | 8–10 | In `sandbox/domain.mjs`, Find `export function canSend`. Compare its two branches with R1. Candidate A (`buggy`) allows only owner; Candidate B (`fixed`) allows owner/concierge. Both deny staff. | Ask a learner to explain the path using the three files. |

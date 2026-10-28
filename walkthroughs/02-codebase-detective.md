@@ -10,6 +10,17 @@ Open the course folder in your editor. Read [AGENTS.md](../AGENTS.md), the [lab 
 
 **Checkpoint:** you can distinguish the staff report from the concierge report. A denied action may be required behavior for one role.
 
+
+### Open these three resources first
+
+| Open online | What to read | File in your downloaded course folder |
+| --- | --- | --- |
+| [AGENTS.md — instructions for the AI](../AGENTS.md) | Read the course boundaries; you do not need to edit this file. | `AGENTS.md`, beside `package.json` |
+| [Requirement R1 — who may send](../fixtures/allocation-requirements.md) | Find the line beginning **R1:**. | `fixtures/allocation-requirements.md` |
+| [Issue G102 — Concierge send-update returns 403](../fixtures/github-issues.json) | Find **G102** in the issue list. It is not “G2.” | `fixtures/github-issues.json` |
+
+R1 and G102 are labels **inside** those files, not filenames. Read them online using these links, then open the same files in your course folder when working with your AI.
+
 ## 2. Write a bounded AI task
 
 Copy [the task brief](../templates/ai-task-brief.md) into your scratch folder. Name the outcome, sources, your OS/shell, allowed read/test actions and no-edit/no-send limits. Give the assistant the brief, then ask it to inspect only the relevant files under `sandbox/`, R1 and G102. Do not supply instructor answers.
