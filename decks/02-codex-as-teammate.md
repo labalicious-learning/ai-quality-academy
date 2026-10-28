@@ -51,13 +51,17 @@ For unfamiliar or consequential work, ask for a plan first. Use repository instr
 
 ---
 
-# Demo
+# Demo · 15-minute read-only investigation
 
-1. Read `AGENTS.md`
-2. Trace a feature through UI, server, and test
-3. Ask for an investigation plan
-4. Verify every cited path
-5. Run an approved check
+1. Read `AGENTS.md`, R1 and G102
+2. Ask for a bounded investigation plan
+3. Trace UI → server → `canSend`
+4. Verify the references and run `npm test`
+5. Save the result, limits and open question
+
+[Open the instructor demo run sheet](https://learn.labalicious.com/instructor/02-instructor-demo.html)
+
+<!-- Instructor: the linked guide contains the exact prompt, timed steps and a labeled fallback. Do not supply that worked guide to the assistant being evaluated. -->
 
 ---
 

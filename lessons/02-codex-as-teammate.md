@@ -15,6 +15,8 @@
 
 ## Instructor preparation
 
+**Slide 6 live demo:** [15-minute instructor run sheet, exact prompt and fallback](../instructor/02-instructor-demo.md). Pre-open it before class.
+
 Use the included sandbox, R1 and G102 in fixtures/github-issues.json. Distinguish the handout's staff report from the concierge issue: staff denial is correct. Explain that npm test checks fixture integrity, not release readiness. Scope model context; public answers do not replace learner reproduction.
 
 Preflight clients before class using [the small-model guide](../SMALL_MODEL_GUIDE.md). Qwen3.8-27B is recommended; OpenCode, compatible Codex CLI or verified Claude Code routes are acceptable. Do not spend lesson time debugging a gateway or require premium inference. Prepare the [GitHub kickoff](../PROJECT_GITHUB.md), approved proposals and one brief comparison. The original investigation lab remains 35 minutes.
