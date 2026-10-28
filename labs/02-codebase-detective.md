@@ -6,11 +6,22 @@
 
 ## Quick start
 
-**First action:** Open R1 and G102, then trace the Send inquiry update request.
+**First action:** Read [AGENTS.md](../AGENTS.md), [requirement R1](../fixtures/allocation-requirements.md), and [issue G102](../fixtures/github-issues.json), then trace the Send inquiry update request.
 
 **Finish with:** A task brief, three verified code references, a check result and an open question.
 
 [Step-by-step help for Session 02](../walkthroughs/02-codebase-detective.md) — smaller steps, checkpoints and troubleshooting. [Saving and asking for help](../LAB_HELP.md).
+
+
+### Open these three resources first
+
+| Open online | What to read | File in your downloaded course folder |
+| --- | --- | --- |
+| [AGENTS.md — instructions for the AI](../AGENTS.md) | Read the course boundaries; you do not need to edit this file. | `AGENTS.md`, beside `package.json` |
+| [Requirement R1 — who may send](../fixtures/allocation-requirements.md) | Find the line beginning **R1:**. | `fixtures/allocation-requirements.md` |
+| [Issue G102 — Concierge send-update returns 403](../fixtures/github-issues.json) | Find **G102** in the issue list. It is not “G2.” | `fixtures/github-issues.json` |
+
+R1 and G102 are labels **inside** those files, not filenames. Read them online using these links, then open the same files in your course folder when working with your AI.
 
 ## Mac / Linux / Windows
 
@@ -30,7 +41,7 @@ Use Codex and repository tools to map the relevant request path and create a foc
 
 ## Steps
 
-1. Read `AGENTS.md`, the report in this handout, [R1](../fixtures/allocation-requirements.md) and [issue G102](../fixtures/github-issues.json). The staff report and concierge issue are different claims; investigate each without assuming either demands a permissions change.
+1. Read [AGENTS.md](../AGENTS.md), the report in this handout, [R1](../fixtures/allocation-requirements.md) and [issue G102](../fixtures/github-issues.json). The staff report and concierge issue are different claims; investigate each without assuming either demands a permissions change.
 2. Complete an [AI task brief](../templates/ai-task-brief.md) asking Codex to locate the relevant code and tests.
 3. Ask Codex for a plan before any proposed code change.
 4. Independently verify the files/functions it cites.

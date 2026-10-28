@@ -53,7 +53,7 @@ For unfamiliar or consequential work, ask for a plan first. Use repository instr
 
 # Demo · 15-minute read-only investigation
 
-1. Read `AGENTS.md`, R1 and G102
+1. Open [AGENTS.md](https://learn.labalicious.com/AGENTS.html), [requirement R1](https://learn.labalicious.com/fixtures/allocation-requirements.html), and [issue G102](https://learn.labalicious.com/fixtures/github-issues.json)
 2. Ask for a bounded investigation plan
 3. Trace UI → server → `canSend`
 4. Verify the references and run `npm test`
