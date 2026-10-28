@@ -40,3 +40,15 @@ test('raw HTML and guide prose remain text, and missing source anchors fail the 
 test('core practice feedback has no numeric scoring or completion gates',async()=>{
   for(const file of labs){const source=await readFile(new URL('labs/'+file,root),'utf8');assert.ok(!/\b[012] points\b|earns full credit|Grade that design/.test(source),file);}
 });
+test('file references resolve safely without nested links or invented downloads',async()=>{
+ const {fileLinksPlugin,resolveFile}=await import('../site/file-links.js');
+ const parser=new MarkdownIt({html:false}).use(fileLinksPlugin);
+ const env={courseFile:'walkthroughs/02-example.md',courseFiles:['AGENTS.md','sandbox/domain.mjs','fixtures/issues.json','LAB_HELP.md']};
+ const html=parser.render('Open `AGENTS.md`, run `node sandbox/domain.mjs`, and save `investigation.md`. [AGENTS.md](../AGENTS.md). `<img src=x>`',env);
+ assert.ok(html.includes('href="../AGENTS.html"'));assert.ok(html.includes('/blob/main/sandbox/domain.mjs'));
+ assert.ok(html.includes('LAB_HELP.html#save-your-work'));assert.ok(html.includes('Create investigation.md'));
+ assert.equal((html.match(/<a /g)||[]).length,4);assert.ok(!html.includes('<img'));
+ assert.equal(resolveFile('missing.json',{files:env.courseFiles}),null);
+ assert.equal(resolveFile('same.md',{files:['a/same.md','b/same.md']}),null);
+ assert.equal(parser.render('`AGENTS.md`',{}).includes('<a'),false,'local reader files must not acquire course links');
+});

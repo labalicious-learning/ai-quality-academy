@@ -14,7 +14,8 @@ export async function checkToday(browser,base,root){
       assert.equal(await page.$eval('h1',e=>e.textContent),'Today');
       assert.equal(await page.$eval('#today-primary',e=>e.getAttribute('href')),'labs/00-course-setup.html');
       assert.equal(await page.$$eval('.path-section[open]',e=>e.length),0);
-      assert.equal(await page.$$eval('#today-prep a',e=>e.length),2);
+      assert.equal(await page.$$eval('#today-prep a',e=>e.length),3);
+      assert.ok(await page.$('#today-prep a[href$="fixtures/setup-example.mjs"]'));
       assert.equal(await page.$eval('#schedule-title',e=>e.textContent),'Dates not announced yet');
       for(const width of [1440,768,375]){
         await page.setViewport({width,height:1000});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Today overflow '+width);

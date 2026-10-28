@@ -1,6 +1,7 @@
 import {readFile,readdir,writeFile,mkdir,cp,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {fileLinksPlugin} from '../site/file-links.js';
 import MarkdownIt from 'markdown-it';
 import {renderHandout,decorateLab} from './handouts.mjs';
 import {sessionGuides} from './session-guides.mjs';
@@ -13,11 +14,14 @@ const config=JSON.parse(await readFile('site.config.json','utf8'));
 const repository=config.repository || process.env.GITHUB_REPOSITORY || null;
 const repoUrl=repository?'https://github.com/'+repository:null;
 const md=new MarkdownIt({html:false,linkify:true});
+md.use(fileLinksPlugin);
+const courseFiles=spawnSync('git',['ls-files'],{encoding:'utf8'}).stdout.trim().split('\n');
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const nav=(prefix='')=>'<header class="top"><a class="wordmark" href="'+prefix+'index.html"><img class="brand-logo" src="'+prefix+'assets/labalicious-logo.png" alt="" width="52" height="52"><span>Labalicious<small>AI & QA ACADEMY</small></span></a><nav aria-label="Main navigation"><a href="'+prefix+'labs/00-course-setup.html">Start here</a>'+(config.signupUrl?'<a href="'+prefix+'SIGNUP.html">Course signup</a>':'')+'<a href="'+prefix+'my-path.html">My learning path</a><a href="'+prefix+'index.html#sessions">Sessions</a><a href="'+prefix+'COURSE_PROJECT.html">Your project</a><a href="'+prefix+'SUBMISSIONS.html">Submit work</a><a href="'+prefix+'reader.html">Markdown reader</a>'+(repoUrl?'<a href="'+repoUrl+'">Course repository ↗</a>':'')+'</nav></header>';
 const footer=(prefix='')=>'<footer><span>© 2026 Jared Cluff. All rights reserved.<br>Learn by doing. Every example is fictional.</span><nav><a href="'+prefix+'materials.html">All course materials</a><a href="'+prefix+'COPYRIGHT.html">Copyright</a><a href="'+prefix+'INSTRUCTOR_GUIDE.html">Instructor guide</a><a href="'+prefix+'PUBLICATION.html">About this course</a></nav></footer>';
 function document(title,body,prefix=''){return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+escape(title)+' · Labalicious Academy</title><link rel="icon" type="image/png" href="'+prefix+'assets/labalicious-logo.png"><link rel="stylesheet" href="'+prefix+'assets/style.css"><link rel="stylesheet" href="'+prefix+'assets/handout.css"><a class="skip-link" href="#main-content">Skip to content</a>'+nav(prefix)+'<main class="document" id="main-content" tabindex="-1"><a class="breadcrumb" href="'+prefix+'index.html">← All sessions</a>'+body+'</main>'+footer(prefix)+'</html>';}
 await cp('site',path.join(out,'assets'),{recursive:true});
+await writeFile(path.join(out,'assets/file-links-browser.js'),'(function(){'+(await readFile('site/file-links.js','utf8')).replaceAll('export function ','function ')+';window.courseFileLinksPlugin=fileLinksPlugin;})();');
 await writeFile(path.join(out,'assets/course-context.js'),'window.CourseContext='+JSON.stringify(courseContext(config)).replaceAll('<','\\u003c')+';');
 await writeFile(path.join(out,'my-path.html'),document('My learning path',await readFile('scripts/path-page.html','utf8')));
 await writeFile(path.join(out,'review-packet.html'),document('Prepare a project review',await readFile('scripts/review-page.html','utf8')));
@@ -37,6 +41,7 @@ const labFiles=(await readdir('labs')).filter(n=>n.endsWith('.md')).sort();
 const lessonFiles=(await readdir('lessons')).filter(n=>n.endsWith('.md')).sort();
 const docs=(await readdir(root)).filter(n=>n.endsWith('.md'));
 for(const dir of roots)for(const name of await readdir(dir))docs.push(dir+'/'+name);
+await writeFile(path.join(out,'assets/file-inventory.js'),'window.courseFileInventory='+JSON.stringify(courseFiles)+';');
 const readerDocs={};
 const titles={};
 for(const file of docs){
@@ -45,7 +50,7 @@ for(const file of docs){
    readerDocs[file]=source;
    const title=source.match(/^# (.+)$/m)?.[1] || path.basename(file);
    titles[file]=title;
-   const rendered=renderHandout(md,source);
+   const rendered=renderHandout(md,source,{courseFile:file,courseFiles,courseRepository:repoUrl});
    let html=file.startsWith('labs/')?decorateLab(rendered,sessionGuides[Number(path.basename(file).slice(0,2))],{labs:labFiles,lessons:lessonFiles}):rendered.html;
    html=html.replace(/href="([^"]+)"/g,(all,href)=>{
      if(/^[a-z]+:/i.test(href))return all;
@@ -60,7 +65,7 @@ for(const file of docs){
  const raw=path.join(out,file);await mkdir(path.dirname(raw),{recursive:true});await writeFile(raw,source);
 }
 await writeFile(path.join(out,'assets/reader-docs.js'),'window.courseMarkdown='+JSON.stringify(readerDocs).replaceAll('<','\\u003c')+';');
-await writeFile(path.join(out,'reader.html'),document('Markdown reader',`<h1>Markdown reader</h1><p>Read course materials or open your own .md file. Local files stay in this browser; remote images are not loaded.</p><div class="reader-controls"><label>Course document<select id="reader-select"></select></label><label>Open a local .md file<input id="reader-file" type="file" accept=".md,.markdown,text/markdown,text/plain"></label><button id="reader-print" type="button">Print / save PDF</button></div><p id="reader-status" role="status"></p><article id="reader-content" aria-label="Rendered Markdown"></article><details><summary>Markdown source</summary><pre id="reader-source"></pre></details><link rel="stylesheet" href="assets/reader.css"><script src="assets/markdown-it.min.js"></script><script src="assets/reader-docs.js"></script><script src="assets/reader.js"></script>`));
+await writeFile(path.join(out,'reader.html'),document('Markdown reader',`<h1>Markdown reader</h1><p>Read course materials or open your own .md file. Local files stay in this browser; remote images are not loaded.</p><div class="reader-controls"><label>Course document<select id="reader-select"></select></label><label>Open a local .md file<input id="reader-file" type="file" accept=".md,.markdown,text/markdown,text/plain"></label><button id="reader-print" type="button">Print / save PDF</button></div><p id="reader-status" role="status"></p><article id="reader-content" aria-label="Rendered Markdown"></article><details><summary>Markdown source</summary><pre id="reader-source"></pre></details><link rel="stylesheet" href="assets/reader.css"><script src="assets/markdown-it.min.js"></script><script src="assets/reader-docs.js"></script><script src="assets/file-inventory.js"></script><script src="assets/file-links-browser.js"></script><script src="assets/reader.js"></script>`));
 const descriptions=[
 'Create your accounts, get the files and launch your first local lab.',
 'Turn observations into findings that another person can verify.',

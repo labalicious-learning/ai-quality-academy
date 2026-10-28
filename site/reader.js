@@ -4,6 +4,7 @@ const picker = document.querySelector('#reader-select');
 const content = document.querySelector('#reader-content');
 const status = document.querySelector('#reader-status');
 const renderer = window.markdownit({html: false, linkify: true});
+renderer.use(window.courseFileLinksPlugin);
 renderer.renderer.rules.image = (tokens, index) => '[Image: ' + renderer.utils.escapeHtml(tokens[index].content || 'not loaded') + ']';
 let current = 'README.md';
 for (const name of Object.keys(documents).sort()) {
@@ -11,7 +12,7 @@ for (const name of Object.keys(documents).sort()) {
 }
 function render(source, name) {
   current = name;
-  content.innerHTML = renderer.render(source);
+  content.innerHTML = renderer.render(source, Object.hasOwn(documents,name)?{courseFile:name,courseFiles:window.courseFileInventory,courseRendered:false}:{});
   document.querySelector('#reader-source').textContent = source;
   status.textContent = name;
   picker.value = Object.hasOwn(documents, name) ? name : '';
