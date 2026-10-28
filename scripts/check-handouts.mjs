@@ -12,6 +12,8 @@ export async function checkHandouts(browser,base,root){
       for(const file of files){
         await page.goto(offline?pathToFileURL(path.join(root,'labs',file)).href:base+'labs/'+file);
         assert.equal(await page.$$eval('h1',e=>e.length),1,file);assert.equal(await page.$$eval('.session-guide',e=>e.length),1,file);
+        assert.equal(await page.$$eval('.lab-resources',e=>e.length),1,file+' resource panel');
+        assert.ok(await page.$$eval('.resource-cards a',e=>e.length)>0,file+' linked resources');
         const missing=await page.$$eval('a[href^="#"]',links=>links.filter(a=>!document.getElementById(decodeURIComponent(a.hash.slice(1)))).map(a=>a.hash));assert.deepEqual(missing,[],file);
         const ids=await page.$$eval('[id]',els=>els.map(e=>e.id));assert.equal(ids.length,new Set(ids).size,file+' duplicate IDs');
         await page.click('#session-support summary');assert.equal(await page.$eval('#session-support',e=>e.open),true);
