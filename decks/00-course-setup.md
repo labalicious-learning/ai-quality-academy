@@ -110,13 +110,15 @@ Later labs investigate behavior; this is just a startup check.
 
 Use Codex or an approved compatible client/host route.
 
-Local/capped Qwen3.8-27B options: **SMALL_MODEL_GUIDE.md**
+Local/capped Qwen3.8-27B options: **[SMALL_MODEL_GUIDE.md](https://learn.labalicious.com/SMALL_MODEL_GUIDE.html)**
 
 Official setup: https://developers.openai.com/codex/quickstart
 
-Ask it to read only fixtures/setup-example.mjs.
+Ask it to read only [fixtures/setup-example.mjs](https://learn.labalicious.com/fixtures/setup-example.mjs).
 
-Predict the output, then run: node fixtures/setup-example.mjs
+Predict the output, then run: `node fixtures/setup-example.mjs`
+
+[Open the example file](https://learn.labalicious.com/fixtures/setup-example.mjs)
 
 <!-- Preflight the exact model/client route. No mandatory premium subscription; hosted usage may require a capped key. -->
 

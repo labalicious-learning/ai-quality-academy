@@ -170,4 +170,4 @@ Include synthetic data, quality checks, time and budget.
 
 Ask for scope approval before building the product.
 
-Course guide: **COURSE_PROJECT.md** · Ideas: **PROJECT_IDEAS.md**
+Course guide: **[COURSE_PROJECT.md](https://learn.labalicious.com/COURSE_PROJECT.html)** · Ideas: **[PROJECT_IDEAS.md](https://learn.labalicious.com/PROJECT_IDEAS.html)**

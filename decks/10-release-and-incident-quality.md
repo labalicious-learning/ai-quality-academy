@@ -102,4 +102,4 @@ Apply today’s skill to your own product as homework.
 
 Link the issue, PR, evidence and next question in your milestone record.
 
-**Course project → COURSE_PROJECT.md**
+**Course project → [COURSE_PROJECT.md](https://learn.labalicious.com/COURSE_PROJECT.html)**
