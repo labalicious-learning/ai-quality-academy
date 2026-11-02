@@ -1,5 +1,7 @@
 # Lab 12 — Your Product Showcase
 
+**When to do this:** Prepare your project and evidence outside class. Your individual presentation to Jared remains live; the 90-minute showcase accommodates up to four learners per block.
+
 **Time:** prepare during course-long homework; eight-minute individual demo plus four minutes with Jared in your assigned Session 12 slot.
 **Team:** your own product; disclose peer/AI assistance.
 

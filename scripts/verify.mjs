@@ -30,7 +30,7 @@ if(JSON.stringify(milestones)!==JSON.stringify(Array.from({length:12},(_,i)=>i+1
 for(const file of (await readdir(path.join(root,'lessons'))).filter(n=>n.endsWith('.md'))){
  const source=await readFile(path.join(root,'lessons',file),'utf8');
  const slots=[...source.matchAll(/^\| (\d+)–(\d+) \|/gm)].map(m=>[Number(m[1]),Number(m[2])]);
- if(!slots.length || slots[0][0]!==0 || slots.at(-1)[1]!==120 || slots.some(([start,end],i)=>end<=start || (i>0 && slots[i-1][1]!==start)))errors.push('lessons/'+file+': agenda must cover 120 continuous minutes');
+ if(!slots.length || slots[0][0]!==0 || slots.at(-1)[1]!==90 || slots.some(([start,end],i)=>end<=start || (i>0 && slots[i-1][1]!==start)))errors.push('lessons/'+file+': agenda must cover 90 continuous minutes');
 }
 for(const file of (await readdir(path.join(root,'labs'))).filter(n=>n.endsWith('.md'))){
  if(!(await readFile(path.join(root,'labs',file),'utf8')).includes('../COURSE_PROJECT.md'))errors.push('labs/'+file+': missing individual project connection');
@@ -48,4 +48,4 @@ for(const name of ['completion_decision','completion_certificate_issued_date','a
  if(!columns.includes(name))errors.push('project-progress.csv: missing separate award field '+name);
 }
 if(register.trim().split(/\r?\n/).length!==1)errors.push('project-progress.csv: publish the empty header only; learner records belong in private storage');
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log('Verified sessions 00–12, '+links+' links, 20 ideas, 12 milestones, two-hour agendas, separate awards, and publication checks.');
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log('Verified sessions 00–12, '+links+' links, 20 ideas, 12 milestones, 90-minute agendas, separate awards, and publication checks.');

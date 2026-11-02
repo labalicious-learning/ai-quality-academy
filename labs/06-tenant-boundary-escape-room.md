@@ -1,6 +1,8 @@
 # Lab 6 — Tenant-Boundary Escape Room
 
-**Time:** 35 minutes  
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
+**Independent practice estimate:** 35 minutes  
 **Team:** pairs; use the [portable request runner and collection](../fixtures/authorization-requests.md)
 
 

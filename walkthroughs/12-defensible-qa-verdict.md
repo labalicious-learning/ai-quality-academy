@@ -1,5 +1,7 @@
 # Session 12 — Product Showcase, one step at a time
 
+**When to do this:** Prepare your project and evidence outside class. Your individual presentation to Jared remains live; the 90-minute showcase accommodates up to four learners per block.
+
 [Back to the showcase](../labs/12-defensible-qa-verdict.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** a presentation of your working product and the evidence of how you built it. Preparation uses your course-long homework. Your assigned slot is eight minutes to demonstrate and four minutes to discuss with Jared. There is no separate test.

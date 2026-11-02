@@ -1,5 +1,7 @@
 # Session 04 — Test Charter, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/04-allocation-test-charter.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** a risk-ranked charter and your first three proposed tests. This is a 35-minute design exercise; you do not need to run payments or build a feature.

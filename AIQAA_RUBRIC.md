@@ -184,7 +184,7 @@ An unavailable reviewer environment produces unverified evidence, not a product 
 
 ## 5. Calibrate and adapt the standard
 
-Use [the worked project mappings and reviewer calibration cases](AIQAA_CALIBRATION.md) before the first cohort and when reviewers change. At first delivery, double-review the first three projects and every disputed decision. Thereafter, double-review at least one in five projects, selected by the private review queue order before viewing outcomes, plus all disputes. If a sampled review changes eligibility, pause final decisions for that reviewer batch and reconcile affected rows before issuance. Budget this separately from the two-hour lessons.
+Use [the worked project mappings and reviewer calibration cases](AIQAA_CALIBRATION.md) before the first cohort and when reviewers change. At first delivery, double-review the first three projects and every disputed decision. Thereafter, double-review at least one in five projects, selected by the private review queue order before viewing outcomes, plus all disputes. If a sampled review changes eligibility, pause final decisions for that reviewer batch and reconcile affected rows before issuance. Budget this separately from the 90-minute lessons.
 
 Record initial per-row agreement as matching row decisions divided by jointly rated rows, excluding neither failures nor unverified cases. Also record complete-decision agreement and every disagreement's cause; a high average must not conceal a disputed safety or certification decision. This is a reviewer quality check, not a student score, and no reliability rate is claimed until real independent reviews occur. Track time spent and evidence burden; pilot whether the project remains feasible within its homework allowance.
 

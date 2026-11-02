@@ -1,6 +1,6 @@
 # Session 00 — Your course workspace
 
-**Duration:** 120 minutes. Prerequisites: laptop, browser, access to your email. A phone/authenticator is useful for securing accounts. No coding experience required.
+**Duration:** 90 minutes. Prerequisites: laptop, browser, access to your email. A phone/authenticator is useful for securing accounts. No coding experience required.
 
 **Slides:** [Session 00 deck](../decks/00-course-setup.md)  
 **Learner checklist:** [Setup lab](../labs/00-course-setup.md)
@@ -16,18 +16,22 @@ Use the [Mac/Linux/Windows platform guide](../PLATFORM_GUIDE.md). Demonstrate ZI
 
 Confirm the published repository URL is set in the site configuration. Test on the operating systems in the cohort. Arrange approved AI seats before class; do not promise free access. Verify relevant age/account eligibility and school/guardian arrangements through the provider's current terms for your cohort. No shared instructor password. Prepare a paired/browser-reading route for restricted school devices.
 
-## 120-minute plan
+**Live schedule:** Mondays, 7:30–9:00 p.m. Central (America/Chicago). Complete the setup checklist independently after the demonstrations; use a support appointment for installation blockers.
+
+## 90-minute plan
 | Time | Activity | Check |
 | --- | --- | --- |
-| 0–10 | Welcome: show the final local lab and the course journey | Learners identify what they will build |
-| 10–25 | Create or recover a personal GitHub account; verify email | Learner shows signed-in profile, no personal details recorded |
-| 25–35 | Account security and public profile/email awareness | Learner configures protection privately |
-| 35–50 | Open course repo; navigate README, folders and issues | Find Session 01 lab and explain public read vs write access |
-| 50–60 | Break; coach installation problems | Triage network vs permissions vs account |
-| 60–80 | Install Node; obtain repo via ZIP, Git CLI or optional Mac/Windows GitHub Desktop | node --version works; package.json is in open folder |
-| 80–95 | Run npm start and open local browser URL | Candidate B loads a reserved record |
-| 95–110 | Open approved client; verify account or local-model route; explain one file | Response cites a real path; learner checks it |
-| 110–120 | Personal readiness card and exit demonstration | Start/stop lab and find next session unaided |
+| 0–10 | Welcome and course journey; explain live class versus independent labs | Learner can find the lab and walkthrough |
+| 10–25 | Demonstrate GitHub account, security and public/private boundaries | Learner knows which personal setup steps remain |
+| 25–40 | Tour the repository, README, resource cards and local folders | Locate the Session 01 materials |
+| 40–50 | Demonstrate Node installation checks and starting/stopping the sandbox | Distinguish terminal, folder and browser URL |
+| 50–60 | Break | Collect blockers privately |
+| 60–75 | Demonstrate the approved AI client and verify one setup-example claim | Identify the cited file and observable check |
+| 75–85 | Explain the independent checklist, saving work and getting help | Each learner names a next action |
+| 85–90 | Readiness check and next-session handoff | Record ready or exact blocker privately |
+
+## Independent setup — after class
+Complete the linked setup lab at your own pace before the next lesson where possible. Allow extra time for accounts, downloads and installation. Do not share credentials or rush security settings. Use the walkthrough and ask for help with a precise blocker; readiness is not graded by speed.
 
 ## Live demonstration script
 Say: “GitHub stores our course files. Your computer runs the lab. Codex assists with work in the folder you give it. These are separate systems.” Show the repo URL, then a filesystem folder, then the localhost URL. Stop the server to show why refreshing localhost fails. Start it again.
@@ -44,4 +48,4 @@ Show local lab, explain the setup example's output, locate next session, name th
 
 ## Affordable project access
 
-During the existing tool-readiness checks, introduce [the small-model guide](../SMALL_MODEL_GUIDE.md). Qwen3.8-27B is the recommended project model; preflight one compatible client/host route before Session 02. A premium subscription and new hardware are not requirements. Send unresolved installation, account-eligibility or spending issues to a private support appointment, not extra work inside the two-hour agenda. Product selection is introduced in Session 01.
+During the existing tool-readiness checks, introduce [the small-model guide](../SMALL_MODEL_GUIDE.md). Qwen3.8-27B is the recommended project model; preflight one compatible client/host route before Session 02. A premium subscription and new hardware are not requirements. Send unresolved installation, account-eligibility or spending issues to a private support appointment, not extra work inside the 90-minute agenda. Product selection is introduced in Session 01.

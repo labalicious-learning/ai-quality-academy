@@ -1,6 +1,8 @@
 # Session 00 — Get ready to learn
 
-**Time:** 120 minutes with your instructor. Keep this checklist open. Use your own accounts and a local course copy.
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
+**Time:** Self-paced setup outside the 90-minute live orientation. Keep this checklist open. Use your own accounts and a local course copy.
 
 
 ## Quick start

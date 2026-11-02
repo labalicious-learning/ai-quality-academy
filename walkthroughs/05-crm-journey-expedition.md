@@ -1,5 +1,7 @@
 # Session 05 — CRM Journey, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/05-crm-journey-expedition.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** a journey log, one evidence packet, a regression-test idea and a product question. Use 35 minutes; switch driver/verifier after the first allocation check.

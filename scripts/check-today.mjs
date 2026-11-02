@@ -16,7 +16,7 @@ export async function checkToday(browser,base,root){
       assert.equal(await page.$$eval('.path-section[open]',e=>e.length),0);
       assert.equal(await page.$$eval('#today-prep a',e=>e.length),3);
       assert.ok(await page.$('#today-prep a[href$="fixtures/setup-example.mjs"]'));
-      assert.equal(await page.$eval('#schedule-title',e=>e.textContent),'Dates not announced yet');
+      assert.equal(await page.$eval('#schedule-title',e=>e.textContent),'Mondays · 7:30–9 p.m. Central');
       for(const width of [1440,768,375]){
         await page.setViewport({width,height:1000});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Today overflow '+width);
         if(!offline)await page.screenshot({path:path.join(root,`review/today-${width}.png`),fullPage:true});
@@ -35,7 +35,7 @@ export async function checkToday(browser,base,root){
       });
       assert.match(await page.$eval('#schedule-title',e=>e.textContent),/Next class.*02/);assert.match(await page.$eval('#schedule-zone',e=>e.textContent),/America\/Chicago/);
       await page.emulateTimezone('Europe/Berlin');await page.evaluate(()=>dispatchEvent(new Event('focus')));assert.match(await page.$eval('#schedule-zone',e=>e.textContent),/Europe\/Berlin/);
-      await page.evaluate(()=>{CourseContext.schedule=[];dispatchEvent(new Event('focus'));});assert.equal(await page.$eval('#schedule-title',e=>e.textContent),'Dates not announced yet');
+      await page.evaluate(()=>{CourseContext.schedule=[];dispatchEvent(new Event('focus'));});assert.equal(await page.$eval('#schedule-title',e=>e.textContent),'Mondays · 7:30–9 p.m. Central');
       await page.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);assert.equal(await page.$eval('html',e=>getComputedStyle(e).scrollBehavior),'auto');
       assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
       console.log('Today: '+(offline?'offline':'online')+' primary action, disclosures, keyboard, persistence, dates/timezones and responsive layout passed');

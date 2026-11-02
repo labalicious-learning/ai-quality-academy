@@ -1,6 +1,6 @@
 # Session 01 teaching guide
 
-Teach learners to separate a convincing claim from evidence they can inspect. Keep one fictional example running through the explanation, demonstration and practice. This guide supplements the [two-hour lesson plan](../lessons/01-quality-and-evidence.md); it does not add another assignment.
+Teach learners to separate a convincing claim from evidence they can inspect. Keep one fictional example running through the explanation, demonstration and practice. This guide supplements the [90-minute lesson plan](../lessons/01-quality-and-evidence.md); it does not add another assignment.
 
 ## Before class
 
@@ -42,7 +42,7 @@ Do not offer exceptions for temporary credentials, personal projects or local mo
 
 ## Keep practice separate from the product project
 
-Today's practice produces three classified claims, one evidence packet and one limitation. The course-long product homework produces a proposal and rough wireframe. State the distinction before opening the lab. Protect the 35-minute hands-on period and have driver and verifier switch halfway.
+Today's practice produces three classified claims, one evidence packet and one limitation. The course-long product homework produces a proposal and rough wireframe. State the distinction before opening the lab. Explain the independent 35-minute practice task and its deliverable. Partners may arrange time outside class and switch roles halfway.
 
 Before releasing the group, have each learner open the walkthrough and identify its first file. Demonstrate creating the blank claim table in local scratch space and saving one line. Ask “Which window do you use next, and what file will you leave with?” Use the walkthrough's checkpoints for coaching. It supplies scaffolding without completing classifications for them. Pair or record a setup blocker if needed; individual installation recovery should not consume the rest of the group's practice period.
 

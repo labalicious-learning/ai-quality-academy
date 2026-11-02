@@ -1,6 +1,6 @@
 # Lesson 6 — API, Data, Permissions, and Privacy
 
-**Duration:** 120 minutes  
+**Duration:** 90 minutes  
 
 **Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [06-api-data-permissions](../decks/06-api-data-permissions.md)  
@@ -17,6 +17,8 @@
 
 Use fixtures/authorization-requests.md and scripts/lab-request.mjs. Verify all four locks against both candidates. PATCH is an authorization probe with persisted:false; unsupported allocation writes return 405. The send button is clickable and its API response supplies the denial. No real authentication or database isolation is tested.
 
+**Live schedule:** Mondays, 7:30–9:00 p.m. Central (America/Chicago). Full labs and product implementation happen outside class.
+
 ## Agenda
 
 | Time | Facilitation |
@@ -26,10 +28,15 @@ Use fixtures/authorization-requests.md and scripts/lab-request.mjs. Verify all f
 | 25–40 | Demo safe request inspection. Redact auth material; compare a browser denial to an API denial. |
 | 40–50 | Practice reading a minimal JSON request/response and defining expected status/state. |
 | 50–60 | Break. |
-| 60–95 | Escape room: teams test contact list/detail isolation, PATCH permission, a positive owner control and UI/API send denial. Distinguish authorization from actual persistence. |
-| 95–110 | Security finding clinic: distinguish an actual unauthorized result from a confusing UI or malformed request. |
-| 110–115 | Explain responsible disclosure and why only sandbox testing is allowed. |
-| 115–120 | Exit ticket: name two independent layers that should enforce tenant isolation. |
+| 60–65 | Independent-lab handoff: open the linked resources and walkthrough, explain the deliverable and show where to save/submit it. Complete the full lab after class. |
+| 65–80 | Security finding clinic: distinguish an actual unauthorized result from a confusing UI or malformed request. |
+| 80–85 | Explain responsible disclosure and why only sandbox testing is allowed. |
+| 85–90 | Exit ticket: name two independent layers that should enforce tenant isolation. |
+
+## Independent lab — after class
+
+Escape room: teams test contact list/detail isolation, PATCH permission, a positive owner control and UI/API send denial. Distinguish authorization from actual persistence. Budget about 35 minutes of focused practice; setup and troubleshooting may need additional time. Work solo or arrange a partner outside class. Use the lab’s linked resources and step-by-step walkthrough. Save the existing deliverables and use the [submission workflow](../SUBMISSIONS.md). Bring one verified result or a specific blocker to the next class; arrange help if you cannot finish. Product Studio homework remains separate.
+
 
 ## Formative coaching
 
@@ -37,6 +44,6 @@ Use the evidence-packet template. Credit is awarded for correct proof of isolati
 
 ## Product Studio connection — Check a real boundary
 
-Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Exercise validation, persistence and malformed input in your product. If it has accounts, test appropriate positive/negative permissions too; otherwise diagram a hypothetical permission boundary and label it unimplemented.
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 90-minute session. The build work happens as homework. Exercise validation, persistence and malformed input in your product. If it has accounts, test appropriate positive/negative permissions too; otherwise diagram a hypothetical permission boundary and label it unimplemented.
 
 Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

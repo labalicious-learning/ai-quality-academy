@@ -1,6 +1,6 @@
 # Lesson 4 — Requirements to Risk-Based Test Design
 
-**Duration:** 120 minutes  
+**Duration:** 90 minutes  
 
 **Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [04-requirements-to-test-design](../decks/04-requirements-to-test-design.md)  
@@ -17,6 +17,8 @@
 
 Give teams the fictional Community Launch story: “A concierge can reserve an allocation after confirming a deposit, and the customer receives an update.” Include a simple lifecycle diagram, a mock UI, and a few incomplete requirements.
 
+**Live schedule:** Mondays, 7:30–9:00 p.m. Central (America/Chicago). Full labs and product implementation happen outside class.
+
 ## Agenda
 
 | Time | Facilitation |
@@ -26,10 +28,15 @@ Give teams the fictional Community Launch story: “A concierge can reserve an a
 | 25–40 | Demo: ask AI for test cases, then highlight omissions—duplicate requests, payment failure, wrong role, stale page, and notification failure. |
 | 40–50 | Guided conversion of one vague statement into three acceptance criteria and two non-goals. |
 | 50–60 | Break. |
-| 60–95 | Lab: teams build a test charter, risk table, and priority order. Require one accessibility, security, and integration case. |
-| 95–110 | Risk poker: teams defend why their top three tests beat another plausible test. |
-| 110–115 | Show how the charter becomes manual test cases, automated checks, and release evidence. |
-| 115–120 | Exit ticket: write one negative acceptance criterion for a workflow they know. |
+| 60–65 | Independent-lab handoff: open the linked resources and walkthrough, explain the deliverable and show where to save/submit it. Complete the full lab after class. |
+| 65–80 | Risk poker: compare prepared test priorities and defend the highest-risk checks. |
+| 80–85 | Show how the charter becomes manual test cases, automated checks, and release evidence. |
+| 85–90 | Exit ticket: write one negative acceptance criterion for a workflow they know. |
+
+## Independent lab — after class
+
+Lab: teams build a test charter, risk table, and priority order. Require one accessibility, security, and integration case. Budget about 35 minutes of focused practice; setup and troubleshooting may need additional time. Work solo or arrange a partner outside class. Use the lab’s linked resources and step-by-step walkthrough. Save the existing deliverables and use the [submission workflow](../SUBMISSIONS.md). Bring one verified result or a specific blocker to the next class; arrange help if you cannot finish. Product Studio homework remains separate.
+
 
 ## Formative coaching
 
@@ -37,7 +44,7 @@ Use `templates/test-charter.md`. A passing charter has risks tied to a harmed us
 
 ## Product Studio connection — Define what quality means
 
-Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Write acceptance criteria and a risk-ranked charter for your product. Include success, negative and boundary cases, the first three checks and any unresolved rules requiring instructor input.
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 90-minute session. The build work happens as homework. Write acceptance criteria and a risk-ranked charter for your product. Include success, negative and boundary cases, the first three checks and any unresolved rules requiring instructor input.
 
 Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.
 

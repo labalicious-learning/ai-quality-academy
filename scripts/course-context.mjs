@@ -12,7 +12,7 @@ export function courseContext(config){
       const date=value.slice(0,10), parts=date.split('-').map(Number);
       if(new Date(Date.UTC(parts[0],parts[1]-1,parts[2])).toISOString().slice(0,10)!==date)throw Error('Invalid calendar date.');
     }
-    if(Date.parse(row.end)-Date.parse(row.start)!==7200000)throw Error('Course sessions must be two hours.');
+    if(Date.parse(row.end)-Date.parse(row.start)!==5400000)throw Error('Course sessions must be 90 minutes.');
     return {session:row.session,start:new Date(row.start).toISOString(),end:new Date(row.end).toISOString()};
   }).sort((a,b)=>a.start.localeCompare(b.start));
   if(schedule.some((s,i)=>i>0&&(s.start<schedule[i-1].end||s.session<=schedule[i-1].session)))throw Error('Course dates must be ordered without overlaps.');

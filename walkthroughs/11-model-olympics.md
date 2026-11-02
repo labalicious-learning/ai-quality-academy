@@ -1,5 +1,7 @@
 # Session 11 — Model Evaluation, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/11-model-olympics.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** an evaluation card, hypothetical role recommendations, one proposed new case and a one-minute risk explanation. Use 35 minutes. The core route uses fabricated outputs and costs no model tokens.
