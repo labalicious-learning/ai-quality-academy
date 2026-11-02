@@ -1,5 +1,7 @@
 # Session 01 — Claim Detective, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/01-ai-claim-detective.md) · [All help guides](../LAB_HELP.md)
 
 **Your job:** decide which of three AI statements the supplied evidence supports. You are investigating a report, not fixing the app or designing your course project.

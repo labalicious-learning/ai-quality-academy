@@ -1,6 +1,9 @@
 # Join a Labalicious cohort
 
-Build useful software with AI, practice QA, and learn with instructor feedback across thirteen two-hour sessions.
+**Class format:** Mondays, 7:30–9:00 p.m. Central (America/Chicago), on Zoom. Full labs are independent work outside class. Live time covers teaching, demonstrations, discussion and the lab handoff. Bring your completed evidence or a specific blocker to the next class.
+
+
+Build useful software with AI, practice QA, and learn with instructor feedback across thirteen 90-minute sessions.
 
 **Schedule pending.** This is an interest/signup form, not a confirmed course place. Dates have not been announced here.
 

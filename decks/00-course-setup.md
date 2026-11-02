@@ -2,7 +2,7 @@
 marp: true
 theme: academy
 paginate: true
-footer: "© 2026 Jared Cluff · Labalicious · Session 00"
+footer: "© 2026 Jared Cluff · Labalicious · Session 00 · 90 min live · labs after class"
 ---
 
 <!-- _class: lead -->
@@ -11,7 +11,7 @@ footer: "© 2026 Jared Cluff · Labalicious · Session 00"
 
 ## SESSION 00 / SET UP TO LEARN
 
-Two hours. Your own accounts. A working local lab.
+Ninety minutes live; labs on your own time. Your own accounts. A working local lab.
 
 ---
 

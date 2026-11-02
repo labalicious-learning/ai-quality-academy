@@ -1,6 +1,6 @@
 # Lesson 5 — Browser and Workflow QA
 
-**Duration:** 120 minutes  
+**Duration:** 90 minutes  
 
 **Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [05-browser-and-workflow-qa](../decks/05-browser-and-workflow-qa.md)  
@@ -17,6 +17,8 @@
 
 Use the included contact lookup, allocation and send-permission controls with R1–R3. Rehearse both candidates. Roles are selectors, not login accounts. Contact creation, classification, role redirects and a full CRM are not implemented or required.
 
+**Live schedule:** Mondays, 7:30–9:00 p.m. Central (America/Chicago). Full labs and product implementation happen outside class.
+
 ## Agenda
 
 | Time | Facilitation |
@@ -26,10 +28,15 @@ Use the included contact lookup, allocation and send-permission controls with R1
 | 25–40 | Demo contact lookup, allocation loading and simulated send permission. Pause after each action: what changed, and what proves it? |
 | 40–50 | Guided practice: inspect one request and decide whether a visible heading means the page worked. |
 | 50–60 | Break. |
-| 60–95 | Pairs run the handout's lookup/allocation/permission journey in both candidates. Driver operates browser; verifier tracks evidence. Swap after allocation inspection. |
-| 95–110 | Teams triage findings as defect, data/setup issue, expected behavior, or uncertain. |
-| 110–115 | Discuss what is appropriate for deterministic automation versus human exploration. |
-| 115–120 | Exit ticket: name the one additional evidence source you would collect for a blank page. |
+| 60–65 | Independent-lab handoff: open the linked resources and walkthrough, explain the deliverable and show where to save/submit it. Complete the full lab after class. |
+| 65–80 | Triage prepared findings as defect, data/setup issue, expected behavior, or uncertain. |
+| 80–85 | Discuss what is appropriate for deterministic automation versus human exploration. |
+| 85–90 | Exit ticket: name the one additional evidence source you would collect for a blank page. |
+
+## Independent lab — after class
+
+Pairs run the handout's lookup/allocation/permission journey in both candidates. Driver operates browser; verifier tracks evidence. Swap after allocation inspection. Budget about 35 minutes of focused practice; setup and troubleshooting may need additional time. Work solo or arrange a partner outside class. Use the lab’s linked resources and step-by-step walkthrough. Save the existing deliverables and use the [submission workflow](../SUBMISSIONS.md). Bring one verified result or a specific blocker to the next class; arrange help if you cannot finish. Product Studio homework remains separate.
+
 
 ## Formative coaching
 
@@ -37,6 +44,6 @@ Learners must report at least one finding or a well-supported no-defect conclusi
 
 ## Product Studio connection — Finish one complete journey
 
-Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Make a user action lead to a saved, visible result. Record manual evidence and a reproduced issue, then request human feedback on a focused fix/feature PR.
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 90-minute session. The build work happens as homework. Make a user action lead to a saved, visible result. Record manual evidence and a reproduced issue, then request human feedback on a focused fix/feature PR.
 
 Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

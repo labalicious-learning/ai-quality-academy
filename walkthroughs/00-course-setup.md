@@ -1,8 +1,10 @@
 # Session 00 — Setup, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the setup lab](../labs/00-course-setup.md) · [All help guides](../LAB_HELP.md)
 
-**You will finish with:** a local lab you can start and stop, one AI explanation you checked, and a private readiness note. Skip steps you have already verified. Work at your own pace within the two-hour setup session.
+**You will finish with:** a local lab you can start and stop, one AI explanation you checked, and a private readiness note. Skip steps you have already verified. Work at your own pace outside the live orientation.
 
 ## 1. Know which window you need
 

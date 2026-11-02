@@ -2,7 +2,7 @@
 marp: true
 theme: default
 paginate: true
-footer: "© 2026 Jared Cluff · Labalicious · Lesson 10"
+footer: "© 2026 Jared Cluff · Labalicious · Lesson 10 · 90 min live · labs after class"
 ---
 
 <!-- _class: lead -->

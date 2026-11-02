@@ -38,7 +38,7 @@ September 20 local verification: 53 automated tests and four handout build tests
 
 ### Publishing public dates
 
-Keep `publicSchedule` in `site.config.json` empty until dates are confirmed. Each optional row has exactly `session` (00–12), `start`, and `end` (ISO timestamps with explicit UTC offsets). Use actual two-hour sessions in session order. Do not add email addresses, names, meeting URLs, private Calendar IDs or signup records. Changes must be rebuilt and published; they do not reschedule existing Google invitations.
+Keep `publicSchedule` in `site.config.json` empty until dates are confirmed. Each optional row has exactly `session` (00–12), `start`, and `end` (ISO timestamps with explicit UTC offsets). Use actual 90-minute sessions in session order. Do not add email addresses, names, meeting URLs, private Calendar IDs or signup records. Changes must be rebuilt and published; they do not reschedule existing Google invitations.
 
 ## Next: complete examples, not fabricated history
 

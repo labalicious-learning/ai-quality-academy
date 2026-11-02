@@ -1,5 +1,7 @@
 # Session 10 — Release Room, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/10-ship-no-ship-release-room.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** three dated/ordered recommendations, a concise incident update and any justified override decision. Use 35 minutes. This is a tabletop exercise; no deployment or cloud CLI is required.

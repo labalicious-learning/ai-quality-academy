@@ -1,5 +1,7 @@
 # Session 08 — Visual Review, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/08-digital-showroom-visual-review.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** annotated captures, a keyboard/accessibility result, one evidence packet and one approved intentional change. Use 35 minutes and compare the same environment for A and B.

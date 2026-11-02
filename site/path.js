@@ -21,8 +21,8 @@
   function showSchedule(){
     const schedule=globalThis.CourseContext?.schedule||[], now=Date.now(), upcoming=globalThis.CourseSchedule?.next(schedule,now);
     if(!upcoming){
-      $('schedule-title').textContent=schedule.length?'No upcoming dates listed':'Dates not announced yet';
-      $('schedule-time').textContent='You can use the public lessons at your own pace. Check with your instructor for the next cohort.';
+      $('schedule-title').textContent='Mondays · 7:30–9 p.m. Central';
+      $('schedule-time').textContent='Live classes last 90 minutes (America/Chicago). Full labs are independent work. Use your private invitation for the exact session date and joining details.';
       $('schedule-zone').textContent='Calendar invitations follow instructor approval and confirmed dates. This planner does not confirm enrollment.';
       return;
     }

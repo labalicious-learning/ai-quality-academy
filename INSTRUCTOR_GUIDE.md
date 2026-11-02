@@ -1,6 +1,9 @@
 # Instructor Guide
 
-Start with [Session 00](lessons/00-course-setup.md). The program now has 13 sessions and 26 contact hours. All core labs use fictional data and the included local app.
+**Class format:** Mondays, 7:30–9:00 p.m. Central (America/Chicago), on Zoom. Full labs are independent work outside class. Live time covers teaching, demonstrations, discussion and the lab handoff. Bring your completed evidence or a specific blocker to the next class.
+
+
+Start with [Session 00](lessons/00-course-setup.md). The program now has 13 sessions and 19.5 scheduled live hours. All core labs use fictional data and the included local app.
 
 ## Staffing and room design
 
@@ -38,7 +41,7 @@ He authorizes each award separately. No automatic issuer, numeric threshold, hid
 
 ## Project review operations
 
-At each session, use the published lab’s session guide to orient learners. Fit its optional recall prompt into arrival/discussion and its next-step reflection into closing/debrief; retain the 120-minute agenda. [Learner support](LEARNER_SUPPORT.md) includes a safe help-request pattern, catch-up route and accommodations guidance. Practice feedback is descriptive coaching, not points or an additional exam. Have learners apply the correction to their existing artifact rather than fill another form.
+At each session, use the published lab’s session guide to orient learners. Fit its optional recall prompt into arrival/discussion and its next-step reflection into closing/debrief; retain the 90-minute agenda. [Learner support](LEARNER_SUPPORT.md) includes a safe help-request pattern, catch-up route and accommodations guidance. Practice feedback is descriptive coaching, not points or an additional exam. Have learners apply the correction to their existing artifact rather than fill another form.
 
 Learners can prepare a focused Markdown note from the dashboard’s **Prepare a project review** link. This is local preparation, not intake, an AI grade or an instructor workspace. Review the original artifacts and exact commits; the helper does not fetch or verify them. Keep decisions in approved private storage. The [Shift Garden example](EXAMPLE_PROJECT.md) illustrates boundary evidence with runnable negative/corrected snapshots; its staged conversation and snapshots do not establish learner history or certification eligibility.
 
@@ -51,12 +54,12 @@ Record all 21 rows using [the private worksheet](templates/aiqaa-evidence-review
 Before the cohort, privately establish a submission/contact channel, learner aliases, review appointments and an approved model route. Preflight Qwen3.8-27B using [the small-model guide](SMALL_MODEL_GUIDE.md); record actual compatibility, account eligibility and spending ceilings. Do not require hardware purchases or a premium subscription.
 
 - Session 01 → 02: review one-page proposals and wireframes between classes; confirm three core features, exclusions, synthetic data, OS/run approach and budget.
-- Each session: scan the milestone index and address one blocker. Use coaches for triage; schedule focused reviews outside the two-hour lesson when needed.
+- Each session: scan the milestone index and address one blocker. Use coaches for triage; schedule focused reviews outside the 90-minute lesson when needed.
 - Sessions 02, 05 and 10–12: ensure substantive human PR feedback at kickoff, working slice and release; add a visual/recovery review in Sessions 08–09.
 - Record repository/PR URLs and reviewed SHAs at early planning, working-slice, test/fix and release stages. Discuss an issue-to-release chain throughout these checkpoints. Counts, dates or an AI summary alone do not prove development or understanding; contextualize squashed/offline history.
 - Public feedback is artifact-focused; identities, separate award decisions, accommodations and coaching stay private.
 - Review student source before any execution. Use an isolated, credential-free environment; never run untrusted installs or workflows on a privileged instructor machine.
-- Use [the showcase plan](lessons/12-capstone-and-professional-practice.md): at most six 12-minute individual presentations in one two-hour block. Book additional blocks/appointments with Jared for larger cohorts; parallel coach panels cannot replace presenting to him.
+- Use [the showcase plan](lessons/12-capstone-and-professional-practice.md): at most four 12-minute individual presentations in one 90-minute block. Book additional blocks/appointments with Jared for larger cohorts; parallel coach panels cannot replace presenting to him.
 
 Copy [the progress register](templates/project-progress.csv), [two-decision review](templates/aiqaa-certification-review.md), [completion certificate](templates/course-completion-certificate.md) and [AIQAA certificate](templates/aiqaa-certificate.md) to approved **private** storage. Never commit filled records. Record evidence, SHAs and follow-up, then each award's decision and issuance date separately. AIQAA records also identify the criteria version and reviewed release/commit. Confirm the working certification title before issuance.
 

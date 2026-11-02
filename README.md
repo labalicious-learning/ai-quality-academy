@@ -1,5 +1,8 @@
 # Labalicious Academy
 
+**Class format:** Mondays, 7:30–9:00 p.m. Central (America/Chicago), on Zoom. Full labs are independent work outside class. Live time covers teaching, demonstrations, discussion and the lab handoff. Bring your completed evidence or a specific blocker to the next class.
+
+
 Deployment destination: https://learn.labalicious.com
 
 Repository destination: https://github.com/labalicious-learning/ai-quality-academy
@@ -22,7 +25,7 @@ Unfinished forms now recover as local drafts. From the dashboard, **Prepare a pr
 
 After `npm run build`, open `dist/reader.html` in your browser. Choose any course document or use **Open a local .md file** to read your own Markdown. It works offline, keeps local files in your browser, renders tables and code, and supports printing to PDF. Raw HTML is disabled and remote images are not loaded. Each built handout links to the reader; this does not change your operating system's default app for `.md` files.
 
-A practical course in using AI across quality assurance and everyday business work. Thirteen two-hour sessions: Session 00 gets you set up; Sessions 01–12 develop investigation, test design, automation and professional judgment.
+A practical course in using AI across quality assurance and everyday business work. Thirteen 90-minute sessions: Session 00 gets you set up; Sessions 01–12 develop investigation, test design, automation and professional judgment.
 
 All supplied scenarios, people, records and applications are fictional teaching examples. Learner products use synthetic data. This repository contains no production application code, internal architecture documents, company data or private repository history.
 
@@ -79,6 +82,6 @@ npm run verify
 - .github/workflows/ — verification and GitHub Pages deployment
 
 ## Delivery and access
-26 contact hours including setup form a foundation for supervised apprenticeship. Completion does not certify expert performance. Use an approved Codex or compatible alternative client with capped hosted or locally served inference; the course does not require a premium AI subscription. Follow the small-model guide and instructor setup check. GitHub, Google and Discord accounts are separate. Optional live integrations require access granted specifically for the course.
+19.5 scheduled live hours including setup form a foundation for supervised apprenticeship. Completion does not certify expert performance. Use an approved Codex or compatible alternative client with capped hosted or locally served inference; the course does not require a premium AI subscription. Follow the small-model guide and instructor setup check. GitHub, Google and Discord accounts are separate. Optional live integrations require access granted specifically for the course.
 
 © 2026 Jared Cluff. All rights reserved. Publicly readable does not mean open-source licensed. See [Copyright](COPYRIGHT.md). Third-party dependencies retain their own licenses.

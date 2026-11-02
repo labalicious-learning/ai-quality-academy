@@ -1,6 +1,6 @@
 # Lesson 11 — AI Agents, Evaluation, and Model Change
 
-**Duration:** 120 minutes  
+**Duration:** 90 minutes  
 
 **Included delivery track:** Follow [LAB_SETUP.md](../LAB_SETUP.md) for the supplied files and local simulation. Required activities use these materials; connected deployments are optional extensions. Instructor debrief: [answer key](../instructor/ANSWER_KEY.md). Real OAuth, cloud releases and payments are simulated or discussed through evidence packets.
 **Deck:** [11-ai-agents-and-model-change](../decks/11-ai-agents-and-model-change.md)  
@@ -17,6 +17,8 @@
 
 Use fixtures/model-cases.json as input-only cases, mock-model-outputs.json as fabricated verdicts and instructor/model-labels.json as separate reviewer labels. Learners predict before scoring. Mark missing rationale, full task completion, latency and cost not measured. For optional live trials follow fixtures/model-evaluation-protocol.md, keeping answers outside actor context.
 
+**Live schedule:** Mondays, 7:30–9:00 p.m. Central (America/Chicago). Full labs and product implementation happen outside class.
+
 ## Agenda
 
 | Time | Facilitation |
@@ -26,10 +28,15 @@ Use fixtures/model-cases.json as input-only cases, mock-model-outputs.json as fa
 | 25–40 | Demonstrate a golden case. Score evidence completeness before reading the model’s conclusion. |
 | 40–50 | Guided practice: learners write one clear pass and one clear fail case for a spreadsheet or UI task. |
 | 50–60 | Break. |
-| 60–95 | Model Olympics: teams score anonymous outputs against the corpus, calculate binary false passes/fails and separate ambiguity/boundary verdicts. Mark mock rationale, full completion, latency and cost not measured. |
-| 95–110 | Teams fill in a model evaluation card and select approved, restricted, or rejected use by task class. |
-| 110–115 | Discuss model updates: rerun the corpus, version prompts/playbooks, and teach the observed delta. |
-| 115–120 | Exit ticket: define a false pass and explain why it is dangerous in QA. |
+| 60–65 | Independent-lab handoff: open the linked resources and walkthrough, explain the deliverable and show where to save/submit it. Complete the full lab after class. |
+| 65–80 | Walk through a prepared model evaluation card and select approved, restricted, or rejected use by task class. |
+| 80–85 | Discuss model updates: rerun the corpus, version prompts/playbooks, and teach the observed delta. |
+| 85–90 | Exit ticket: define a false pass and explain why it is dangerous in QA. |
+
+## Independent lab — after class
+
+Model Olympics: teams score anonymous outputs against the corpus, calculate binary false passes/fails and separate ambiguity/boundary verdicts. Mark mock rationale, full completion, latency and cost not measured. Budget about 35 minutes of focused practice; setup and troubleshooting may need additional time. Work solo or arrange a partner outside class. Use the lab’s linked resources and step-by-step walkthrough. Save the existing deliverables and use the [submission workflow](../SUBMISSIONS.md). Bring one verified result or a specific blocker to the next class; arrange help if you cannot finish. Product Studio homework remains separate.
+
 
 ## Teaching notes
 
@@ -41,6 +48,6 @@ Learners pass when they can identify an unsafe self-grading setup and make a bou
 
 ## Product Studio connection — Improve the workflow, not the bill
 
-Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 120-minute session. The build work happens as homework. Compare two brief/context versions on one small product task using the same inexpensive model and starting revision. Record actual outcomes, retries and costs; update the playbook. Prepare your final release and showcase.
+Use up to five minutes of the existing closing/debrief time for a project next-step check; do not extend the 90-minute session. The build work happens as homework. Compare two brief/context versions on one small product task using the same inexpensive model and starting revision. Record actual outcomes, retries and costs; update the playbook. Prepare your final release and showcase.
 
 Follow [the milestone map](../COURSE_PROJECT.md) and [review checklist](../templates/project-review.md). Record support needs privately; practice lab quality criteria are coaching, not an exam or numeric completion gate.

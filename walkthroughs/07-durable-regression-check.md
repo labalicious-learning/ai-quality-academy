@@ -1,5 +1,7 @@
 # Session 07 — Regression Check, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/07-durable-regression-check.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** a small test diff, actual red/green results, locator rationale and coverage limit. Use 35 minutes. If browser automation is blocked, use the lab's assertion-design route and label execution unverified.

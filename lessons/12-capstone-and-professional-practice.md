@@ -1,6 +1,6 @@
 # Lesson 12 — Product Showcase and Professional Practice
 
-**Duration:** 120 minutes per showcase block; at most six individual presentations.
+**Duration:** 90 minutes per showcase block; at most four individual presentations.
 **Deck:** [Product showcase](../decks/12-capstone-and-professional-practice.md)
 **Lab:** [Your final product presentation](../labs/12-defensible-qa-verdict.md)
 
@@ -14,7 +14,7 @@ Apply [the 21-criterion rubric](../AIQAA_RUBRIC.md) to the frozen assessment agr
 
 Use [Product Studio](../COURSE_PROJECT.md), [review checklist](../templates/project-review.md) and [showcase template](../templates/project-showcase.md). Review repositories and evidence before presentation day, including early/intermediate/test-fix/release history and a learner-explained issue-to-release chain; eight demo minutes cannot substitute for ongoing inspection. Use [the private certification review](../templates/aiqaa-certification-review.md) for the two distinct decisions. Confirm release SHAs, synthetic data, local fallback, accessibility arrangements and each learner's appointment.
 
-Schedule six learners or fewer per block, each with eight minutes to demonstrate and four minutes to discuss the work with Jared. For larger cohorts book additional two-hour blocks or individual appointments **with Jared present**. Parallel coach panels and team presentations cannot replace an individual's presentation to him. Additional showcase blocks extend delivery time for larger cohorts; the standard 26 contact hours include one block.
+Schedule four learners or fewer per block, each with eight minutes to demonstrate and four minutes to discuss the work with Jared. For larger cohorts book additional 90-minute blocks or individual appointments **with Jared present**. Parallel coach panels and team presentations cannot replace an individual's presentation to him. Additional showcase blocks extend delivery time for larger cohorts; the standard 19.5 scheduled live hours include one block.
 
 Use isolated, credential-free environments for student code; no secrets or personal account access on demo machines. Prepare a private progress/decision register. Do not announce certificates automatically before Jared's review.
 
@@ -22,13 +22,12 @@ Use isolated, credential-free environments for student code; no secrets or perso
 
 | Time | Facilitation |
 | --- | --- |
-| 0–10 | Welcome and expectations: useful product, evidence, growth and honest limitations. Confirm presentation order. |
-| 10–20 | Demo setup and fallback checks; close private tabs/notifications and load synthetic data. |
-| 20–56 | Three individual slots, 12 minutes each: eight-minute demo and four-minute conversation with Jared. |
-| 56–66 | Break. |
-| 66–102 | Three more individual slots, 12 minutes each. Unused slots become coached follow-up, not new assessed tasks. |
-| 102–112 | Written reflection, apprenticeship interests and one concrete next skill. |
-| 112–120 | Explain separate course-completion and AIQAA decisions, private issuance and certification follow-up. Celebrate shared progress without public marks. |
+| 0–10 | Welcome, privacy/fallback checks and presentation order. |
+| 10–34 | Two individual slots: eight-minute demo and four-minute conversation with Jared each. |
+| 34–44 | Break. |
+| 44–68 | Two more individual slots, 12 minutes each. |
+| 68–80 | Reflection, feedback and next steps; unused slots become coached follow-up. |
+| 80–90 | Separate completion/certification decisions and follow-up; no public marks. |
 
 ## What to discuss
 

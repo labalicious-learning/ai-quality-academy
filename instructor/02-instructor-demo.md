@@ -37,7 +37,7 @@ If it starts editing, stop that action and restate the read-only scope. Do not g
 | 12–14 | Save the brief, three references, command/result, limited conclusion and question. Show the saved file. | Can someone else retrace the evidence? |
 | 14–15 | State the next activity and point to the student walkthrough. “You will repeat the investigation and verify your own references.” | Ask a learner to name the first action and deliverable. |
 
-Allow students to answer; do not narrate continuously. Keep this demonstration inside its 15-minute block. Product kickoff and the break come next; the full 35-minute investigation lab starts at class minute 60.
+Allow students to answer; do not narrate continuously. Keep this demonstration inside its 15-minute block. Product kickoff and the break come next; introduce the independent 35-minute investigation lab at class minute 60; learners complete it after class.
 
 ## What your saved example should establish
 
@@ -62,7 +62,7 @@ Take one focused attempt, then say: “That result is not verified yet. I will p
 
 If a check cannot run, mark it **pending** and preserve the exact error. Explain the test assertions without claiming they passed. Keep the lab time; move installation or account troubleshooting to coaching. Never manufacture tool output or an AI conversation.
 
-## Handoff for the later 35-minute lab
+## Handoff for the independent 35-minute lab
 
 “Open the Session 02 walkthrough. Read R1 and G102. Save your task brief before asking for a fix. At the first checkpoint, show your brief and one reference you personally opened. Work as driver and verifier, and switch roles after planning.”
 

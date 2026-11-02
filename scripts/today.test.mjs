@@ -5,7 +5,7 @@ import {courseContext} from './course-context.mjs';
 import '../site/path-core.js';
 import '../site/schedule-core.js';
 const C=globalThis.LearningPath;
-const date=(session='00',start='2027-01-12T18:00:00-06:00',end='2027-01-12T20:00:00-06:00')=>({session,start,end});
+const date=(session='00',start='2027-01-12T18:00:00-06:00',end='2027-01-12T19:30:00-06:00')=>({session,start,end});
 test('Today starts with one setup action and does not mutate or migrate saved state',()=>{
   const state=C.blank(), before=JSON.stringify(state), today=C.today(state);
   assert.equal(today.primary.href,'labs/00-course-setup.html');assert.equal(today.projectStage,'Not started');assert.equal(JSON.stringify(state),before);assert.equal(state.version,1);

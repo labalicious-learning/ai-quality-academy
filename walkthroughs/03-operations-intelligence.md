@@ -1,5 +1,7 @@
 # Session 03 — Operations Intelligence, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/03-operations-intelligence.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** preserved source data, a cleaned working view, source log, one-page memo and an automation boundary. Use 35 minutes; divide sources among your group, then verify together. No live connectors are needed.

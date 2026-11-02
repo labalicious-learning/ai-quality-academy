@@ -1,5 +1,7 @@
 # Session 09 — Event Reliability, one step at a time
 
+**When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
+
 [Back to the lab](../labs/09-inquiry-to-crm-reliability.md) · [All help guides](../LAB_HELP.md)
 
 **Finish with:** a system-boundary map, healthy/failure/recovery observations, an evidence packet and a regression proposal. Use 35 minutes; no real inbox, OAuth credentials or customer messages are involved.
