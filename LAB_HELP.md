@@ -1,5 +1,7 @@
 # Lab help — one step at a time
 
+**Prefer a video? [Open the video guide library](VIDEO_GUIDES.md)** — a general getting-started guide plus one guide for every lab, with captions, chapters, transcripts, and resource links.
+
 Choose your session below. These guides explain the same assignments in smaller steps; using them does not add work or change the review criteria. Mac, Linux and Windows routes are included where commands differ.
 
 ## Find your walkthrough
