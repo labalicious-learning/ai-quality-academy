@@ -1,5 +1,7 @@
 # Lab 12 — Your Product Showcase
 
+> **Watch the lab guide:** [Lab 12 · Prepare your product showcase · 3:01](https://labalicious-videos.jaredcluff.com/lab-guides-20261102/12/) — captions, chapters, transcript, and linked resources. New to labs? [Start with the general guide](../VIDEO_GUIDES.md#start-here).
+
 **When to do this:** Prepare your project and evidence outside class. Your individual presentation to Jared remains live; the 90-minute showcase accommodates up to four learners per block.
 
 **Time:** prepare during course-long homework; eight-minute individual demo plus four minutes with Jared in your assigned Session 12 slot.

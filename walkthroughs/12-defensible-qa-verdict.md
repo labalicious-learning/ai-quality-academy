@@ -1,5 +1,7 @@
 # Session 12 — Product Showcase, one step at a time
 
+> **Watch the lab guide:** [Lab 12 · Prepare your product showcase · 3:01](https://labalicious-videos.jaredcluff.com/lab-guides-20261102/12/) — captions, chapters, transcript, and linked resources. New to labs? [Start with the general guide](../VIDEO_GUIDES.md#start-here).
+
 **When to do this:** Prepare your project and evidence outside class. Your individual presentation to Jared remains live; the 90-minute showcase accommodates up to four learners per block.
 
 [Back to the showcase](../labs/12-defensible-qa-verdict.md) · [All help guides](../LAB_HELP.md)

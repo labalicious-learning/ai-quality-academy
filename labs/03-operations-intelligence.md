@@ -1,5 +1,7 @@
 # Lab 3 — Operations Intelligence Sprint
 
+> **Watch the lab guide:** [Lab 03 · Turn business files into a defensible memo · 3:02](https://labalicious-videos.jaredcluff.com/lab-guides-20261102/03/) — captions, chapters, transcript, and linked resources. New to labs? [Start with the general guide](../VIDEO_GUIDES.md#start-here).
+
 **When to do this:** Complete this lab on your own time after the Monday class. Live classes run 7:30–9:00 p.m. Central. Use the linked resources and walkthrough, then bring a result or blocker to the next class. Work solo or arrange a partner outside class.
 
 **Independent practice estimate:** 35 minutes  
